@@ -1,0 +1,46 @@
+name: Bug report
+description: Report an installation, packaging, or design-result problem.
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        For ordinary problems, see SUPPORT.md. Do not report a suspected security
+        vulnerability here; follow SECURITY.md for the private-reporting boundary.
+        Remove credentials, customer information, and private project content before sharing.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and invocation
+      description: >-
+        Include the artifact filename or release/tag, package version and SHA-256
+        if available, edition (Codex, Claude preview, or unreleased common package),
+        client/version and surface, model/settings if known, installation route,
+        skill, and exact invocation. Say when an identity is unknown rather than guessing.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Task and expected result
+      description: What were you trying to do? For a design result, name the product requirement that should be satisfied.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Include the relevant error or the part of the output that failed.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reproducible example or explain what prevents reproduction.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Optional redacted sources, output excerpts, or screenshots that show the difference.

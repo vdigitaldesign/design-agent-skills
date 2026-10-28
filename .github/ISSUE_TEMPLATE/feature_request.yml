@@ -1,0 +1,25 @@
+name: Feature request
+description: Propose a useful design capability or improvement.
+body:
+  - type: markdown
+    attributes:
+      value: Describe the user need before the proposed solution. Share only material you may publish.
+  - type: textarea
+    id: need
+    attributes:
+      label: User need
+      description: Who needs to do what, and where does the current workflow fall short?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe a concrete task and the useful result. Include any relevant client or installation route.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current approach and alternatives
+      description: Optional examples, existing skills tried, or a smaller change that could meet the need.

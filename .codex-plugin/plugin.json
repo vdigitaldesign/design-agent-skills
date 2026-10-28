@@ -1,0 +1,45 @@
+{
+  "name": "design-agent-skills",
+  "version": "0.1.0",
+  "description": "Design skills for Codex, from product context and interface reviews to approved decisions and developer handoff.",
+  "author": {
+    "name": "Volodymyr Onishchenko",
+    "url": "https://github.com/vdigitaldesign"
+  },
+  "homepage": "https://github.com/vdigitaldesign/design-agent-skills",
+  "repository": "https://github.com/vdigitaldesign/design-agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "agent-skills",
+    "product-design",
+    "design-systems",
+    "design-review",
+    "design-handoff"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Design Agent Skills",
+    "shortDescription": "Design workflows for Codex",
+    "longDescription": "DAS helps Codex reconstruct product context, audit interfaces, explore design alternatives, and prepare a developer handoff. It carries approved choices into contracts and checks implementation against them. You choose material product changes. Version 0.1.0 supports the documented Codex app and CLI workflows. Claude support is under development and is not part of this release.",
+    "developerName": "Volodymyr Onishchenko",
+    "category": "Creativity",
+    "capabilities": [
+      "Design review",
+      "Design exploration",
+      "Developer handoff",
+      "Implementation verification"
+    ],
+    "websiteURL": "https://github.com/vdigitaldesign/design-agent-skills",
+    "supportURL": "https://github.com/vdigitaldesign/design-agent-skills/issues",
+    "defaultPrompt": [
+      "Review this interface and recommend what to change.",
+      "Explore design directions for this product.",
+      "Check the implementation against the approved design."
+    ],
+    "brandColor": "#050505",
+    "brandColorDark": "#FFDF20",
+    "composerIcon": "./assets/plugin-icon.svg",
+    "logo": "./assets/plugin-icon.svg"
+  }
+}

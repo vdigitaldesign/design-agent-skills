@@ -1,0 +1,340 @@
+{
+  "clientTarget": "codex-0.1.0",
+  "entrypoint": "reconstruct-design-context",
+  "files": [
+    {
+      "bytes": 1078,
+      "path": "LICENSE",
+      "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
+    },
+    {
+      "bytes": 5655,
+      "path": "SKILL.md",
+      "sha256": "83e5279ffdb081f535debda45d9e8d5583e0827e19498c67b1fd1f693e09024b"
+    },
+    {
+      "bytes": 992,
+      "path": "TARGET.json",
+      "sha256": "14e8eeff312c5064afeb44ca4468e7e9834967f0967577f76a465ee3b0fa8ff5"
+    },
+    {
+      "bytes": 6,
+      "path": "VERSION",
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
+    },
+    {
+      "bytes": 5913,
+      "path": "references/audit-exploration-templates.md",
+      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+    },
+    {
+      "bytes": 9546,
+      "path": "references/authority-and-status.md",
+      "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
+    },
+    {
+      "bytes": 8036,
+      "path": "references/contract-review-templates.md",
+      "sha256": "7c053bba8e564fe619684fc2303aa9f23b5be1eed8734511ec6f0cb5a2ed8c1f"
+    },
+    {
+      "bytes": 2859,
+      "path": "references/design-knowledge-index.md",
+      "sha256": "11382bb0e97fb7e28ef76fac91531bac7b78446ff5d81670f432dbfda0702454"
+    },
+    {
+      "bytes": 14715,
+      "path": "references/design-lab-protocol.md",
+      "sha256": "864c12cf0463751a98d46684a0c9a024167a8b873b009df374d0eeb6ca2cbbce"
+    },
+    {
+      "bytes": 7489,
+      "path": "references/design-system-craft.md",
+      "sha256": "880630c3847589531bdef2df68575a0e0124ba003cc2adce0dc05f15a8e4156c"
+    },
+    {
+      "bytes": 3722,
+      "path": "references/engineering-integration.md",
+      "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
+    },
+    {
+      "bytes": 18698,
+      "path": "references/packet-projections.md",
+      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+    },
+    {
+      "bytes": 9133,
+      "path": "references/product-profile-and-tools.md",
+      "sha256": "0bf3b26b3bcfb09924710f1caab3b35c42e88d46833353a5f934a7a8b138c58c"
+    },
+    {
+      "bytes": 4658,
+      "path": "references/quality-checklists.md",
+      "sha256": "429524d759bb1244005cdd2c356cf0cc85a26cade4716bb44ffe82fb37e2ca84"
+    },
+    {
+      "bytes": 2967,
+      "path": "references/task-context-templates.md",
+      "sha256": "2c8478608469f62356b09cc815e318a567005f616172c30ba2e5d2cd890d4bf8"
+    },
+    {
+      "bytes": 8672,
+      "path": "references/visual-craft.md",
+      "sha256": "61b558e5beed0d85599cc4c9a44a4cf7ecb4f162f31b6f4c18762118f8b10831"
+    },
+    {
+      "bytes": 4168,
+      "path": "related/assess-design-reuse.md",
+      "sha256": "6c1438a2e3d852ebeaf4c4b6448a96aedfde48b07fa7c628a6673869d3a25506"
+    },
+    {
+      "bytes": 5839,
+      "path": "related/audit-design-surface.md",
+      "sha256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66"
+    },
+    {
+      "bytes": 5292,
+      "path": "related/audit-design-system.md",
+      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+    },
+    {
+      "bytes": 9344,
+      "path": "related/design-router.md",
+      "sha256": "a3d2e90268a60a48a9c26deeed5187500bb8c600ab968171e6bca865d26a003f"
+    },
+    {
+      "bytes": 7474,
+      "path": "related/develop-visual-direction.md",
+      "sha256": "7d5ad6ecba81b6329397f3cacc55a17170f05f51cb476cdb4021ee3d92c2f3d7"
+    },
+    {
+      "bytes": 5390,
+      "path": "related/evolve-design-system.md",
+      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+    },
+    {
+      "bytes": 5710,
+      "path": "related/explore-design-directions.md",
+      "sha256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293"
+    },
+    {
+      "bytes": 4851,
+      "path": "related/frame-design-task.md",
+      "sha256": "65b67edff28dca0ab617e103da6756f1c9f45ddb8b8cb57b4ef3e8b40324aefe"
+    },
+    {
+      "bytes": 4861,
+      "path": "related/maintain-design-knowledge.md",
+      "sha256": "bca7b73142b343803e2e4bc0212437a284a922a7bfa2af6fddaf214c0d171198"
+    },
+    {
+      "bytes": 7182,
+      "path": "related/prototype-design-directions.md",
+      "sha256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368"
+    },
+    {
+      "bytes": 7082,
+      "path": "related/publish-design-system-canon.md",
+      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+    },
+    {
+      "bytes": 5167,
+      "path": "related/record-design-decision.md",
+      "sha256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707"
+    },
+    {
+      "bytes": 6418,
+      "path": "related/validate-design-contract.md",
+      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+    },
+    {
+      "bytes": 6610,
+      "path": "related/verify-design-implementation.md",
+      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+    },
+    {
+      "bytes": 10679,
+      "path": "related/write-design-contract.md",
+      "sha256": "63d881faed37968a8e2cadc3a3fca7be232a7b5ec57fdefbed7a0e7a70bd6a47"
+    },
+    {
+      "bytes": 21853,
+      "path": "verify.py",
+      "sha256": "cd6e5440b2f44e0dad06f5ebc11c49674bb298139e61e0e7ed3fe139f9cb39cd"
+    }
+  ],
+  "kind": "skill",
+  "schema": "das-portable-v1",
+  "sourceDigest": "4b3cf50c212aac87f2f788c762d5b1866f336c73c765213f140444c6b2ecd86b",
+  "sources": [
+    {
+      "exportPath": "references/audit-exploration-templates.md",
+      "exportSHA256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3",
+      "sourcePath": "references/audit-exploration-templates.md",
+      "sourceSHA256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+    },
+    {
+      "exportPath": "references/authority-and-status.md",
+      "exportSHA256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7",
+      "sourcePath": "references/authority-and-status.md",
+      "sourceSHA256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
+    },
+    {
+      "exportPath": "references/contract-review-templates.md",
+      "exportSHA256": "7c053bba8e564fe619684fc2303aa9f23b5be1eed8734511ec6f0cb5a2ed8c1f",
+      "sourcePath": "references/contract-review-templates.md",
+      "sourceSHA256": "7c053bba8e564fe619684fc2303aa9f23b5be1eed8734511ec6f0cb5a2ed8c1f"
+    },
+    {
+      "exportPath": "references/design-knowledge-index.md",
+      "exportSHA256": "11382bb0e97fb7e28ef76fac91531bac7b78446ff5d81670f432dbfda0702454",
+      "sourcePath": "references/design-knowledge-index.md",
+      "sourceSHA256": "2abdd9c7b89050da1ad92d58a952538411af309ecb1b8f8e31fc986e2ad119c5"
+    },
+    {
+      "exportPath": "references/design-lab-protocol.md",
+      "exportSHA256": "864c12cf0463751a98d46684a0c9a024167a8b873b009df374d0eeb6ca2cbbce",
+      "sourcePath": "references/design-lab-protocol.md",
+      "sourceSHA256": "864c12cf0463751a98d46684a0c9a024167a8b873b009df374d0eeb6ca2cbbce"
+    },
+    {
+      "exportPath": "references/design-system-craft.md",
+      "exportSHA256": "880630c3847589531bdef2df68575a0e0124ba003cc2adce0dc05f15a8e4156c",
+      "sourcePath": "references/design-system-craft.md",
+      "sourceSHA256": "880630c3847589531bdef2df68575a0e0124ba003cc2adce0dc05f15a8e4156c"
+    },
+    {
+      "exportPath": "references/engineering-integration.md",
+      "exportSHA256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf",
+      "sourcePath": "references/engineering-integration.md",
+      "sourceSHA256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
+    },
+    {
+      "exportPath": "references/packet-projections.md",
+      "exportSHA256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641",
+      "sourcePath": "references/packet-projections.md",
+      "sourceSHA256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+    },
+    {
+      "exportPath": "references/product-profile-and-tools.md",
+      "exportSHA256": "0bf3b26b3bcfb09924710f1caab3b35c42e88d46833353a5f934a7a8b138c58c",
+      "sourcePath": "references/product-profile-and-tools.md",
+      "sourceSHA256": "0bf3b26b3bcfb09924710f1caab3b35c42e88d46833353a5f934a7a8b138c58c"
+    },
+    {
+      "exportPath": "references/quality-checklists.md",
+      "exportSHA256": "429524d759bb1244005cdd2c356cf0cc85a26cade4716bb44ffe82fb37e2ca84",
+      "sourcePath": "references/quality-checklists.md",
+      "sourceSHA256": "429524d759bb1244005cdd2c356cf0cc85a26cade4716bb44ffe82fb37e2ca84"
+    },
+    {
+      "exportPath": "references/task-context-templates.md",
+      "exportSHA256": "2c8478608469f62356b09cc815e318a567005f616172c30ba2e5d2cd890d4bf8",
+      "sourcePath": "references/task-context-templates.md",
+      "sourceSHA256": "2c8478608469f62356b09cc815e318a567005f616172c30ba2e5d2cd890d4bf8"
+    },
+    {
+      "exportPath": "references/visual-craft.md",
+      "exportSHA256": "61b558e5beed0d85599cc4c9a44a4cf7ecb4f162f31b6f4c18762118f8b10831",
+      "sourcePath": "references/visual-craft.md",
+      "sourceSHA256": "61b558e5beed0d85599cc4c9a44a4cf7ecb4f162f31b6f4c18762118f8b10831"
+    },
+    {
+      "exportPath": "related/assess-design-reuse.md",
+      "exportSHA256": "6c1438a2e3d852ebeaf4c4b6448a96aedfde48b07fa7c628a6673869d3a25506",
+      "sourcePath": "skills/assess-design-reuse/SKILL.md",
+      "sourceSHA256": "a26608a56522f5f1e6b4e2e910292eb1a5a9fb889fa840b159946bebfe13b926"
+    },
+    {
+      "exportPath": "related/audit-design-surface.md",
+      "exportSHA256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66",
+      "sourcePath": "skills/audit-design-surface/SKILL.md",
+      "sourceSHA256": "1048c083a332f8845d43a3f5c9466c2a6d1a1e99ecd5dfb410acfae042d7555a"
+    },
+    {
+      "exportPath": "related/audit-design-system.md",
+      "exportSHA256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b",
+      "sourcePath": "skills/audit-design-system/SKILL.md",
+      "sourceSHA256": "22af77fcc5560497019c9ce4f7a951032c7b2bac93fe12b4a3cda297d48f5ce0"
+    },
+    {
+      "exportPath": "related/design-router.md",
+      "exportSHA256": "a3d2e90268a60a48a9c26deeed5187500bb8c600ab968171e6bca865d26a003f",
+      "sourcePath": "skills/design-router/SKILL.md",
+      "sourceSHA256": "792f2a16d284dade79cc2a451e1fe723608813d4fdee530b71306d64b1656f35"
+    },
+    {
+      "exportPath": "related/develop-visual-direction.md",
+      "exportSHA256": "7d5ad6ecba81b6329397f3cacc55a17170f05f51cb476cdb4021ee3d92c2f3d7",
+      "sourcePath": "skills/develop-visual-direction/SKILL.md",
+      "sourceSHA256": "fb80c903f2ae1eff5d66db98ca1efcd70496f6544153efd341084592a5744b7e"
+    },
+    {
+      "exportPath": "related/evolve-design-system.md",
+      "exportSHA256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7",
+      "sourcePath": "skills/evolve-design-system/SKILL.md",
+      "sourceSHA256": "a29aa39531420493637425ee947cd8f63d55bbf9872ae5e3ad9d56e482080091"
+    },
+    {
+      "exportPath": "related/explore-design-directions.md",
+      "exportSHA256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293",
+      "sourcePath": "skills/explore-design-directions/SKILL.md",
+      "sourceSHA256": "9d8e5fd00830eae82a907c239f73b581228ec3daec83eea1f0d7a26342f3415b"
+    },
+    {
+      "exportPath": "related/frame-design-task.md",
+      "exportSHA256": "65b67edff28dca0ab617e103da6756f1c9f45ddb8b8cb57b4ef3e8b40324aefe",
+      "sourcePath": "skills/frame-design-task/SKILL.md",
+      "sourceSHA256": "d5006f5fedcd42b9f29fd92e1a8ea8cf9a467c6043e8bf9fc940db6d32d1fb70"
+    },
+    {
+      "exportPath": "related/maintain-design-knowledge.md",
+      "exportSHA256": "bca7b73142b343803e2e4bc0212437a284a922a7bfa2af6fddaf214c0d171198",
+      "sourcePath": "skills/maintain-design-knowledge/SKILL.md",
+      "sourceSHA256": "f44c85fb39f1b676c6b7d04eb415d779af3f8d40c2057717cec372e3d0f97905"
+    },
+    {
+      "exportPath": "related/prototype-design-directions.md",
+      "exportSHA256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368",
+      "sourcePath": "skills/prototype-design-directions/SKILL.md",
+      "sourceSHA256": "e869f3c177b34682f1e1b5f2ec1fe6664f920e00b6bf668ea695d288dcd4a9ea"
+    },
+    {
+      "exportPath": "related/publish-design-system-canon.md",
+      "exportSHA256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e",
+      "sourcePath": "skills/publish-design-system-canon/SKILL.md",
+      "sourceSHA256": "5e739c5cce81ce17e65f3e9e0f28bf76a280bdc42e537098db744fc5630624e8"
+    },
+    {
+      "exportPath": "SKILL.md",
+      "exportSHA256": "83e5279ffdb081f535debda45d9e8d5583e0827e19498c67b1fd1f693e09024b",
+      "sourcePath": "skills/reconstruct-design-context/SKILL.md",
+      "sourceSHA256": "54606931f179981e0235eb8471cc90752210514d9b2b4689acc6dd2fcd3970c1"
+    },
+    {
+      "exportPath": "related/record-design-decision.md",
+      "exportSHA256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707",
+      "sourcePath": "skills/record-design-decision/SKILL.md",
+      "sourceSHA256": "23fa4997d22e59d3321046edeae162352c1920f4594ab10be2aef465a471a036"
+    },
+    {
+      "exportPath": "related/validate-design-contract.md",
+      "exportSHA256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5",
+      "sourcePath": "skills/validate-design-contract/SKILL.md",
+      "sourceSHA256": "19aca0023015a80d9be0143a901d77c09725935c9607196ada5eb7f3a7d079e0"
+    },
+    {
+      "exportPath": "related/verify-design-implementation.md",
+      "exportSHA256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de",
+      "sourcePath": "skills/verify-design-implementation/SKILL.md",
+      "sourceSHA256": "fbef785421780d8ad7f1dc8906034c9a1a13b6bf3147c02e49d3714300c3d544"
+    },
+    {
+      "exportPath": "related/write-design-contract.md",
+      "exportSHA256": "63d881faed37968a8e2cadc3a3fca7be232a7b5ec57fdefbed7a0e7a70bd6a47",
+      "sourcePath": "skills/write-design-contract/SKILL.md",
+      "sourceSHA256": "79d30f798feef64d6d1cb3e8e0ad718a8c0440fe42a0749165ddea67a2c8741b"
+    }
+  ],
+  "version": "0.1.0"
+}
