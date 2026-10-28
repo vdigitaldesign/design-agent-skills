@@ -1,6 +1,6 @@
 # How DAS works
 
-DAS helps Codex work from a product request to a design decision and engineering handoff, then compare the built result with the approved design. Its skills share guidance for context, decisions, and verification.
+DAS helps agents work from a product request to a design decision and engineering handoff, then compare the built result with the approved design. Its skills share guidance for context, decisions, and verification.
 
 ## Start from the task
 
@@ -10,7 +10,7 @@ You can invoke a specialist directly when the task is clear. The [catalog](skill
 
 ## Establish the product context
 
-Product facts can live in a brief, design files, component code, previous decisions, and the running interface. Codex should distinguish authoritative requirements from observed behavior, inferences, and unresolved questions.
+Product facts can live in a brief, design files, component code, previous decisions, and the running interface. The agent should distinguish authoritative requirements from observed behavior, inferences, and unresolved questions.
 
 The current implementation shows what exists. An existing component or behavior may still conflict with an approved rule. DAS asks the agent to check applicable product and design-system sources before treating an implementation detail as a requirement.
 

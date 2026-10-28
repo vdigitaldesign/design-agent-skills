@@ -1,6 +1,6 @@
 # Give DAS a useful task
 
-A brief should tell Codex what people need to do, what the product offers, and what you want to receive. Supply the relevant rules, screens, and existing decisions with the request. Replace the bracketed paths and details below with your own.
+A brief should tell the agent what people need to do, what the product offers, and what you want to receive. Supply the relevant rules, screens, and existing decisions with the request. Replace the bracketed paths and details below with your own.
 
 The examples use the plugin prefix. For project-local copied skills, use `$design-router` or the corresponding unprefixed specialist name.
 
@@ -26,7 +26,7 @@ Include decisions you have already made so the agent can carry them forward. If 
 
 > Use $design-agent-skills:design-router to improve rescheduling in [project]. Read [current flow], [booking rules], and [design system]. People need to change a date without losing their selected service or misunderstanding a price change. Preserve the cancellation policy and existing payment behavior. Show me the material design choices, prototype the selected direction, and prepare it for implementation in [destination].
 
-Give Codex access to adjacent screens, relevant components, and current behavior. A screenshot can show a confusing state while leaving its product rule unknown.
+Give the agent access to adjacent screens, relevant components, and current behavior. A screenshot can show a confusing state while leaving its product rule unknown.
 
 ## Audit a screen
 

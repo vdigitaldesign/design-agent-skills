@@ -1,7 +1,7 @@
 {
   "name": "design-agent-skills",
   "version": "0.1.0",
-  "description": "Design skills for Codex, from product context and interface reviews to approved decisions and developer handoff.",
+  "description": "Design skills for AI agents to understand products, explore design options, and prepare clear implementation handoffs.",
   "author": {
     "name": "Volodymyr Onishchenko",
     "url": "https://github.com/vdigitaldesign"
@@ -20,8 +20,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Design Agent Skills",
-    "shortDescription": "Design workflows for Codex",
-    "longDescription": "DAS helps Codex reconstruct product context, audit interfaces, explore design alternatives, and prepare a developer handoff. It carries approved choices into contracts and checks implementation against them. You choose material product changes. Version 0.1.0 supports the documented Codex app and CLI workflows. Claude support is under development and is not part of this release.",
+    "shortDescription": "Design work for agents",
+    "longDescription": "DAS helps agents understand product context, review interfaces, and explore design directions. It carries your approved choices into implementation requirements and a developer handoff, then checks the built result against them. Use the skills with your product sources, design system, and available tools.\n\nVersion 0.1.0 supports the documented Codex app and CLI workflows. Claude support is under development and is not part of this release.",
     "developerName": "Volodymyr Onishchenko",
     "category": "Creativity",
     "capabilities": [

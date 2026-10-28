@@ -5,22 +5,18 @@
 **Design work for agents. Design authority for humans.**
 
 [![Version: 0.1.0](https://img.shields.io/badge/version-0.1.0-ff6846)](CHANGELOG.md)
-[![Skills: 16](https://img.shields.io/badge/skills-16-62d9ff)](docs/skills.md)
 ![Format: Markdown](https://img.shields.io/badge/format-Markdown-f4f0e6)
 [![License: MIT](https://img.shields.io/badge/license-MIT-c9f24a)](LICENSE)
-[![Codex: app and CLI](https://img.shields.io/badge/Codex-app%20%2B%20CLI-ff6846)](docs/codex.md)
 
-[Why DAS](#why-das-exists) · [Install](#install) · [Workflow](#how-the-work-flows) · [Skills](#choose-a-skill) · [Docs](#documentation) · [Contribute](CONTRIBUTING.md)
+[Why DAS](#why-das-exists) · [Supported agents](#supported-agents) · [Install](#install) · [Workflow](#how-the-work-flows) · [Skills](#choose-a-skill) · [Docs](#documentation) · [Contribute](CONTRIBUTING.md)
 
-Design Agent Skills (DAS) gives Codex 16 Markdown skills and 12 shared references for the design work between a
-product request and implementation. It helps the agent understand a product, inspect interfaces, develop and
-compare designs, and give the implementer clear requirements. People retain control of consequential product and
-design choices.
+Design Agent Skills (DAS) helps AI agents do the design work between a product request and implementation.
+The agent works from your product context, reviews existing interfaces, and develops design directions for
+you to compare. DAS carries your approved decisions into requirements and a developer handoff, then checks
+the built result against those requirements.
 
 The skills work with your product context, design system, and tools. They carry observations, proposals,
 approved decisions, and verification results between tasks while keeping those records distinct.
-
-> Version 0.1.0 supports the documented Codex app and CLI workflows. Claude support is under development and is not included in this release's supported configurations. See the [release notes](docs/release-notes.md) and [tested configurations](docs/advanced-installation.md#support-and-evidence).
 
 ## Why DAS exists
 
@@ -44,7 +40,13 @@ developing the visual treatment, and handing the selected design to a coding age
 record of the person's choice travel together; the route depends on the task.
 
 
+## Supported agents
+
+Version 0.1.0 supports the documented Codex app and CLI workflows. Claude support is under development and is not included in this release's supported configurations. See the [release notes](docs/release-notes.md) and [tested configurations](docs/advanced-installation.md#support-and-evidence).
+
 ## Install
+
+[![Codex: app and CLI](https://img.shields.io/badge/Codex-app%20%2B%20CLI-ff6846)](docs/codex.md)
 
 The native plugin installs all 16 skills for Codex app and CLI. You can also install project-local copies through Skills CLI. Use one route per project to avoid duplicate DAS entries.
 
@@ -108,6 +110,8 @@ Read [how DAS works](docs/how-das-works.md) for decision boundaries, design-syst
 
 ## Choose a skill
 
+[![Skills: 16](https://img.shields.io/badge/skills-16-62d9ff)](docs/skills.md)
+
 Use [`design-router`](skills/design-router/SKILL.md) when the task crosses several areas or you are unsure where to start. Invoke a specialist directly when the work is clear.
 
 ### Understand the task
@@ -157,7 +161,7 @@ The [skill catalog](docs/skills.md) adds the typical result for each capability.
 
 Provide the result you need, relevant product facts, existing decisions, files or previews, and constraints. State where the agent may work. It should inspect accessible sources before asking you to fill a gap, and continue work that does not depend on the missing answer.
 
-Tools come from your Codex environment. Some tasks need a browser, design files, or an image tool; DAS does not bundle those services or a model runtime. Each skill carries its supporting references and related instructions. Keep the complete installed folders so the agent can open them. The [Codex guide](docs/codex.md) describes the supported setup.
+Tools come from your agent environment. Some tasks need a browser, design files, or an image tool; DAS does not bundle those services or a model runtime. Each skill carries its supporting references and related instructions. Keep the complete installed folders so the agent can open them. The [Codex guide](docs/codex.md) describes the supported setup.
 
 ## Scope
 
