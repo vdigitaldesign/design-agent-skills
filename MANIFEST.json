@@ -50,9 +50,9 @@
       "sha256": "22231e55eb337e54a0f3747c7535b19519d34e8bfd6f6eeb45c40c6f22635779"
     },
     {
-      "bytes": 706,
+      "bytes": 879,
       "path": ".github/workflows/validate.yml",
-      "sha256": "7bcab42d692f9bb0af34983de794d13d9c66312bff38dff187790b5e6aec3829"
+      "sha256": "e592f51c9303e3a42972220cb3959dfeb6a5ce75e9cdcb9c49ae36b7898c7aef"
     },
     {
       "bytes": 56,
