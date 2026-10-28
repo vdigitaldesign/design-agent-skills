@@ -25,9 +25,9 @@
       "sha256": "8556952959a90a4cf27dd4e1842fe7ee8ff2e6809fccd553fc51db7cb5ced003"
     },
     {
-      "bytes": 1879,
+      "bytes": 1946,
       "path": ".codex-plugin/plugin.json",
-      "sha256": "cfea2556f9fe81d932f7d76bec282d20d8c04f7542f282f388133ffb0a9b30e4"
+      "sha256": "0545ec498b11d5f007c055c0f51419297a6dd5f59711ab4d3b6d28be3b0c682a"
     },
     {
       "bytes": 1767,
@@ -90,9 +90,9 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 13817,
+      "bytes": 13895,
       "path": "README.md",
-      "sha256": "0446f25dced3ed2735b73559e4f057a2d53e37de0530c48a04587ab5c19357d9"
+      "sha256": "5dbd042f6910a31d12fcccaebb6c2075ce8dfb8605fd4bc94f1a4338d749d864"
     },
     {
       "bytes": 1436,
@@ -140,14 +140,14 @@
       "sha256": "70eb321c550233547e669592b76caf47d1503c267dd2763ebd8fb2cac0cac32f"
     },
     {
-      "bytes": 4043,
+      "bytes": 4051,
       "path": "docs/getting-started.md",
-      "sha256": "9e8fb8db709c048ac3899a5de71cc3744d1c8f49875d011b87be469f86d27516"
+      "sha256": "9a226affb4a002bebc09b01878379a80ba3d7d75fbe9efb29d476d46af852ed0"
     },
     {
-      "bytes": 4619,
+      "bytes": 4624,
       "path": "docs/how-das-works.md",
-      "sha256": "2861c182ef8f2275ece4ec1e07166f42fdf3a5a6d73a676b3a0560efc3459931"
+      "sha256": "f449b3bbc8a5d8dfc011676a984ef6e4f37f46700849846c26503c67811602db"
     },
     {
       "bytes": 2234,
