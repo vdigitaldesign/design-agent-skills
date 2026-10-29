@@ -80,9 +80,9 @@
       "sha256": "903645f35bb97c192a8e4d2ee6b032467dc4b9e98a4b6486603ba274152baf3f"
     },
     {
-      "bytes": 4401,
+      "bytes": 5207,
       "path": "INSTALL.md",
-      "sha256": "d55061d937319ead68a31b3e4880102dd1fe00f752baaab28f1f159893d1c3d2"
+      "sha256": "642725941b053dc22fa218f24679e6f1816d7adfe51d32f5a260e9e20681e361"
     },
     {
       "bytes": 1078,
@@ -90,9 +90,9 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 13077,
+      "bytes": 13270,
       "path": "README.md",
-      "sha256": "73dde4324fdc09313a8423358230567bf10a44be06fb7275806f67c575ee3994"
+      "sha256": "e45f46547686453f012fc5d286d534078a28dc8170857fc7d865ad71336be87b"
     },
     {
       "bytes": 1444,
@@ -130,9 +130,9 @@
       "sha256": "5a164d665947a9b57182ad4c1f195590b562156400ce4fa9101049e3b54a0664"
     },
     {
-      "bytes": 11073,
+      "bytes": 11774,
       "path": "docs/advanced-installation.md",
-      "sha256": "203be4de2e3736ba4858aa111efd80d00ed0c58a4777b4898808c98b9fe9b322"
+      "sha256": "3b780bb834039b4bada7c10cdda1e5b2fbc32f0308b7647bf17f46fe19be5647"
     },
     {
       "bytes": 2783,
