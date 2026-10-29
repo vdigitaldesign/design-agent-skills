@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.1.1
+
+### Fixed
+
+- Stop archive extraction and verifier execution when the checksum fails.
+- Clarify removal scope so users can preserve another agent's same-named skills.
+- Deliver consistent product descriptions in the README and installed plugin.
+
+### Added
+
+- A worked example from a design brief to a selected direction and developer handoff.
+- A public summary of completed release-installation checks, with their scope and limits.
+
+The qualified design instructions are unchanged. See the [release notes](docs/release-notes.md) and [upgrade guidance](docs/advanced-installation.md#replace-an-earlier-installation).
+
 ## 0.1.0
 
 First supported Codex edition of Design Agent Skills.

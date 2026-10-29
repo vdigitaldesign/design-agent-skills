@@ -1,6 +1,6 @@
 {
   "name": "design-agent-skills",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Design skills for AI agents to understand products, explore design options, and prepare clear implementation handoffs.",
   "author": {
     "name": "Volodymyr Onishchenko",
@@ -21,7 +21,7 @@
   "interface": {
     "displayName": "Design Agent Skills",
     "shortDescription": "Design work for agents",
-    "longDescription": "DAS helps agents understand product context, review interfaces, and explore design directions. It carries your approved choices into implementation requirements and a developer handoff, then checks the built result against them. Use the skills with your product sources, design system, and available tools.\n\nVersion 0.1.0 supports the documented Codex app and CLI workflows. Claude support is under development and is not part of this release.",
+    "longDescription": "DAS helps your agent investigate a design problem and develop alternatives you can compare. It works from your product sources and design system, then carries your approved choices into a clear implementation handoff. After the interface is built, the skills can help check it against those requirements.\n\nVersion 0.1.1 supports the documented Codex app and CLI workflows. Claude support is under development and is not part of this release.",
     "developerName": "Volodymyr Onishchenko",
     "category": "Creativity",
     "capabilities": [

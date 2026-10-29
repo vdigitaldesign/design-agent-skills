@@ -10,6 +10,6 @@ Include the affected release and artifact hash when available, client and instal
 
 ## Supported releases
 
-Version 0.1.0 is the supported release. Earlier local development and preview packages are not supported releases. No response-time commitment is made.
+Version 0.1.1 is the current supported release. Earlier local development and preview packages are not supported releases. No response-time commitment is made.
 
 Security fixes use a new version and release notes. Published tags, archives, and checksums are not replaced in place. See [replacement and rollback](docs/advanced-installation.md#replace-an-earlier-installation) for preserving an existing installation.

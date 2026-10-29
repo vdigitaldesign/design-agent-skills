@@ -2,6 +2,8 @@
 
 DAS helps agents work from a product request to a design decision and engineering handoff, then compare the built result with the approved design. Its skills share guidance for context, decisions, and verification.
 
+See the [worked example](worked-example.md) for a concrete brief, design options, and a handoff built around one illustrative choice.
+
 ## Start from the task
 
 Design Router chooses the work needed for your requested result. An audit can end with findings. A routine correction determined by an existing approved rule can use a short handoff. A material design choice may need alternatives, a prototype, and your decision before a contract is prepared.

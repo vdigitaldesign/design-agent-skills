@@ -4,6 +4,8 @@ A brief should tell the agent what people need to do, what the product offers, a
 
 The examples use the plugin prefix. For project-local copied skills, use `$design-router` or the corresponding unprefixed specialist name.
 
+For a filled-in brief and the work that follows it, read the [ticket-reassignment example](worked-example.md). It shows the options, an illustrative human choice, and a developer handoff.
+
 ## Brief template
 
 ```text
