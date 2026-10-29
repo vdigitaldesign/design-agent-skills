@@ -4,26 +4,17 @@
 
 **Design work for agents. Design authority for humans.**
 
-[![Version: 0.1.0](https://img.shields.io/badge/version-0.1.0-ff6846)](CHANGELOG.md)
+[![Version: 0.1.1](https://img.shields.io/badge/version-0.1.1-ff6846)](CHANGELOG.md)
 ![Format: Markdown](https://img.shields.io/badge/format-Markdown-f4f0e6)
 [![License: MIT](https://img.shields.io/badge/license-MIT-c9f24a)](LICENSE)
 
-[Why DAS](#why-das-exists) · [Supported agents](#supported-agents) · [Install](#install) · [Workflow](#how-the-work-flows) · [Skills](#choose-a-skill) · [Docs](#documentation) · [Contribute](CONTRIBUTING.md)
+[Why DAS](#why-das-exists) · [Example](docs/worked-example.md) · [Supported agents](#supported-agents) · [Install](#install) · [Workflow](#how-the-work-flows) · [Skills](#choose-a-skill) · [Docs](#documentation) · [Contribute](CONTRIBUTING.md)
 
-Design Agent Skills (DAS) helps AI agents do the design work between a product request and implementation.
-The agent works from your product context, reviews existing interfaces, and develops design directions for
-you to compare. DAS carries your approved decisions into requirements and a developer handoff, then checks
-the built result against those requirements.
-
-The skills work with your product context, design system, and tools. They carry observations, proposals,
-approved decisions, and verification results between tasks while keeping those records distinct.
+Design Agent Skills (DAS) helps you work through product and interface design with an AI agent. Use it to
+investigate a confusing screen, compare designs for a new flow, or prepare an approved design for
+implementation.
 
 ## Why DAS exists
-
-DAS helps the agent do the design work between product intent and implementation: recover the context, check
-reuse, explore content, interaction, and visual choices, and recommend a direction. The agent then carries the
-person's choice into implementation requirements and checks the built interface against them. The same methods
-support improving an existing product or designing something new.
 
 A coding agent can build a working interface while still getting the design wrong. When context is incomplete,
 it may invent a recovery flow, overlook an existing component, choose a visual direction without alternatives,
@@ -31,18 +22,16 @@ or treat the current code as the approved design. Passing implementation tests d
 
 ### What DAS adds
 
-DAS works alongside your implementation tools, component libraries, and audits. It connects the design work from
-product context and alternatives to an explicit human decision. The handoff makes approved requirements and
-unresolved questions clear to the implementer; verification checks the built result against those requirements.
+The skills connect design work to your product rules and design system. The agent checks what can be reused,
+makes important choices visible, and carries your approved decisions into a handoff. After implementation,
+it can compare the built interface with those requirements. Your engineering tools handle the production code.
 
-For a checkout redesign, the work could include finding an existing form pattern, comparing recovery flows,
-developing the visual treatment, and handing the selected design to a coding agent. The design work and the
-record of the person's choice travel together; the route depends on the task.
-
+The [worked example](docs/worked-example.md) shows a fictional ticket-reassignment task: three design options,
+a person's choice, and the concrete flow and checks handed to a developer.
 
 ## Supported agents
 
-Version 0.1.0 supports the documented Codex app and CLI workflows. Claude support is under development and is not included in this release's supported configurations. See the [release notes](docs/release-notes.md) and [tested configurations](docs/advanced-installation.md#support-and-evidence).
+Version 0.1.1 supports the documented Codex app and CLI workflows. Claude support is under development and is not included in this release's supported configurations. See the [release notes](docs/release-notes.md) and [tested configurations](docs/advanced-installation.md#support-and-evidence).
 
 ## Install
 
@@ -50,15 +39,15 @@ Version 0.1.0 supports the documented Codex app and CLI workflows. Claude suppor
 
 The native plugin installs all 16 skills for Codex app and CLI. You can also install project-local copies through Skills CLI. Use one route per project to avoid duplicate DAS entries.
 
-If DAS is already installed, follow the [replacement instructions](docs/advanced-installation.md#replace-an-earlier-installation) first. Local development packages, RC1, and 0.1.0 share the plugin identity and version; the source identifies which package you have.
+If DAS is already installed, follow the [replacement instructions](docs/advanced-installation.md#replace-an-earlier-installation) before changing its source or version.
 
 ### Codex plugin quick start
 
 In your terminal:
 
 ```sh
-codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.0
-codex plugin add design-agent-skills@design-agent-skills
+codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.1 &&
+codex plugin add design-agent-skills@design-agent-skills &&
 codex plugin list
 ```
 
@@ -83,7 +72,7 @@ Replace the flow, constraints, and destination with your task. Give Codex access
 From the root of the project that will use DAS:
 
 ```sh
-npx --yes skills@1.7.2 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.0 --agent codex --skill '*' --copy --yes
+npx --yes skills@1.7.2 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.1 --agent codex --skill '*' --copy --yes
 ```
 
 Standalone copies use `$design-router` in Codex, without the plugin prefix. The [installation guide](INSTALL.md) covers prerequisites, verified archive downloads, and existing installations. The [Codex guide](docs/codex.md) explains discovery and use; [advanced installation](docs/advanced-installation.md) covers replacement, removal, and troubleshooting.
@@ -177,6 +166,7 @@ The release preserves the instruction sources used in the completed design-contr
 | --- | --- |
 | Install DAS | [Installation](INSTALL.md), [Codex guide](docs/codex.md) |
 | Give the agent a useful task | [Getting started](docs/getting-started.md) |
+| See a brief, design choice, and developer handoff | [Worked example](docs/worked-example.md) |
 | Understand the workflow and your decisions | [How DAS works](docs/how-das-works.md) |
 | Find a specialist and its expected output | [Skill catalog](docs/skills.md) |
 | Update, remove, or restore an installation | [Advanced installation](docs/advanced-installation.md) |

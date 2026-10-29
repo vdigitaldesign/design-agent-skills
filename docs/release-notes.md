@@ -1,21 +1,35 @@
-# DAS 0.1.0
+# DAS 0.1.1
 
-DAS 0.1.0 provides 16 product and interface design skills for Codex app and CLI. It includes context reconstruction, audits, reuse assessment, design exploration, prototyping, contracts, design-system work, and implementation verification.
+DAS helps agents work through product and interface decisions, then give developers a handoff they can act on. This patch makes the installation instructions safer and gives newcomers a concrete example of that work.
 
-The release contains 12 shared references and the `codex-0.1.0` source target. Its 28 instruction sources match the selected RC1 sources used in the completed contract, validation, handoff, and approval-chain checks. Packaging and user documentation have their own release identity.
+## What changed
 
-## Install
+- Archive verification stops before extraction or execution when the checksum fails.
+- Removal instructions distinguish an isolated DAS installation from folders shared with another agent. They explain how to preserve an independent same-named copy.
+- The plugin card and README explain the design work, with supported clients described separately.
+- A [worked example](worked-example.md) follows a brief through alternatives, a human choice and a developer handoff.
+- The [installation evidence](advanced-installation.md#support-and-evidence) includes completed checks of the published 0.1.0 package and keeps them separate from earlier behavior tests.
 
-Use the [Codex plugin or project-local Skills CLI route](../INSTALL.md). Both select tag `v0.1.0`. The release assets are `design-agent-skills-0.1.0.zip` and `design-agent-skills-0.1.0.sha256`; verify them before installing from a downloaded archive.
+The design instructions are unchanged. `VERSION` identifies package 0.1.1; `TARGET.json` retains `codex-0.1.0` as the identity of the qualified instruction sources. The source evidence below applies to both packages; installation results belong to each released version.
 
-If you used a local development package or RC1, follow [replacement instructions](advanced-installation.md#replace-an-earlier-installation). Those packages share the plugin name and `0.1.0` version, so the displayed version alone does not prove which sources are installed.
+## Install or upgrade
 
-## Evidence and limits
+Use the [installation guide](../INSTALL.md) for the Codex plugin or project-local skills. Both commands select `v0.1.1`. Downloaded release assets are `design-agent-skills-0.1.1.zip` and `design-agent-skills-0.1.1.sha256`.
 
-The selected sources completed the BorrowDesk and Fieldnote contract tasks with concrete acceptance procedures, validation, and complete handoffs. A separate two-phase task completed an exact human approval, local canon publication and readback, independently authorized contract effectivity, and the current handoff in the same session history.
+Existing users should follow [replacement instructions](advanced-installation.md#replace-an-earlier-installation), especially when another agent uses the same project folders. The immutable [0.1.0 release](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.0) remains available for recovery. Public installation results for this patch are recorded on the [0.1.1 release](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.1).
 
-Local RC1 plugin and project-local installation checks also observed resource access and short routine handoffs. [Support and evidence](advanced-installation.md#support-and-evidence) records the client/model settings and limits. The checks do not establish reliability across all skills, models, platforms, or products, and they do not demonstrate measured time savings.
+## What the existing checks establish
 
-Claude support is under development and is not part of this release's supported configurations. Product decisions, implementation permission, external tools, and model access remain with the people and environment using DAS.
+The unchanged instructions were tested in synthetic design tasks on macOS with Codex CLI 0.163.0, `gpt-6-astra` and `ultra` reasoning. Each result applies to its stated task:
 
-Report ordinary issues through [support](../SUPPORT.md), and suspected vulnerabilities through [private reporting](../SECURITY.md). DAS is distributed under the [MIT license](../LICENSE).
+| Task | Observed result |
+| --- | --- |
+| BorrowDesk: assemble pickup-request behavior from several sources and owner clarifications | Complete contract, concrete acceptance procedures, validation and a review-ready handoff, including cancellation, eligibility changes and uncertain operation outcomes. |
+| Fieldnote: carry supplied requirements into a design contract | Complete source assembly, acceptance procedures, validation and a review-ready handoff. The contract remained non-effective pending its separate approval. |
+| Team invitations: carry an exact approved design into the current handoff | A proposal and contract, actual human approval, publication of the approved local design rule, readback, separately authorized contract effectivity and a current handoff in the same session. |
+
+The [route evidence](advanced-installation.md#support-and-evidence) distinguishes RC1 app/CLI observations from installation checks on a public release. These samples do not establish every skill's reliability, cross-platform parity, production implementation or measured time savings. The worked example is illustrative; it is not an additional test result.
+
+Version 0.1.1 supports the documented Codex routes. Claude support is under development and is outside this release's supported configurations. Available tools, authentication and model access come from the user's environment.
+
+Use [GitHub Issues](../SUPPORT.md) for ordinary reports and [private reporting](../SECURITY.md) for suspected vulnerabilities. DAS uses the [MIT license](../LICENSE).

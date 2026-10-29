@@ -20,7 +20,7 @@
     {
       "bytes": 6,
       "path": "VERSION",
-      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
+      "sha256": "80447316529fc62014fbaa047fb67c51ac30e32830cda370405349d8d66d196c"
     },
     {
       "bytes": 5913,
@@ -158,9 +158,9 @@
       "sha256": "17aa9e17ae68556adbfbebe048fec63a3e8155ceaba4ec8e6e88199fbaa375b6"
     },
     {
-      "bytes": 21853,
+      "bytes": 21879,
       "path": "verify.py",
-      "sha256": "cd6e5440b2f44e0dad06f5ebc11c49674bb298139e61e0e7ed3fe139f9cb39cd"
+      "sha256": "74f27065255df457aa375c53b1ef8f2d727f239c677010ff757a1b93ec09bfcb"
     }
   ],
   "kind": "skill",
@@ -336,5 +336,5 @@
       "sourceSHA256": "79d30f798feef64d6d1cb3e8e0ad718a8c0440fe42a0749165ddea67a2c8741b"
     }
   ],
-  "version": "0.1.0"
+  "version": "0.1.1"
 }

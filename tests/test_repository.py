@@ -142,19 +142,23 @@ class RepositoryTests(unittest.TestCase):
         self.assertEqual(Path(first["archive"]).read_bytes(), archive)
 
     def test_version_bump_updates_advertised_plugins_and_standalone_skills(self):
-        (self.root / "VERSION").write_text("0.1.1\n", encoding="utf-8")
+        version_file = self.root / "VERSION"
+        current = version_file.read_text(encoding="utf-8").strip()
+        major, minor, patch = map(int, current.split("+", 1)[0].split("-", 1)[0].split("."))
+        next_version = "{}.{}.{}".format(major, minor, patch + 1)
+        version_file.write_text(next_version + "\n", encoding="utf-8")
         with self.assertRaisesRegex(ValueError, "Stale generated files"):
             MANAGE["check_repository"](self.root)
         MANAGE["sync"](self.root)
         result = MANAGE["check_repository"](self.root)
-        self.assertEqual(result["version"], "0.1.1")
+        self.assertEqual(result["version"], next_version)
         for name in (".claude-plugin/plugin.json", ".codex-plugin/plugin.json"):
             if self.target and name in VERIFY["CLAUDE_PLUGIN_FILES"]:
                 self.assertFalse((self.root / name).exists())
                 continue
-            self.assertEqual(json.loads((self.root / name).read_text())["version"], "0.1.1")
+            self.assertEqual(json.loads((self.root / name).read_text())["version"], next_version)
         for entry in VERIFY["SKILLS"]:
-            self.assertEqual((self.root / "skills" / entry / "VERSION").read_text(), "0.1.1\n")
+            self.assertEqual((self.root / "skills" / entry / "VERSION").read_text(), next_version + "\n")
 
     def test_edition_provenance_and_no_claude_metadata_leak(self):
         manifest = json.loads((self.root / "MANIFEST.json").read_text())

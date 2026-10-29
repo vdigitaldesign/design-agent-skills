@@ -6,7 +6,7 @@ Start with `design-router` when you want the agent to work through the task. Cho
 
 | Skill | Use it to | Typical result |
 | --- | --- | --- |
-| [`design-router`](../skills/design-router/SKILL.md) | Choose and continue the right workflow | A route and carried task context |
+| [`design-router`](../skills/design-router/SKILL.md) | Choose and continue the right workflow | The requested design result, or a concrete decision needed to continue |
 | [`frame-design-task`](../skills/frame-design-task/SKILL.md) | Clarify the goal, scope, constraints, and decisions | A focused task frame |
 | [`reconstruct-design-context`](../skills/reconstruct-design-context/SKILL.md) | Recover product facts from existing sources | A design read with facts and open questions |
 

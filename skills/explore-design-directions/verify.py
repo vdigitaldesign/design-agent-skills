@@ -90,7 +90,7 @@ TARGET_SUFFIXES = {CODEX_TARGET_ID: "-codex", CODEX_RC_TARGET_ID: "-codex-rc1",
 CLAUDE_PLUGIN_FILES = {".claude-plugin/plugin.json", ".claude-plugin/marketplace.json"}
 CODEX_PLUGIN_FILES = {".codex-plugin/plugin.json", ".agents/plugins/marketplace.json"}
 STABLE_EXCLUDED_FILES = CLAUDE_PLUGIN_FILES | {"docs/claude-code.md", "docs/claude-desktop.md"}
-STABLE_EXTRA_FILES = ("docs/release-notes.md", "assets/plugin-icon.svg",
+STABLE_EXTRA_FILES = ("docs/release-notes.md", "docs/worked-example.md", "assets/plugin-icon.svg",
                       "assets/social-preview.png")
 
 
