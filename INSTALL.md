@@ -4,7 +4,7 @@ Choose the Codex plugin or project-local copied skills. Use one route in a proje
 
 You need Codex with access to an available model. The plugin route also needs a Codex CLI that exposes `codex plugin`; check with `codex plugin --help`. The Skills CLI route needs Git, npm, and [Node.js 22.20.0 or later](https://github.com/vercel-labs/skills/blob/v1.7.2/package.json). Python 3.9 or later is needed only for the package verifier and maintenance commands.
 
-If an older DAS installation is present, read [replacement and rollback](docs/advanced-installation.md#replace-an-earlier-installation) before adding this version. The commands below select tag `v0.1.1`.
+If an older DAS installation is present, read [replacement and rollback](docs/advanced-installation.md#replace-an-earlier-installation) before adding this version. The plugin and fixed-release commands below select tag `v0.1.1`.
 
 ## Codex plugin
 
@@ -23,14 +23,26 @@ Adding this repository as a marketplace source installs a Codex plugin from GitH
 Run this from the root of the project that will use DAS:
 
 ```sh
-npx --yes skills@1.7.2 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.1 --agent codex --skill '*' --copy --yes
+npx skills add vdigitaldesign/design-agent-skills
 ```
 
-This copies all 16 skills into `.agents/skills/`. Before running it, check that the DAS names in the [catalog](docs/skills.md) are not already installed there or shared through symlinks. Keep each complete skill folder, including its `references/`, `related/`, and `TARGET.json` files.
+In the installer, select the skills you need, keep the **Universal** destination used by Codex, and choose **Project** scope. Clear any additional agents you do not want; the installer may preselect detected agents. Choose **Copy** if you want independent folders.
+
+The command uses the repository’s default branch and the current Skills CLI. The shared `.agents/skills/` folder can also be discovered by other agents; this release’s supported workflows are for Codex. Before installing, check that the DAS names in the [catalog](docs/skills.md) are not already present or shared through symlinks. Keep each complete skill folder, including its `references/`, `related/`, and `TARGET.json` files.
 
 Start a new Codex session in that project. Project-local skills use names such as `$design-router` and `$audit-design-surface`, without the plugin prefix. The app may label them **Project** in its picker.
 
-`npx` may download the pinned Skills CLI from npm. Its [documentation](https://github.com/vercel-labs/skills/tree/v1.7.2) describes the installer and its telemetry settings.
+`npx` may download the Skills CLI from npm. Its [documentation](https://github.com/vercel-labs/skills) describes the installer and its telemetry settings.
+
+### Install a fixed release
+
+To use the exact DAS release and installer version checked for 0.1.1, run this instead:
+
+```sh
+npx --yes skills@1.7.2 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.1 --agent codex --skill '*' --copy --yes
+```
+
+This installs all DAS skills as project-local copies without selection prompts. The full URL pins DAS to `v0.1.1`; `skills@1.7.2` pins the installer. Neither command creates a background updater.
 
 ## Download and verify an archive
 
@@ -57,7 +69,7 @@ codex plugin marketplace add /absolute/path/to/das-0.1.1.ABC123/design-agent-ski
 codex plugin add design-agent-skills@design-agent-skills
 ```
 
-Keep that source folder in place while the local marketplace is registered. For project-local copies, replace the GitHub URL in the Skills CLI command with the absolute path to this folder.
+Keep that source folder in place while the local marketplace is registered. For project-local copies, replace the repository argument in the Skills CLI command with the absolute path to this folder.
 
 ## Check your setup
 

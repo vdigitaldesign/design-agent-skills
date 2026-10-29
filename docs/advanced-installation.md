@@ -44,6 +44,10 @@ Local development packages, RC1, and public releases share the `design-agent-ski
 4. For project-local skills, replace only the identified DAS folders and their lock entries. If another agent shares those folders or aliases, use a fresh project or plan that migration explicitly.
 5. Install from the desired release tag or verified archive. Check its identity and complete files, then start a new session and inspect the skill picker.
 
+Installed files do not change when a new DAS release is published. The plugin command in this guide pins its marketplace source to `v0.1.1`; use the replacement steps above to choose a newer release. For standalone skills, `npx skills update` is an explicit update: an installation from the default branch follows that branch, while a saved tag stays pinned to that tag. See the [Skills CLI update documentation](https://github.com/vercel-labs/skills/blob/main/docs/commands.md#skills-update).
+
+The package version identifies a release of the files and documentation. `TARGET.json` identifies the instruction snapshot: package 0.1.1 still uses `codex-0.1.0` because those instructions are unchanged.
+
 A same-version refresh is not proof of a version upgrade. Automatic in-place migration across shared installations is outside the verified scope. Future releases provide their own migration notes; retain the current artifact until the replacement is verified.
 
 ## Remove the plugin

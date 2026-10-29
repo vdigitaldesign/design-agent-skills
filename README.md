@@ -72,8 +72,10 @@ Replace the flow, constraints, and destination with your task. Give Codex access
 From the root of the project that will use DAS:
 
 ```sh
-npx --yes skills@1.7.2 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.1 --agent codex --skill '*' --copy --yes
+npx skills add vdigitaldesign/design-agent-skills
 ```
+
+Choose the skills you want and **Project** scope. Codex uses the **Universal** destination; clear any additional agents you do not want. This installs from the repository’s default branch. For a fixed release, use the [pinned command](INSTALL.md#install-a-fixed-release).
 
 Standalone copies use `$design-router` in Codex, without the plugin prefix. The [installation guide](INSTALL.md) covers prerequisites, verified archive downloads, and existing installations. The [Codex guide](docs/codex.md) explains discovery and use; [advanced installation](docs/advanced-installation.md) covers replacement, removal, and troubleshooting.
 
