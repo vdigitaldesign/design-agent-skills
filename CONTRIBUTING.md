@@ -8,7 +8,7 @@ Use an [issue form](https://github.com/vdigitaldesign/design-agent-skills/issues
 
 This repository contains published DAS releases. Maintainers integrate accepted contributions into the development source before generating a subsequent release, so a later export retains the change. Keep the issue or pull request linked to the release that delivers it.
 
-The `codex-0.1.0` target contains the 28 instruction sources selected for this release. `TARGET.json` and the verifier bind their source digest. An instruction change creates a new source edition; it cannot inherit this target's evidence by regenerating manifests or editing its identity.
+The `codex-0.1.2` target contains the 28 instruction sources selected for this release. `TARGET.json` and the verifier bind their source digest. An instruction change creates a new source edition; it cannot inherit this target's evidence by regenerating manifests or editing its identity.
 
 | Change | Source |
 | --- | --- |

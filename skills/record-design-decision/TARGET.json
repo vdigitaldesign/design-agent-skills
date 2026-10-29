@@ -1,16 +1,15 @@
 {
   "client": "codex",
-  "id": "codex-0.1.0",
+  "id": "codex-0.1.2",
   "qualification": {
+    "baseTarget": "codex-0.1.0",
     "claudeQualification": "not conferred",
-    "effort": "ultra",
-    "model": "gpt-6-astra",
-    "packagingInstallationQualification": "source behavior and RC1 local routes have separate evidence; verify the final published artifact and its public routes",
-    "route": "native explicit named-skill CLI 0.163.0",
-    "scope": "Exact RC1 sources: seven-source BorrowDesk, fresh Fieldnote and both E07 phases assessed C1-C4 PASS. E07 includes actual exact approval, local canon publication/readback, separate contract effectivity and current handoff. Scoped samples do not establish reliability, every-skill or all-model correctness."
+    "consumerRuntime": "NOT RUN on this source edition",
+    "packagingInstallationQualification": "verify this artifact and its public routes separately",
+    "scope": "PA-08 source clarification: omit issue classification for a conforming parity result. All four issue classifications and missing-evidence handling are unchanged. Offline source, link and export checks establish the one-reference change and 27 unchanged sources; they do not establish agent behavior. BorrowDesk, Fieldnote and E07 observations remain historical evidence for the preceding exact source edition, not new PASS results for this edition."
   },
   "schema": "das-client-target-v1",
-  "selectedSourceMapSHA256": "2084692186f80c00ae9d297d3bbd8dfcda627dcdf39a71bcd1ad92edbd020eca",
-  "sourceDigest": "4b3cf50c212aac87f2f788c762d5b1866f336c73c765213f140444c6b2ecd86b",
+  "selectedSourceMapSHA256": "7db9c360f0017f8c487f51c06811862dea7f6198c6e0078cbb8931e69a4b4f30",
+  "sourceDigest": "a77e1fc8a149b137ef4a436a1f5736a835d7098552cd661775243caea4c90dbc",
   "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
 }

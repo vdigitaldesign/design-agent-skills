@@ -1,5 +1,5 @@
 {
-  "clientTarget": "codex-0.1.0",
+  "clientTarget": "codex-0.1.2",
   "entrypoint": "reconstruct-design-context",
   "files": [
     {
@@ -13,14 +13,14 @@
       "sha256": "83e5279ffdb081f535debda45d9e8d5583e0827e19498c67b1fd1f693e09024b"
     },
     {
-      "bytes": 992,
+      "bytes": 1054,
       "path": "TARGET.json",
-      "sha256": "14e8eeff312c5064afeb44ca4468e7e9834967f0967577f76a465ee3b0fa8ff5"
+      "sha256": "06d77d3c53a664165f62fa23ecf83803d0c1c7b42d4107fdd7f3409f57896df6"
     },
     {
       "bytes": 6,
       "path": "VERSION",
-      "sha256": "80447316529fc62014fbaa047fb67c51ac30e32830cda370405349d8d66d196c"
+      "sha256": "297b50f08386d3521f8fdaf2f78eb8d9d0acdf452d2e61596905fba37208c792"
     },
     {
       "bytes": 5913,
@@ -33,9 +33,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8036,
+      "bytes": 8058,
       "path": "references/contract-review-templates.md",
-      "sha256": "7c053bba8e564fe619684fc2303aa9f23b5be1eed8734511ec6f0cb5a2ed8c1f"
+      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
     },
     {
       "bytes": 2859,
@@ -158,14 +158,14 @@
       "sha256": "63d881faed37968a8e2cadc3a3fca7be232a7b5ec57fdefbed7a0e7a70bd6a47"
     },
     {
-      "bytes": 21879,
+      "bytes": 23206,
       "path": "verify.py",
-      "sha256": "74f27065255df457aa375c53b1ef8f2d727f239c677010ff757a1b93ec09bfcb"
+      "sha256": "a62c06540a9108d5054bbbc845302882f3042eed1118d5ef8492544368355dce"
     }
   ],
   "kind": "skill",
   "schema": "das-portable-v1",
-  "sourceDigest": "4b3cf50c212aac87f2f788c762d5b1866f336c73c765213f140444c6b2ecd86b",
+  "sourceDigest": "a77e1fc8a149b137ef4a436a1f5736a835d7098552cd661775243caea4c90dbc",
   "sources": [
     {
       "exportPath": "references/audit-exploration-templates.md",
@@ -181,9 +181,9 @@
     },
     {
       "exportPath": "references/contract-review-templates.md",
-      "exportSHA256": "7c053bba8e564fe619684fc2303aa9f23b5be1eed8734511ec6f0cb5a2ed8c1f",
+      "exportSHA256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7",
       "sourcePath": "references/contract-review-templates.md",
-      "sourceSHA256": "7c053bba8e564fe619684fc2303aa9f23b5be1eed8734511ec6f0cb5a2ed8c1f"
+      "sourceSHA256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
     },
     {
       "exportPath": "references/design-knowledge-index.md",
@@ -336,5 +336,5 @@
       "sourceSHA256": "79d30f798feef64d6d1cb3e8e0ad718a8c0440fe42a0749165ddea67a2c8741b"
     }
   ],
-  "version": "0.1.1"
+  "version": "0.1.2"
 }

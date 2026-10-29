@@ -100,7 +100,7 @@ For each requirement checked:
 - capture time;
 - limitations;
 - user consequence;
-- classification: implementation defect / contract gap / inconclusive observation / proposed material delta requiring owner approval;
+- classification (omit for `conforms`): implementation defect / contract gap / inconclusive observation / proposed material delta requiring owner approval;
 - responsible next lane.
 
 Conclude with overall coverage, untested states, blocking discrepancies, and the smallest next action. A parity review cannot make an unapproved delta acceptable.

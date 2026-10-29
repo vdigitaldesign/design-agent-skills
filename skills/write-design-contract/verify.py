@@ -65,10 +65,10 @@ CODEX_RC_TARGET_RECORD = {
     "sourceDigest": "4b3cf50c212aac87f2f788c762d5b1866f336c73c765213f140444c6b2ecd86b",
     "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
 }
-CODEX_STABLE_TARGET_ID = "codex-0.1.0"
-CODEX_STABLE_TARGET_RECORD = {
+CODEX_010_TARGET_ID = "codex-0.1.0"
+CODEX_010_TARGET_RECORD = {
     "client": "codex",
-    "id": CODEX_STABLE_TARGET_ID,
+    "id": CODEX_010_TARGET_ID,
     "qualification": {
         "claudeQualification": "not conferred",
         "effort": "ultra",
@@ -82,11 +82,29 @@ CODEX_STABLE_TARGET_RECORD = {
     "sourceDigest": "4b3cf50c212aac87f2f788c762d5b1866f336c73c765213f140444c6b2ecd86b",
     "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
 }
+CODEX_STABLE_TARGET_ID = "codex-0.1.2"
+CODEX_STABLE_TARGET_RECORD = {
+    "client": "codex",
+    "id": CODEX_STABLE_TARGET_ID,
+    "qualification": {
+        "baseTarget": CODEX_010_TARGET_ID,
+        "claudeQualification": "not conferred",
+        "consumerRuntime": "NOT RUN on this source edition",
+        "packagingInstallationQualification": "verify this artifact and its public routes separately",
+        "scope": "PA-08 source clarification: omit issue classification for a conforming parity result. All four issue classifications and missing-evidence handling are unchanged. Offline source, link and export checks establish the one-reference change and 27 unchanged sources; they do not establish agent behavior. BorrowDesk, Fieldnote and E07 observations remain historical evidence for the preceding exact source edition, not new PASS results for this edition."
+    },
+    "schema": "das-client-target-v1",
+    "selectedSourceMapSHA256": "7db9c360f0017f8c487f51c06811862dea7f6198c6e0078cbb8931e69a4b4f30",
+    "sourceDigest": "a77e1fc8a149b137ef4a436a1f5736a835d7098552cd661775243caea4c90dbc",
+    "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
+}
 CODEX_TARGETS = {CODEX_TARGET_ID: CODEX_TARGET_RECORD,
                  CODEX_RC_TARGET_ID: CODEX_RC_TARGET_RECORD,
+                 CODEX_010_TARGET_ID: CODEX_010_TARGET_RECORD,
                  CODEX_STABLE_TARGET_ID: CODEX_STABLE_TARGET_RECORD}
+CODEX_STABLE_TARGET_IDS = {CODEX_010_TARGET_ID, CODEX_STABLE_TARGET_ID}
 TARGET_SUFFIXES = {CODEX_TARGET_ID: "-codex", CODEX_RC_TARGET_ID: "-codex-rc1",
-                   CODEX_STABLE_TARGET_ID: ""}
+                   CODEX_010_TARGET_ID: "", CODEX_STABLE_TARGET_ID: ""}
 CLAUDE_PLUGIN_FILES = {".claude-plugin/plugin.json", ".claude-plugin/marketplace.json"}
 CODEX_PLUGIN_FILES = {".codex-plugin/plugin.json", ".agents/plugins/marketplace.json"}
 STABLE_EXCLUDED_FILES = CLAUDE_PLUGIN_FILES | {"docs/claude-code.md", "docs/claude-desktop.md"}
@@ -96,7 +114,7 @@ STABLE_EXTRA_FILES = ("docs/release-notes.md", "docs/worked-example.md", "assets
 
 def repository_files(names, target):
     """Select only the documented consumer files for this artifact profile."""
-    if target == CODEX_STABLE_TARGET_ID:
+    if target in CODEX_STABLE_TARGET_IDS:
         return tuple(name for name in names if name not in STABLE_EXCLUDED_FILES) + STABLE_EXTRA_FILES
     return tuple(name for name in names if not target or name not in CLAUDE_PLUGIN_FILES)
 
@@ -269,7 +287,7 @@ def check_plugins(root, names, version, target=None):
         return
     if not paths.issubset(names):
         raise ValueError("Incomplete plugin metadata")
-    if target == CODEX_STABLE_TARGET_ID:
+    if target in CODEX_STABLE_TARGET_IDS:
         if STABLE_EXCLUDED_FILES.intersection(names):
             raise ValueError("Other-client files are forbidden in the stable Codex artifact")
         if not set(STABLE_EXTRA_FILES).issubset(names):
@@ -286,7 +304,7 @@ def check_plugins(root, names, version, target=None):
     codex = json.loads((root / ".codex-plugin/plugin.json").read_text(encoding="utf-8"))
     if codex.get("skills") != "./skills/":
         raise ValueError("Codex plugin must point to the installed skills directory")
-    if target == CODEX_STABLE_TARGET_ID:
+    if target in CODEX_STABLE_TARGET_IDS:
         interface = codex.get("interface", {})
         for field in ("logo", "composerIcon"):
             path = interface.get(field) if isinstance(interface, dict) else None
