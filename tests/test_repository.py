@@ -172,7 +172,7 @@ class RepositoryTests(unittest.TestCase):
                 skill = self.root / "skills" / entry
                 self.assertEqual((skill / "TARGET.json").read_bytes(), target)
                 self.assertEqual(VERIFY["check"](skill)["clientTarget"], self.target)
-            if self.target == VERIFY["CODEX_STABLE_TARGET_ID"]:
+            if self.target in VERIFY["CODEX_STABLE_TARGET_IDS"]:
                 for name in VERIFY["STABLE_EXTRA_FILES"]:
                     self.assertTrue((self.root / name).is_file(), name)
                 for name in VERIFY["STABLE_EXCLUDED_FILES"]:

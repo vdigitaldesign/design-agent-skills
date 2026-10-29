@@ -1,35 +1,27 @@
-# DAS 0.1.1
+# DAS 0.1.2
 
-DAS helps agents work through product and interface decisions, then give developers a handoff they can act on. This patch makes the installation instructions safer and gives newcomers a concrete example of that work.
+When an implementation matches the approved design, its verification record should say so without assigning an issue category. This patch makes that exception explicit in the implementation-check template.
 
 ## What changed
 
-- Archive verification stops before extraction or execution when the checksum fails.
-- Removal instructions distinguish an isolated DAS installation from folders shared with another agent. They explain how to preserve an independent same-named copy.
-- The plugin card and README explain the design work, with supported clients described separately.
-- A [worked example](worked-example.md) follows a brief through alternatives, a human choice and a developer handoff.
-- The [installation evidence](advanced-installation.md#support-and-evidence) includes completed checks of the published 0.1.0 package and keeps them separate from earlier behavior tests.
+The classification field now says to omit it for `conforms`. The four existing classifications remain available for discrepancies and inconclusive observations. Missing evidence still cannot establish conformance, and a parity review still cannot approve a material design change.
 
-The design instructions are unchanged. `VERSION` identifies package 0.1.1; `TARGET.json` retains `codex-0.1.0` as the identity of the qualified instruction sources. The source evidence below applies to both packages; installation results belong to each released version.
+This is the only instruction-source change. The other 27 source files are unchanged. Package and instruction target are both identified as `0.1.2` (`codex-0.1.2` in `TARGET.json`), so the revised sources cannot be mistaken for the earlier tested edition.
+
+The quick start also includes the shorter interactive installation command already available in the repository. The installation guide retains a fixed-release alternative.
 
 ## Install or upgrade
 
-Use the [installation guide](../INSTALL.md) for the Codex plugin or project-local skills. Both commands select `v0.1.1`. Downloaded release assets are `design-agent-skills-0.1.1.zip` and `design-agent-skills-0.1.1.sha256`.
+Use the [installation guide](../INSTALL.md) for the Codex plugin or project-local skills. The plugin command and fixed-release alternative select `v0.1.2`; the short interactive command follows the repository's default branch. Release assets are `design-agent-skills-0.1.2.zip` and `design-agent-skills-0.1.2.sha256`.
 
-Existing users should follow [replacement instructions](advanced-installation.md#replace-an-earlier-installation), especially when another agent uses the same project folders. The immutable [0.1.0 release](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.0) remains available for recovery. Public installation results for this patch are recorded on the [0.1.1 release](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.1).
+Existing users should follow [replacement instructions](advanced-installation.md#replace-an-earlier-installation), especially when another agent uses the same project folders. The immutable [0.1.1 release](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.1) remains available for recovery. Publication and installation results for this patch belong to its [GitHub release record](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.2).
 
-## What the existing checks establish
+## Verification scope
 
-The unchanged instructions were tested in synthetic design tasks on macOS with Codex CLI 0.163.0, `gpt-6-astra` and `ultra` reasoning. Each result applies to its stated task:
+Offline checks cover the exact source change, complete resource copies, local links, rejection of source or identity drift, and a byte-identical archive rebuild using the public maintenance tools.
 
-| Task | Observed result |
-| --- | --- |
-| BorrowDesk: assemble pickup-request behavior from several sources and owner clarifications | Complete contract, concrete acceptance procedures, validation and a review-ready handoff, including cancellation, eligibility changes and uncertain operation outcomes. |
-| Fieldnote: carry supplied requirements into a design contract | Complete source assembly, acceptance procedures, validation and a review-ready handoff. The contract remained non-effective pending its separate approval. |
-| Team invitations: carry an exact approved design into the current handoff | A proposal and contract, actual human approval, publication of the approved local design rule, readback, separately authorized contract effectivity and a current handoff in the same session. |
+No new model task was run for this patch. The recorded BorrowDesk, Fieldnote and team-invitation results belong to the earlier RC1 instruction sources used in 0.1.0 and 0.1.1. The [evidence summary](advanced-installation.md#support-and-evidence) preserves those results and their limits; they are not a new behavioral PASS for this revised source edition.
 
-The [route evidence](advanced-installation.md#support-and-evidence) distinguishes RC1 app/CLI observations from installation checks on a public release. These samples do not establish every skill's reliability, cross-platform parity, production implementation or measured time savings. The worked example is illustrative; it is not an additional test result.
-
-Version 0.1.1 supports the documented Codex routes. Claude support is under development and is outside this release's supported configurations. Available tools, authentication and model access come from the user's environment.
+Version 0.1.2 supports the documented Codex routes. Claude support remains under development and outside this release's supported configurations. Available tools, authentication and model access come from the user's environment.
 
 Use [GitHub Issues](../SUPPORT.md) for ordinary reports and [private reporting](../SECURITY.md) for suspected vulnerabilities. DAS uses the [MIT license](../LICENSE).

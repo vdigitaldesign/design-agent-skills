@@ -4,9 +4,11 @@ The [installation guide](../INSTALL.md) covers the release-tagged plugin and pro
 
 ## Support and evidence
 
-`VERSION` identifies package version `0.1.1`; `TARGET.json` retains the instruction target `codex-0.1.0`. The instructions remain the qualified RC1 sources: 16 skills and 12 shared references, with source map `2084692186f80c00ae9d297d3bbd8dfcda627dcdf39a71bcd1ad92edbd020eca`. A release's archive hash and file manifest identify its packaging; they are separate from that source map.
+`VERSION` identifies package version `0.1.2`; `TARGET.json` identifies instruction target `codex-0.1.2`, with source map `7db9c360f0017f8c487f51c06811862dea7f6198c6e0078cbb8931e69a4b4f30`. One template field now says to omit issue classification for a conforming result. The other 27 instruction sources are unchanged from the RC1 sources used in 0.1.0 and 0.1.1.
 
-The recorded observations used macOS. They establish the following scopes:
+Offline checks verify the bounded source change, complete resources, links, fixed target identity and reproducible packaging. No new model task was run for this patch. The behavior results below belong to the earlier source edition; they are not a new behavioral PASS for 0.1.2. Each release's archive hash and manifest identify its own package.
+
+The historical observations below used macOS and the earlier source edition. They establish the following scopes:
 
 | Check | Observation and limit |
 | --- | --- |
@@ -18,7 +20,7 @@ The recorded observations used macOS. They establish the following scopes:
 | Published v0.1.0 plugin | Codex CLI 0.163.0 installed from the public `v0.1.0` source, removed the plugin and marketplace, and restored the enabled plugin with matching release files. Unrelated plugins and marketplaces were unchanged. This did not include a new model call or fresh Desktop-picker observation. |
 | Published v0.1.0 project-local skills | Skills CLI 1.7.2 on Node.js 24.16.0 installed the public `v0.1.0` tag into an empty disposable project. All 16 standalone verifiers passed for 528 files. Full removal left no DAS directories and an empty skills lock. This isolated-project result does not establish safe selective removal in a mixed-client project. |
 
-The v0.1.0 observations above were completed on October 29, 2026. For the v0.1.1 artifact and installation results, see its [release record](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.1). Each version's installation evidence is separate; the shared instruction sources preserve the applicability of the scoped behavioral observations above.
+The v0.1.0 observations above were completed on October 29, 2026. For the v0.1.1 artifact and installation results, see its [release record](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.1). For 0.1.2 publication and installation results, use its [release record](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.2). Each version's installation evidence is separate.
 
 Tests of one case or model do not establish all-skill reliability, minimum supported client versions, cross-platform parity, or measured time savings. Earlier development failures retain their own source and task scope.
 
@@ -36,7 +38,7 @@ If both namespaced and Project versions appear, check whether you installed both
 
 ## Replace an earlier installation
 
-Local development packages, RC1, and public releases share the `design-agent-skills@design-agent-skills` plugin identity. RC1 and the first public release also display version `0.1.0`; check their source and `TARGET.json` to distinguish them. Version 0.1.1 is a packaging and documentation update with unchanged skill instructions.
+Local development packages, RC1, and public releases share the `design-agent-skills@design-agent-skills` plugin identity. RC1 and the first public release also display version `0.1.0`; check their source and `TARGET.json` to distinguish them. Version 0.1.1 changed packaging and documentation; 0.1.2 also clarifies one implementation-check template field.
 
 1. Record the existing DAS plugin or project-local paths, source, and enabled state. Check symlink targets and relevant skill-lock entries, including any shared with another agent.
 2. Keep the original package and a copy of affected settings or lock entries outside discovery. Preserve unrelated entries.
@@ -44,9 +46,9 @@ Local development packages, RC1, and public releases share the `design-agent-ski
 4. For project-local skills, replace only the identified DAS folders and their lock entries. If another agent shares those folders or aliases, use a fresh project or plan that migration explicitly.
 5. Install from the desired release tag or verified archive. Check its identity and complete files, then start a new session and inspect the skill picker.
 
-Installed files do not change when a new DAS release is published. The plugin command in this guide pins its marketplace source to `v0.1.1`; use the replacement steps above to choose a newer release. For standalone skills, `npx skills update` is an explicit update: an installation from the default branch follows that branch, while a saved tag stays pinned to that tag. See the [Skills CLI update documentation](https://github.com/vercel-labs/skills/blob/main/docs/commands.md#skills-update).
+Installed files do not change when a new DAS release is published. The plugin command in this guide pins its marketplace source to `v0.1.2`; use the replacement steps above to choose a newer release. For standalone skills, `npx skills update` is an explicit update: an installation from the default branch follows that branch, while a saved tag stays pinned to that tag. See the [Skills CLI update documentation](https://github.com/vercel-labs/skills/blob/main/docs/commands.md#skills-update).
 
-The package version identifies a release of the files and documentation. `TARGET.json` identifies the instruction snapshot: package 0.1.1 still uses `codex-0.1.0` because those instructions are unchanged.
+The package version identifies a release of the files and documentation. `TARGET.json` identifies the instruction snapshot: 0.1.0 and 0.1.1 used `codex-0.1.0`; the template clarification in 0.1.2 creates the new target `codex-0.1.2`.
 
 A same-version refresh is not proof of a version upgrade. Automatic in-place migration across shared installations is outside the verified scope. Future releases provide their own migration notes; retain the current artifact until the replacement is verified.
 

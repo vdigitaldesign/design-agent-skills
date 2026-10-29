@@ -1,6 +1,6 @@
 # Use DAS in Codex
 
-Install the [0.1.1 plugin or project-local skills](../INSTALL.md), then open a new Codex session in the project where you want to work. Select a skill from the picker or name it explicitly in your request. If you are replacing 0.1.0 or a development package, follow [replacement and rollback](advanced-installation.md#replace-an-earlier-installation) first.
+Install the [0.1.2 plugin or project-local skills](../INSTALL.md), then open a new Codex session in the project where you want to work. Select a skill from the picker or name it explicitly in your request. If you are replacing an earlier release or a development package, follow [replacement and rollback](advanced-installation.md#replace-an-earlier-installation) first.
 
 | Installation | Router invocation | Specialist example |
 | --- | --- | --- |

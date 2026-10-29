@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.2
+
+### Fixed
+
+- A conforming implementation-check result no longer asks for an issue classification. The existing categories still apply to discrepancies and inconclusive observations.
+
+### Changed
+
+- The quick start uses the shorter interactive Skills CLI command, with a fixed-release command available in the installation guide.
+- The package identifies the revised instructions as `codex-0.1.2`. Earlier behavior-test results remain attributed to their original sources.
+
+See the [release notes](docs/release-notes.md) for verification scope and [upgrade guidance](docs/advanced-installation.md#replace-an-earlier-installation).
+
 ## 0.1.1
 
 ### Fixed
@@ -13,7 +26,7 @@
 - A worked example from a design brief to a selected direction and developer handoff.
 - A public summary of completed release-installation checks, with their scope and limits.
 
-The qualified design instructions are unchanged. See the [release notes](docs/release-notes.md) and [upgrade guidance](docs/advanced-installation.md#replace-an-earlier-installation).
+The qualified design instructions are unchanged. See the [0.1.1 release notes](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.1) and [upgrade guidance](docs/advanced-installation.md#replace-an-earlier-installation).
 
 ## 0.1.0
 
@@ -25,4 +38,4 @@ First supported Codex edition of Design Agent Skills.
 - Includes a task brief, skill catalog, engineering integration guidance, installation and replacement instructions, and support and contribution routes.
 - Ships a source-pinned package, integrity verifier, reproducible archive builder, and checksums.
 
-Claude is outside this release's supported configurations. Test scope and known limits are in the [release notes](docs/release-notes.md).
+Claude is outside this release's supported configurations. Test scope and known limits are in the [0.1.0 release notes](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.0).
