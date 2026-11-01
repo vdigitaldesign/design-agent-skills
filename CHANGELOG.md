@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.3
+
+### Changed
+
+- Update the README banner, plugin icon, and repository social-preview image with the new green artwork.
+- Match the plugin colors and README tagline to the artwork.
+
+Skill instructions are unchanged from 0.1.2. See the [release notes](docs/release-notes.md) and [upgrade guidance](docs/advanced-installation.md#replace-an-earlier-installation).
+
 ## 0.1.2
 
 ### Fixed
@@ -11,7 +20,7 @@
 - The quick start uses the shorter interactive Skills CLI command, with a fixed-release command available in the installation guide.
 - The package identifies the revised instructions as `codex-0.1.2`. Earlier behavior-test results remain attributed to their original sources.
 
-See the [release notes](docs/release-notes.md) for verification scope and [upgrade guidance](docs/advanced-installation.md#replace-an-earlier-installation).
+See the [0.1.2 release notes](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.2) for verification scope and [upgrade guidance](docs/advanced-installation.md#replace-an-earlier-installation).
 
 ## 0.1.1
 

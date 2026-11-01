@@ -20,7 +20,7 @@
     {
       "bytes": 6,
       "path": "VERSION",
-      "sha256": "297b50f08386d3521f8fdaf2f78eb8d9d0acdf452d2e61596905fba37208c792"
+      "sha256": "2d2454ef0edeb462a6ce8b25d387aaa74df08093d5cea0428a10ce55510c6326"
     },
     {
       "bytes": 5913,
@@ -336,5 +336,5 @@
       "sourceSHA256": "79d30f798feef64d6d1cb3e8e0ad718a8c0440fe42a0749165ddea67a2c8741b"
     }
   ],
-  "version": "0.1.2"
+  "version": "0.1.3"
 }

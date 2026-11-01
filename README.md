@@ -1,10 +1,10 @@
-<img src="assets/design-agent-skills-hero.svg" alt="Design Agent Skills: understand context, diagnose, create, make human decisions, deliver, and verify" width="100%">
+<img src="assets/design-agent-skills-hero.svg" alt="Design Agent Skills. Design work for agents. Authority for humans." width="100%">
 
 # Design Agent Skills
 
-**Design work for agents. Design authority for humans.**
+**Design work for agents. Authority for humans.**
 
-[![Version: 0.1.2](https://img.shields.io/badge/version-0.1.2-ff6846)](CHANGELOG.md)
+[![Version: 0.1.3](https://img.shields.io/badge/version-0.1.3-00632E)](CHANGELOG.md)
 ![Format: Markdown](https://img.shields.io/badge/format-Markdown-f4f0e6)
 [![License: MIT](https://img.shields.io/badge/license-MIT-c9f24a)](LICENSE)
 
@@ -31,7 +31,7 @@ a person's choice, and the concrete flow and checks handed to a developer.
 
 ## Supported agents
 
-Version 0.1.2 supports the documented Codex app and CLI workflows. Claude support is under development and is not included in this release's supported configurations. See the [release notes](docs/release-notes.md) and [tested configurations](docs/advanced-installation.md#support-and-evidence).
+Version 0.1.3 supports the documented Codex app and CLI workflows. Claude support is under development and is not included in this release's supported configurations. See the [release notes](docs/release-notes.md) and [tested configurations](docs/advanced-installation.md#support-and-evidence).
 
 ## Install
 
@@ -46,7 +46,7 @@ If DAS is already installed, follow the [replacement instructions](docs/advanced
 In your terminal:
 
 ```sh
-codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.2 &&
+codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.3 &&
 codex plugin add design-agent-skills@design-agent-skills &&
 codex plugin list
 ```
