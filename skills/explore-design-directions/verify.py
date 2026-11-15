@@ -82,10 +82,10 @@ CODEX_010_TARGET_RECORD = {
     "sourceDigest": "4b3cf50c212aac87f2f788c762d5b1866f336c73c765213f140444c6b2ecd86b",
     "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
 }
-CODEX_STABLE_TARGET_ID = "codex-0.1.2"
-CODEX_STABLE_TARGET_RECORD = {
+CODEX_012_TARGET_ID = "codex-0.1.2"
+CODEX_012_TARGET_RECORD = {
     "client": "codex",
-    "id": CODEX_STABLE_TARGET_ID,
+    "id": CODEX_012_TARGET_ID,
     "qualification": {
         "baseTarget": CODEX_010_TARGET_ID,
         "claudeQualification": "not conferred",
@@ -98,13 +98,30 @@ CODEX_STABLE_TARGET_RECORD = {
     "sourceDigest": "a77e1fc8a149b137ef4a436a1f5736a835d7098552cd661775243caea4c90dbc",
     "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
 }
+CODEX_STABLE_TARGET_ID = "codex-0.1.4"
+CODEX_STABLE_TARGET_RECORD = {
+    "client": "codex",
+    "id": "codex-0.1.4",
+    "qualification": {
+        "baseTarget": "codex-0.1.2",
+        "claudeQualification": "not conferred",
+        "consumerRuntime": "NOT RUN on this source edition",
+        "packagingInstallationQualification": "verify this exact artifact and its public routes separately",
+        "scope": "PA-09 editorial pass: consolidate repeated router instructions and split dense writer instructions without changing requirements or criteria. Exactly two sources differ from codex-0.1.2; the other 26 sources and PA-08 template clarification remain unchanged. Source correspondence, review and offline packaging checks do not establish model behavior. BorrowDesk, Fieldnote and E07 observations remain historical evidence for their preceding exact source edition, not new PASS results for this edition."
+    },
+    "schema": "das-client-target-v1",
+    "selectedSourceMapSHA256": "c8f36e141a7138febb27c8af60ecef05ef34f733aff09b82c1428c4325382dc3",
+    "sourceDigest": "cf11aeb980dbfb941c2338579f0aaf43e3ebd47cb8e4b889f58982ec5e9dd857",
+    "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
+}
 CODEX_TARGETS = {CODEX_TARGET_ID: CODEX_TARGET_RECORD,
                  CODEX_RC_TARGET_ID: CODEX_RC_TARGET_RECORD,
                  CODEX_010_TARGET_ID: CODEX_010_TARGET_RECORD,
+                 CODEX_012_TARGET_ID: CODEX_012_TARGET_RECORD,
                  CODEX_STABLE_TARGET_ID: CODEX_STABLE_TARGET_RECORD}
-CODEX_STABLE_TARGET_IDS = {CODEX_010_TARGET_ID, CODEX_STABLE_TARGET_ID}
+CODEX_STABLE_TARGET_IDS = {CODEX_010_TARGET_ID, CODEX_012_TARGET_ID, CODEX_STABLE_TARGET_ID}
 TARGET_SUFFIXES = {CODEX_TARGET_ID: "-codex", CODEX_RC_TARGET_ID: "-codex-rc1",
-                   CODEX_010_TARGET_ID: "", CODEX_STABLE_TARGET_ID: ""}
+                   CODEX_010_TARGET_ID: "", CODEX_012_TARGET_ID: "", CODEX_STABLE_TARGET_ID: ""}
 CLAUDE_PLUGIN_FILES = {".claude-plugin/plugin.json", ".claude-plugin/marketplace.json"}
 CODEX_PLUGIN_FILES = {".codex-plugin/plugin.json", ".agents/plugins/marketplace.json"}
 STABLE_EXCLUDED_FILES = CLAUDE_PLUGIN_FILES | {"docs/claude-code.md", "docs/claude-desktop.md"}
