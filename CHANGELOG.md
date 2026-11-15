@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.4
+
+### Changed
+
+- Remove repeated packet-field and continuation instructions from design-router.
+- Split write-design-contract into focused sections and six acceptance-procedure steps, preserving all requirements and applicable cases.
+- Identify the revised instruction sources as `codex-0.1.4`; the other 26 sources remain unchanged from 0.1.3.
+
+No new model task was run for this editorial patch. See the [release notes](docs/release-notes.md) and [upgrade guidance](docs/advanced-installation.md#replace-an-earlier-installation).
+
 ## 0.1.3
 
 ### Changed

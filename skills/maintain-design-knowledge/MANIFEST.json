@@ -1,5 +1,5 @@
 {
-  "clientTarget": "codex-0.1.2",
+  "clientTarget": "codex-0.1.4",
   "entrypoint": "maintain-design-knowledge",
   "files": [
     {
@@ -13,14 +13,14 @@
       "sha256": "ec79a242e921c3242c797eae183ae20f069b17d52cd42964e0a551127f0cbaa1"
     },
     {
-      "bytes": 1054,
+      "bytes": 1113,
       "path": "TARGET.json",
-      "sha256": "06d77d3c53a664165f62fa23ecf83803d0c1c7b42d4107fdd7f3409f57896df6"
+      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
     },
     {
       "bytes": 6,
       "path": "VERSION",
-      "sha256": "2d2454ef0edeb462a6ce8b25d387aaa74df08093d5cea0428a10ce55510c6326"
+      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
     },
     {
       "bytes": 5913,
@@ -98,9 +98,9 @@
       "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
     },
     {
-      "bytes": 9345,
+      "bytes": 8852,
       "path": "related/design-router.md",
-      "sha256": "dc5de3e780d56c185ba3ec803e23b205f1717ae807bf6ec3bba4dc98dd009bf2"
+      "sha256": "1f5e02785df58b54a1caa7544b8b332ee9d91f9a0de55bc5bbf1d2be521d835e"
     },
     {
       "bytes": 7457,
@@ -153,19 +153,19 @@
       "sha256": "5e160cf6d4c42a0ae77ab9bab5357819079797905c013ddcf1611466dd127249"
     },
     {
-      "bytes": 10662,
+      "bytes": 10597,
       "path": "related/write-design-contract.md",
-      "sha256": "caee419b5b0c07979ef5458a0db9ae7dcfbc355a5a32550c09aab47396879761"
+      "sha256": "90609c278bd13da45ae31a4288d30bc1759b340519395e7209516158f47673e3"
     },
     {
-      "bytes": 23206,
+      "bytes": 24523,
       "path": "verify.py",
-      "sha256": "a62c06540a9108d5054bbbc845302882f3042eed1118d5ef8492544368355dce"
+      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
     }
   ],
   "kind": "skill",
   "schema": "das-portable-v1",
-  "sourceDigest": "a77e1fc8a149b137ef4a436a1f5736a835d7098552cd661775243caea4c90dbc",
+  "sourceDigest": "cf11aeb980dbfb941c2338579f0aaf43e3ebd47cb8e4b889f58982ec5e9dd857",
   "sources": [
     {
       "exportPath": "references/audit-exploration-templates.md",
@@ -259,9 +259,9 @@
     },
     {
       "exportPath": "related/design-router.md",
-      "exportSHA256": "dc5de3e780d56c185ba3ec803e23b205f1717ae807bf6ec3bba4dc98dd009bf2",
+      "exportSHA256": "1f5e02785df58b54a1caa7544b8b332ee9d91f9a0de55bc5bbf1d2be521d835e",
       "sourcePath": "skills/design-router/SKILL.md",
-      "sourceSHA256": "792f2a16d284dade79cc2a451e1fe723608813d4fdee530b71306d64b1656f35"
+      "sourceSHA256": "24acf839e9dc4ad13f4420bc6a0ea8a31bf7b91a3fc7a24893c25ef6b7407ebc"
     },
     {
       "exportPath": "related/develop-visual-direction.md",
@@ -331,10 +331,10 @@
     },
     {
       "exportPath": "related/write-design-contract.md",
-      "exportSHA256": "caee419b5b0c07979ef5458a0db9ae7dcfbc355a5a32550c09aab47396879761",
+      "exportSHA256": "90609c278bd13da45ae31a4288d30bc1759b340519395e7209516158f47673e3",
       "sourcePath": "skills/write-design-contract/SKILL.md",
-      "sourceSHA256": "79d30f798feef64d6d1cb3e8e0ad718a8c0440fe42a0749165ddea67a2c8741b"
+      "sourceSHA256": "347c95b9edd2b6c091c2d9fa6ffda0880ed9d38223a4c0c4f7771823f21c83af"
     }
   ],
-  "version": "0.1.3"
+  "version": "0.1.4"
 }

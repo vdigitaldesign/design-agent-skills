@@ -5,9 +5,11 @@ description: Orchestrate a request that touches UI/UX when no specialist design 
 
 # Design Router
 
-Turn the request into useful design work. Choose the smallest correct route. Use the decision gate to start the work; do not treat it as the deliverable.
+Turn the request into useful design work. Choose the smallest correct route and use the decision gate to start it.
 
 Read [authority and status](../references/authority-and-status.md) before you classify the task. If material or uncertain work will cross more than one design workflow, create one compact [Design Work Packet](../references/packet-projections.md#design-work-packet) before the first downstream step. Do not load the Task Frame or Design Read templates just to route the task. Use [task and context templates](../references/task-context-templates.md) only when one of those durable outputs is required.
+
+Do not create a packet for engineering pass-through, a single clear specialist invocation, or routine conformance. Use the smallest native output for those paths.
 
 ## Route by current state
 
@@ -25,7 +27,7 @@ Use an existing API, data, database, implementation, or operational contract as 
 
 | Current state | Route |
 | --- | --- |
-| Effective product canon, effective design-system canon, or an effective Design Contract already determines the exact result | Produce a light routine handoff from the controlling source. Pass it to engineering and plan [verify-design-implementation](verify-design-implementation.md). Do not create a new contract or effectivity gate. |
+| Effective product canon, effective design-system canon, or an effective Design Contract already determines the exact result | Produce a light routine handoff from the controlling source. Pass it to engineering and plan [verify-design-implementation](verify-design-implementation.md). |
 | Scope, materiality, or authority is ambiguous, or the user explicitly asks for a brief | Use [frame-design-task](frame-design-task.md), then continue the required workflow chain. |
 | A material outcome or interaction is undecided | Reconstruct context. Audit or assess reuse as needed. Explore directions, obtain a human decision, write and validate a contract, then hand off. Frame first only when its specific trigger applies. |
 | Material context or authority may be missing | Use [reconstruct-design-context](../SKILL.md). Continue independent research and audit before you escalate an irreducible gap. |
@@ -42,7 +44,7 @@ Use an existing API, data, database, implementation, or operational contract as 
 | An exact design-system proposal has explicit effectivity approval and needs durable publication/adoption lineage | Use [publish-design-system-canon](publish-design-system-canon.md). |
 | An implementation exists and must be checked against design authority | Use [verify-design-implementation](verify-design-implementation.md). |
 
-A request may need several workflows in sequence. Carry findings and lineage into each step. Do not make the user restate evidence. Continue every safe, relevant step in the same turn. Stop only at a genuine blocker defined by the shared continuation invariant.
+A request may need several workflows in sequence. Carry findings and lineage into each step; do not make the user restate evidence. Continue every safe, relevant step in the same turn when authorized and feasible. Stop only at a genuine blocker defined by the shared continuation invariant. Do not treat routing or another intermediate artifact as the product.
 
 ## Retrieval discipline
 
@@ -60,27 +62,10 @@ Limit connected-source fields, excerpts, records, and date range. Broaden the se
 
 ## Router output
 
-For a material or uncertain multi-skill route, carry one Design Work Packet. Do not add a separate routing note and repeated intake artifacts. Keep these fields in the packet:
-
-- ID and revision;
-- requested outcome and scope;
-- authority and materiality;
-- facts, inferences, unknowns, and conflicts;
-- protected boundaries;
-- exact source locators and revisions;
-- active sequence;
-- explicitly inactive workflows or workflow groups, with their absent triggers;
-- completed findings to preserve;
-- next gate or scoped stop.
-
-Downstream steps update the same packet and preserve its lineage.
+Carry the packet's [identity, context, and route fields](../references/packet-projections.md#design-work-packet). Do not add a separate routing note or repeated intake artifacts. Downstream steps update the same packet and preserve its lineage.
 
 When the chain stops for one missing human-owned fact, return the decision-relevant findings, supported options, recommendation and trade-offs, material unknowns, protected boundaries, and one bounded question.
 
 Keep packet administration and workflow bookkeeping in the carried context. Include them in the reply only when requested or needed to understand the evidence, authority, or next decision. You do not need a separate document just to ask the question. Return the complete packet when it is the requested deliverable or required for a handoff. In either form, preserve the applicable audit vocabulary and evidence limitations.
-
-Do not create a packet for engineering pass-through, a single clear specialist invocation, or routine conformance. Use the smallest native output for those paths.
-
-Execute the full safe workflow chain in the same turn when authorized and feasible. Do not treat routing or another intermediate artifact as the product.
 
 After an audit, Design Lab, visual direction, contract, or parity task, route to knowledge maintenance only when both conditions hold: the evidence is likely to improve a later task across scopes, and an authorized durable index exists. Keep incidental or product-private learning in the task packet.
