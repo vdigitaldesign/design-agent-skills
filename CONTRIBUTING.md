@@ -46,3 +46,7 @@ python3 scripts/manage.py build --output-dir ../das-release
 The builder checks the repository, then writes the package directory, deterministic ZIP, and SHA-256 checksum. It excludes local Git and IDE metadata. It refuses an existing output directory and does not publish a release.
 
 Release notes identify the version, source edition, assets, supported routes, limitations, and migration needs. Keep published tags and asset bytes immutable. A compatible correction gets a new patch version; a capability or compatibility change needs an explained version and migration decision. Keep the previous package and checksum available for [rollback](docs/advanced-installation.md#rollback).
+
+## Public writing and package contents
+
+Write for the person installing, using, or maintaining DAS. Use UX Writing and Humanizer when available, preserving exact technical instructions and supported claims. Explain limitations through their effect on the user's work. Keep development experiment history and private material out of guides, metadata, examples, and generated copies. Check the complete exported tree as well as its source templates.

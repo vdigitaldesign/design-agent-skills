@@ -31,7 +31,7 @@ a person's choice, and the concrete flow and checks handed to a developer.
 
 ## Supported agents
 
-Version 0.1.4 supports the documented Codex app and CLI workflows. Claude support is under development and is not included in this release's supported configurations. See the [release notes](docs/release-notes.md) and [tested configurations](docs/advanced-installation.md#support-and-evidence).
+Version 0.1.4 supports the documented Codex app and CLI workflows. The [Claude Code edition](https://github.com/vdigitaldesign/design-agent-skills/tree/claude) has its own version, installation guide, and known limitations. Choose the edition for your client. See the Codex [release notes](docs/release-notes.md) and [tested configurations](docs/advanced-installation.md#support-and-evidence).
 
 ## Install
 

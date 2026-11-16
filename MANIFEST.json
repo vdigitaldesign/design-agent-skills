@@ -30,9 +30,9 @@
       "sha256": "6d0f8abc16c6da37a20353af182837cec1d1959a9e0abac8362061bf8f584a58"
     },
     {
-      "bytes": 1767,
+      "bytes": 1736,
       "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
-      "sha256": "4cce0309e1f3dfd195116256b5232f9c2da6a2f4e008554d927d7a9b894e19d5"
+      "sha256": "1eb6e70e4e2db6ade4096bb351bb56a4688a10d84961c76fa1ded3d19feff14a"
     },
     {
       "bytes": 874,
@@ -60,9 +60,9 @@
       "sha256": "0dfab376e12a5820c67468bd154af9fba8c6d17078e2f1af5a26bf530a583caf"
     },
     {
-      "bytes": 1531,
+      "bytes": 1927,
       "path": "AGENTS.md",
-      "sha256": "043038bfaa52fb50f2cd0eb848cac72c0ab2aa8b441fa35dafe09af0e1fb5376"
+      "sha256": "18ea4629255cf129baf8e826f34194e2b7e2616ac8acddec9fd9977f6ef6146b"
     },
     {
       "bytes": 3166,
@@ -75,9 +75,9 @@
       "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
     },
     {
-      "bytes": 3445,
+      "bytes": 3894,
       "path": "CONTRIBUTING.md",
-      "sha256": "d1ed25dcb48c9d1d74e25dea3459ec79028b78a1a75eb59428ff574365ed6610"
+      "sha256": "fa7fd13618b94f51e3a1ac3d94aebfe5d085046461b54b350aee7ff95a4720d2"
     },
     {
       "bytes": 5184,
@@ -90,9 +90,9 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 13301,
+      "bytes": 13400,
       "path": "README.md",
-      "sha256": "2f82ff2aa673912696d00089187d239ebe3cececd4d2265e748b553cdd5d49bb"
+      "sha256": "d0b73d29e8dab39aafd07d21c62f57ac52d65d45bdf20dc4215af988b188da88"
     },
     {
       "bytes": 1444,
