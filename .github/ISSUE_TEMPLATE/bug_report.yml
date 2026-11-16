@@ -13,7 +13,7 @@ body:
       label: Environment and invocation
       description: >-
         Include the artifact filename or release/tag, package version and SHA-256
-        if available, edition (Codex, Claude preview, or unreleased common package),
+        if available, edition (Codex or Claude Code),
         client/version and surface, model/settings if known, installation route,
         skill, and exact invocation. Say when an identity is unknown rather than guessing.
     validations:

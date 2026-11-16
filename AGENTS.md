@@ -10,3 +10,5 @@ Read [CONTRIBUTING](CONTRIBUTING.md) for editable sources, checks and contributi
 - Run the applicable offline checks. Report what was checked and any remaining limits; package integrity does not establish design quality or support for an untested client route.
 - Keep raw model outputs unchanged when using them as evidence. A failing design result is not repaired by rewriting its evaluation criteria.
 - Remove task-created disposable scratch before completion and retain useful outputs. Follow the contribution path in CONTRIBUTING; building a package does not publish a release.
+
+For public prose, use clear US English and the available UX Writing and Humanizer capabilities. Preserve facts, commands, conditions, and known limitations. Keep development stages, evaluator grades, raw experiment logs, private links, and machine paths out of user documentation and exported metadata. These writing capabilities are contributor tools, not dependencies of installed DAS skills.
