@@ -4,27 +4,17 @@ The [installation guide](../INSTALL.md) covers the release-tagged plugin and pro
 
 ## Support and evidence
 
-`VERSION` identifies package version `0.1.4`; `TARGET.json` identifies instruction target `codex-0.1.4`, with source map `c8f36e141a7138febb27c8af60ecef05ef34f733aff09b82c1428c4325382dc3`. This edition simplifies router and contract-writer instructions without changing requirements or criteria. The other 26 sources remain unchanged from 0.1.3, including 0.1.2’s implementation-check template clarification.
+This edition is for the Codex app and CLI, through the native plugin or project-local Skills CLI copies. [Claude Code has a separate edition](https://github.com/vdigitaldesign/design-agent-skills/tree/claude).
 
-Offline verification covers exact source correspondence, complete resources, local links, fixed target identity and reproducible packaging. No new model task was run for this editorial patch. The behavior results below belong to the earlier source edition; they are not new behavioral PASS results for 0.1.2, 0.1.3 or 0.1.4. Each archive hash and manifest identifies its own package.
-
-The historical observations below used macOS and the earlier source edition. They establish the following scopes:
-
-| Check | Observation and limit |
+| Configuration | Observed scope and limit |
 | --- | --- |
-| Source-faithful contract and handoff | The selected sources completed the seven-source BorrowDesk and Fieldnote tasks, including concrete acceptance procedures, actual validation, and accessible handoffs. These explicit native CLI tasks used Codex CLI 0.163.0 with `gpt-6-astra` / `ultra`. The handoffs retained the required authority boundaries. |
-| Approval and publication chain | The same sources completed a review-ready proposal and contract, followed by the owner's exact approval in the same history. The continuation published the approved local canon, read it back, checked its relationship to the contract, established the separately authorized contract effectivity, and delivered the current handoff. This observed one complete chain, not product implementation or deployment. |
-| RC1 plugin lifecycle and routine use | The 571-file RC1 plugin matched its archive. Installation, enabled inventory, resource reading, a short CLI handoff, removal, and restoration were observed. The app also completed a short explicit-reference handoff; the owner observed picker selection and disappearance after removal. These observations do not establish every skill's behavior. |
-| RC1 project-local skills | Skills CLI 1.7.2 copied all 16 complete skills, 528 files, into a disposable project. One same-chat continuation in Codex app runtime 0.165.0-alpha.1.2 with `gpt-6-astra` / `low` read the four required Router resources completely and produced the requested short handoff. The owner observed Project entries and their disappearance after removal. An earlier setup attempt stopped before reading the skills; that result remains separate. |
-| Published v0.1.0 archive | An anonymous download matched the release SHA-256 and passed verification of its 572 files. The archive hash was `cb3006194f1985c819e3bbcb82b2cbdbb7cf4058dd2489a4cb2702ce8122cb7d`. |
-| Published v0.1.0 plugin | Codex CLI 0.163.0 installed from the public `v0.1.0` source, removed the plugin and marketplace, and restored the enabled plugin with matching release files. Unrelated plugins and marketplaces were unchanged. This did not include a new model call or fresh Desktop-picker observation. |
-| Published v0.1.0 project-local skills | Skills CLI 1.7.2 on Node.js 24.16.0 installed the public `v0.1.0` tag into an empty disposable project. All 16 standalone verifiers passed for 528 files. Full removal left no DAS directories and an empty skills lock. This isolated-project result does not establish safe selective removal in a mixed-client project. |
+| Codex on macOS | Design-contract, approval-chain, plugin, and copied-skill workflows have been observed. Other operating systems and every skill/model combination are not established by those samples. |
+| Model settings | Earlier contract and approval-chain checks used `gpt-6-astra` with `ultra` reasoning. Short resource-reading handoffs used `low`. These are observations, not a required effort setting for every task. |
+| Current package | Version 0.1.5 preserves the design instructions from 0.1.4 and changes public copy and tooling. Integrity checks cover complete resources, source correspondence, local links, and reproducible builds. No new model task was run for this cleanup. |
 
-The v0.1.0 observations above were completed on October 29, 2026. For the v0.1.1 artifact and installation results, see its [release record](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.1). For 0.1.2 publication and installation results, use its [release record](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.2). For 0.1.3 delivery and verification results, see its [release record](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.3). Each version's installation evidence is separate.
+Earlier behavior checks preceded the router and writer editorial changes in 0.1.4. They do not establish a new behavioral result for this package or guarantee a complete design for every product. Check source fidelity, approval scope, and the handoff before implementation.
 
-Tests of one case or model do not establish all-skill reliability, minimum supported client versions, cross-platform parity, or measured time savings. Earlier development failures retain their own source and task scope.
-
-Claude is not a supported consumer configuration for this release. Tool integrations, authentication, and model access come from the user's environment.
+`VERSION` identifies the package. `TARGET.json` binds its selected instruction edition; the manifests and verifier check its files. [Release records](https://github.com/vdigitaldesign/design-agent-skills/releases) identify published versions and installation results. Tool integrations, authentication, and model access come from your environment.
 
 ## Troubleshooting
 
@@ -38,7 +28,7 @@ If both namespaced and Project versions appear, check whether you installed both
 
 ## Replace an earlier installation
 
-Local development packages, RC1, and public releases share the `design-agent-skills@design-agent-skills` plugin identity. RC1 and the first public release also display version `0.1.0`; check their source and `TARGET.json` to distinguish them. Version 0.1.1 changed packaging and documentation; 0.1.2 also clarifies one implementation-check template field. Version 0.1.3 updates the artwork and keeps those instructions unchanged. Version 0.1.4 simplifies two skill texts while preserving their requirements.
+Record the installed source, version, and scope before replacement. A locally built package can share a public plugin's name or displayed version; use a known release tag and retained package when restoring an installation.
 
 1. Record the existing DAS plugin or project-local paths, source, and enabled state. Check symlink targets and relevant skill-lock entries, including any shared with another agent.
 2. Keep the original package and a copy of affected settings or lock entries outside discovery. Preserve unrelated entries.
@@ -46,9 +36,9 @@ Local development packages, RC1, and public releases share the `design-agent-ski
 4. For project-local skills, replace only the identified DAS folders and their lock entries. If another agent shares those folders or aliases, use a fresh project or plan that migration explicitly.
 5. Install from the desired release tag or verified archive. Check its identity and complete files, then start a new session and inspect the skill picker.
 
-Installed files do not change when a new DAS release is published. The plugin command in this guide pins its marketplace source to `v0.1.4`; use the replacement steps above to choose a newer release. For standalone skills, `npx skills update` is an explicit update: an installation from the default branch follows that branch, while a saved tag stays pinned to that tag. See the [Skills CLI update documentation](https://github.com/vercel-labs/skills/blob/main/docs/commands.md#skills-update).
+Installed files do not change when a new DAS release is published. The plugin command in this guide pins its marketplace source to `v0.1.5`; use the replacement steps above to choose a newer release. For standalone skills, `npx skills update` is an explicit update: an installation from the default branch follows that branch, while a saved tag stays pinned to that tag. See the [Skills CLI update documentation](https://github.com/vercel-labs/skills/blob/main/docs/commands.md#skills-update).
 
-The package version identifies a release of the files and documentation. `TARGET.json` identifies the instruction snapshot: 0.1.0 and 0.1.1 used `codex-0.1.0`; the template clarification in 0.1.2 created the target `codex-0.1.2`, which 0.1.3 retains. The two-source editorial patch in 0.1.4 creates `codex-0.1.4`.
+Package versions identify released files and documentation. The target metadata pins the instruction contents. A package update can leave those instructions unchanged; the [changelog](../CHANGELOG.md) explains what changed.
 
 A same-version refresh is not proof of a version upgrade. Automatic in-place migration across shared installations is outside the verified scope. Future releases provide their own migration notes; retain the current artifact until the replacement is verified.
 

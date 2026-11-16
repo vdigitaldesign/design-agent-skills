@@ -1,13 +1,6 @@
 {
   "client": "codex",
-  "id": "codex-0.1.4",
-  "qualification": {
-    "baseTarget": "codex-0.1.2",
-    "claudeQualification": "not conferred",
-    "consumerRuntime": "NOT RUN on this source edition",
-    "packagingInstallationQualification": "verify this exact artifact and its public routes separately",
-    "scope": "PA-09 editorial pass: consolidate repeated router instructions and split dense writer instructions without changing requirements or criteria. Exactly two sources differ from codex-0.1.2; the other 26 sources and PA-08 template clarification remain unchanged. Source correspondence, review and offline packaging checks do not establish model behavior. BorrowDesk, Fieldnote and E07 observations remain historical evidence for their preceding exact source edition, not new PASS results for this edition."
-  },
+  "id": "codex-0.1.5",
   "schema": "das-client-target-v1",
   "selectedSourceMapSHA256": "c8f36e141a7138febb27c8af60ecef05ef34f733aff09b82c1428c4325382dc3",
   "sourceDigest": "cf11aeb980dbfb941c2338579f0aaf43e3ebd47cb8e4b889f58982ec5e9dd857",

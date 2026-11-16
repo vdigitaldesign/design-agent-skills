@@ -4,7 +4,7 @@
 
 **Design work for agents. Authority for humans.**
 
-[![Version: 0.1.4](https://img.shields.io/badge/version-0.1.4-00632E)](CHANGELOG.md)
+[![Version: 0.1.5](https://img.shields.io/badge/version-0.1.5-00632E)](CHANGELOG.md)
 ![Format: Markdown](https://img.shields.io/badge/format-Markdown-f4f0e6)
 [![License: MIT](https://img.shields.io/badge/license-MIT-c9f24a)](LICENSE)
 
@@ -31,7 +31,7 @@ a person's choice, and the concrete flow and checks handed to a developer.
 
 ## Supported agents
 
-Version 0.1.4 supports the documented Codex app and CLI workflows. The [Claude Code edition](https://github.com/vdigitaldesign/design-agent-skills/tree/claude) has its own version, installation guide, and known limitations. Choose the edition for your client. See the Codex [release notes](docs/release-notes.md) and [tested configurations](docs/advanced-installation.md#support-and-evidence).
+Version 0.1.5 supports the documented Codex app and CLI workflows. The [Claude Code edition](https://github.com/vdigitaldesign/design-agent-skills/tree/claude) has its own version and installation guide. See the [release notes](docs/release-notes.md) and [tested configurations](docs/advanced-installation.md#support-and-evidence).
 
 ## Install
 
@@ -46,7 +46,7 @@ If DAS is already installed, follow the [replacement instructions](docs/advanced
 In your terminal:
 
 ```sh
-codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.4 &&
+codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.5 &&
 codex plugin add design-agent-skills@design-agent-skills &&
 codex plugin list
 ```
@@ -160,7 +160,7 @@ DAS supports design decisions across a workflow. It has no universal visual styl
 
 The design skills can create prototypes and implementation specifications. Production UI and engineering architecture belong to the implementation work. A completed specification does not establish that the interface was built, deployed, or successful with users.
 
-This release carries forward the earlier design-contract and approval-chain sources with the documented template and editorial changes. Historical results apply to their recorded source editions, tasks, models, and routes; they do not establish a new behavioral PASS or reliability across every skill or product. [Tested configurations and limits](docs/advanced-installation.md#support-and-evidence) explain the evidence behind the release.
+Version 0.1.5 updates public documentation and package tooling. Its design instructions are unchanged from 0.1.4. Review each handoff against your product rules; model behavior varies with context and settings. [Tested configurations and limits](docs/advanced-installation.md#support-and-evidence) explain the evidence behind the release.
 
 ## Documentation
 
