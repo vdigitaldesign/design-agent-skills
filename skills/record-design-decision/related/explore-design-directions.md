@@ -32,7 +32,7 @@ When a real material choice exists, usually create two or three directions. Vary
 For each direction:
 
 - explain the user flow and information structure;
-- show how it handles important states, permissions, failure, and recovery;
+- show how it handles important states, permissions, failure, and recovery. Derive each outcome state from what this direction's action leaves in the view that shows it, including its defaults and opt-ins. A view is empty only when none of the records it represents remain: a delivered-only view can be empty while active records stay elsewhere, but a whole-history view that still holds them cannot. Reuse another direction's states by reference only when its action leaves the same records in the same views;
 - identify reuse versus custom work;
 - preserve protected boundaries;
 - state evidence, assumptions, unknowns, accessibility and responsive implications;

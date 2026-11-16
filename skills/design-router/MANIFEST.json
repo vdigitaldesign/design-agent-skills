@@ -1,5 +1,5 @@
 {
-  "clientTarget": "codex-0.1.4",
+  "clientTarget": "claude-0.1.0",
   "entrypoint": "design-router",
   "files": [
     {
@@ -8,24 +8,24 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 8998,
+      "bytes": 10260,
       "path": "SKILL.md",
-      "sha256": "bfa960450df8e5cfbcace81e6e112b81f1cd44fbf4c198a677e090887411b7a2"
+      "sha256": "5395bcda6d47db9533a52e42778683241707e99d1466ea4f7f939f0d137a8c3c"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -33,9 +33,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2661,
       "path": "references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff"
     },
     {
       "bytes": 2859,
@@ -58,9 +58,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -93,9 +103,9 @@
       "sha256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66"
     },
     {
-      "bytes": 5292,
+      "bytes": 5791,
       "path": "related/audit-design-system.md",
-      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+      "sha256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e"
     },
     {
       "bytes": 7474,
@@ -103,14 +113,14 @@
       "sha256": "7d5ad6ecba81b6329397f3cacc55a17170f05f51cb476cdb4021ee3d92c2f3d7"
     },
     {
-      "bytes": 5390,
+      "bytes": 5573,
       "path": "related/evolve-design-system.md",
-      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+      "sha256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469"
     },
     {
-      "bytes": 5710,
+      "bytes": 6145,
       "path": "related/explore-design-directions.md",
-      "sha256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293"
+      "sha256": "29975e01acc6770ce34b884521bbfa2fca674144075cbacbd6175217a35734ab"
     },
     {
       "bytes": 4869,
@@ -128,9 +138,9 @@
       "sha256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
       "bytes": 5667,
@@ -138,40 +148,45 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 5167,
+      "bytes": 3514,
       "path": "related/record-design-decision.md",
-      "sha256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707"
+      "sha256": "7cc69a206ffd00ec6625fc56b073112a9924f5b63b00050628a6e6af0f982026"
     },
     {
-      "bytes": 6418,
+      "bytes": 5403,
       "path": "related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610"
     },
     {
-      "bytes": 6610,
+      "bytes": 7028,
       "path": "related/verify-design-implementation.md",
-      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+      "sha256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd"
     },
     {
-      "bytes": 10614,
+      "bytes": 6897,
       "path": "related/write-design-contract.md",
-      "sha256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8"
+      "sha256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     }
   ],
   "kind": "skill",
   "schema": "das-portable-v1",
-  "sourceDigest": "cf11aeb980dbfb941c2338579f0aaf43e3ebd47cb8e4b889f58982ec5e9dd857",
+  "sourceDigest": "491382874c052da485216de642254bc4b84a558045fe28ff41f19a71d401b874",
   "sources": [
     {
       "exportPath": "references/audit-exploration-templates.md",
-      "exportSHA256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3",
+      "exportSHA256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa",
       "sourcePath": "references/audit-exploration-templates.md",
-      "sourceSHA256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sourceSHA256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "exportPath": "references/authority-and-status.md",
@@ -181,9 +196,9 @@
     },
     {
       "exportPath": "references/contract-review-templates.md",
-      "exportSHA256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7",
+      "exportSHA256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff",
       "sourcePath": "references/contract-review-templates.md",
-      "sourceSHA256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sourceSHA256": "db02aba7831566288ef4e1893d24afd1e62bd41252c2f95ed699ca84fdff19bf"
     },
     {
       "exportPath": "references/design-knowledge-index.md",
@@ -210,10 +225,22 @@
       "sourceSHA256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
+      "exportPath": "references/executable-acceptance.md",
+      "exportSHA256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e",
+      "sourcePath": "references/executable-acceptance.md",
+      "sourceSHA256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "exportPath": "references/native-design-delivery.md",
+      "exportSHA256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294",
+      "sourcePath": "references/native-design-delivery.md",
+      "sourceSHA256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
       "exportPath": "references/packet-projections.md",
-      "exportSHA256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641",
+      "exportSHA256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712",
       "sourcePath": "references/packet-projections.md",
-      "sourceSHA256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sourceSHA256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "exportPath": "references/product-profile-and-tools.md",
@@ -253,15 +280,15 @@
     },
     {
       "exportPath": "related/audit-design-system.md",
-      "exportSHA256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b",
+      "exportSHA256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e",
       "sourcePath": "skills/audit-design-system/SKILL.md",
-      "sourceSHA256": "22af77fcc5560497019c9ce4f7a951032c7b2bac93fe12b4a3cda297d48f5ce0"
+      "sourceSHA256": "c08c5e5a6d6805d0826b2e25579d82e1068dbae71e14a65e3ca8271f9c48328d"
     },
     {
       "exportPath": "SKILL.md",
-      "exportSHA256": "bfa960450df8e5cfbcace81e6e112b81f1cd44fbf4c198a677e090887411b7a2",
+      "exportSHA256": "5395bcda6d47db9533a52e42778683241707e99d1466ea4f7f939f0d137a8c3c",
       "sourcePath": "skills/design-router/SKILL.md",
-      "sourceSHA256": "24acf839e9dc4ad13f4420bc6a0ea8a31bf7b91a3fc7a24893c25ef6b7407ebc"
+      "sourceSHA256": "5cbb445dd64adc6a6dfda26922b49d2e5abe3f5adbe0cea4181ccc062b7c598a"
     },
     {
       "exportPath": "related/develop-visual-direction.md",
@@ -271,15 +298,15 @@
     },
     {
       "exportPath": "related/evolve-design-system.md",
-      "exportSHA256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7",
+      "exportSHA256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469",
       "sourcePath": "skills/evolve-design-system/SKILL.md",
-      "sourceSHA256": "a29aa39531420493637425ee947cd8f63d55bbf9872ae5e3ad9d56e482080091"
+      "sourceSHA256": "9c22d0c830912214196dbf5ca9f091d4de09fbdc854bf04c0849effb9c9d3c7b"
     },
     {
       "exportPath": "related/explore-design-directions.md",
-      "exportSHA256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293",
+      "exportSHA256": "29975e01acc6770ce34b884521bbfa2fca674144075cbacbd6175217a35734ab",
       "sourcePath": "skills/explore-design-directions/SKILL.md",
-      "sourceSHA256": "9d8e5fd00830eae82a907c239f73b581228ec3daec83eea1f0d7a26342f3415b"
+      "sourceSHA256": "0b5f65a4d5f7df21db6efb9ed4479ee0fa663b5657790fe0ef85a390c628a674"
     },
     {
       "exportPath": "related/frame-design-task.md",
@@ -301,9 +328,9 @@
     },
     {
       "exportPath": "related/publish-design-system-canon.md",
-      "exportSHA256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e",
+      "exportSHA256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b",
       "sourcePath": "skills/publish-design-system-canon/SKILL.md",
-      "sourceSHA256": "5e739c5cce81ce17e65f3e9e0f28bf76a280bdc42e537098db744fc5630624e8"
+      "sourceSHA256": "aab9a5842fb985304504d977526c342c848806a9192a3128c73b098636e8ac79"
     },
     {
       "exportPath": "related/reconstruct-design-context.md",
@@ -313,28 +340,34 @@
     },
     {
       "exportPath": "related/record-design-decision.md",
-      "exportSHA256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707",
+      "exportSHA256": "7cc69a206ffd00ec6625fc56b073112a9924f5b63b00050628a6e6af0f982026",
       "sourcePath": "skills/record-design-decision/SKILL.md",
-      "sourceSHA256": "23fa4997d22e59d3321046edeae162352c1920f4594ab10be2aef465a471a036"
+      "sourceSHA256": "d3e5ce787d114bde836b5fe3a56024079994384c3e456588ca80c8733a1ecbba"
     },
     {
       "exportPath": "related/validate-design-contract.md",
-      "exportSHA256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5",
+      "exportSHA256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610",
       "sourcePath": "skills/validate-design-contract/SKILL.md",
-      "sourceSHA256": "19aca0023015a80d9be0143a901d77c09725935c9607196ada5eb7f3a7d079e0"
+      "sourceSHA256": "e0e925b1a6c59848ff9a20273895b0ceefcd825740efa1358740c1723599df7d"
     },
     {
       "exportPath": "related/verify-design-implementation.md",
-      "exportSHA256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de",
+      "exportSHA256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd",
       "sourcePath": "skills/verify-design-implementation/SKILL.md",
-      "sourceSHA256": "fbef785421780d8ad7f1dc8906034c9a1a13b6bf3147c02e49d3714300c3d544"
+      "sourceSHA256": "a80ef363be787bf81a8257243c17b842c58218090a6a7b65908b1e71be5b5b57"
     },
     {
       "exportPath": "related/write-design-contract.md",
-      "exportSHA256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8",
+      "exportSHA256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f",
       "sourcePath": "skills/write-design-contract/SKILL.md",
-      "sourceSHA256": "347c95b9edd2b6c091c2d9fa6ffda0880ed9d38223a4c0c4f7771823f21c83af"
+      "sourceSHA256": "04daa5ec54100fe5b5db3538328de19d4446ee5d3b86528b2f4c5e65b8bd8ffd"
+    },
+    {
+      "exportPath": "related/write-design-contract/references/source-version-reading.md",
+      "exportSHA256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb",
+      "sourcePath": "skills/write-design-contract/references/source-version-reading.md",
+      "sourceSHA256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
     }
   ],
-  "version": "0.1.4"
+  "version": "0.1.0"
 }

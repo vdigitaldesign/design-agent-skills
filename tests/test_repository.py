@@ -26,20 +26,31 @@ class RepositoryTests(unittest.TestCase):
         self.root = self.area / "repository"
         MANAGE["write_payload"](self.root, self.original)
         self.target = json.loads((self.root / "MANIFEST.json").read_text()).get("clientTarget")
+        self.claude = self.target in VERIFY["CLAUDE_TARGETS"]
+        self.pinned_error = "Pinned Claude source digest" if self.claude else "Pinned Codex source digest"
 
     def test_source_round_trip_and_exact_entrypoints(self):
         result = MANAGE["check_repository"](self.root, strict=True)
         self.assertEqual(result["skills"], 16)
-        self.assertEqual(result["inverseReproductions"], 448)
+        self.assertEqual(result["inverseReproductions"], 496 if self.claude else 448)
+        self.assertEqual(result["sourcesPerSkill"], 31 if self.claude else 28)
         self.assertEqual(len(list(self.root.rglob("SKILL.md"))), 16)
         for entry in VERIFY["SKILLS"]:
-            for reference in VERIFY["REFERENCES"]:
-                name = "references/" + reference + ".md"
-                mapping = VERIFY["path_mapping"](entry)
-                inverse = {export: source for source, export in mapping.items()}
-                portable = (self.root / "skills" / entry / name).read_bytes()
-                restored = VERIFY["transform"](portable, name, inverse)
-                self.assertEqual(restored, (self.root / name).read_bytes())
+            skill = self.root / "skills" / entry
+            records = json.loads((skill / "MANIFEST.json").read_text())["sources"]
+            sources = {r["sourcePath"] for r in records}
+            expected = set(VERIFY["SOURCES"])
+            if self.claude:
+                expected |= {"references/executable-acceptance.md", "references/native-design-delivery.md",
+                             "skills/write-design-contract/references/source-version-reading.md"}
+            self.assertEqual(sources, expected)
+            inverse = {r["exportPath"]: r["sourcePath"] for r in records}
+            self.assertEqual(len(inverse), 31 if self.claude else 28)
+            for record in records:
+                if record["sourcePath"].startswith("references/"):
+                    portable = (skill / record["exportPath"]).read_bytes()
+                    restored = VERIFY["transform"](portable, record["exportPath"], inverse)
+                    self.assertEqual(restored, (self.root / record["sourcePath"]).read_bytes())
 
     def test_reference_edit_requires_sync_and_updates_every_skill(self):
         reference = "references/" + VERIFY["REFERENCES"][0] + ".md"
@@ -47,7 +58,7 @@ class RepositoryTests(unittest.TestCase):
         source.write_bytes(source.read_bytes() + b"\nMaintainer fixture reference.\n")
         manifest_before = (self.root / "MANIFEST.json").read_bytes()
         if self.target:
-            with self.assertRaisesRegex(ValueError, "Pinned Codex source digest"):
+            with self.assertRaisesRegex(ValueError, self.pinned_error):
                 MANAGE["sync"](self.root)
             self.assertEqual((self.root / "MANIFEST.json").read_bytes(), manifest_before)
             return
@@ -68,7 +79,7 @@ class RepositoryTests(unittest.TestCase):
         path.write_bytes(edited)
         if self.target:
             manifest_before = (self.root / "MANIFEST.json").read_bytes()
-            with self.assertRaisesRegex(ValueError, "Pinned Codex source digest"):
+            with self.assertRaisesRegex(ValueError, self.pinned_error):
                 MANAGE["sync"](self.root)
             self.assertEqual(path.read_bytes(), edited)
             self.assertEqual((self.root / "MANIFEST.json").read_bytes(), manifest_before)
@@ -128,7 +139,7 @@ class RepositoryTests(unittest.TestCase):
             MANAGE["build"](self.root, self.root / "dist")
         reference = self.root / "references" / (VERIFY["REFERENCES"][0] + ".md")
         reference.write_bytes(reference.read_bytes() + b"\nUnsynced edit.\n")
-        expected = "Pinned Codex source digest" if self.target else "Stale generated files"
+        expected = self.pinned_error if self.target else "Stale generated files"
         with self.assertRaisesRegex(ValueError, expected):
             MANAGE["build"](self.root, self.area / "release")
         self.assertFalse((self.area / "release").exists())
@@ -153,20 +164,35 @@ class RepositoryTests(unittest.TestCase):
         result = MANAGE["check_repository"](self.root)
         self.assertEqual(result["version"], next_version)
         for name in (".claude-plugin/plugin.json", ".codex-plugin/plugin.json"):
-            if self.target and name in VERIFY["CLAUDE_PLUGIN_FILES"]:
+            excluded = (self.claude and name == ".codex-plugin/plugin.json"
+                        or self.target and not self.claude and name == ".claude-plugin/plugin.json")
+            if excluded:
                 self.assertFalse((self.root / name).exists())
                 continue
             self.assertEqual(json.loads((self.root / name).read_text())["version"], next_version)
         for entry in VERIFY["SKILLS"]:
             self.assertEqual((self.root / "skills" / entry / "VERSION").read_text(), next_version + "\n")
 
-    def test_edition_provenance_and_no_claude_metadata_leak(self):
+    def test_edition_provenance_and_explicit_client_metadata_profile(self):
         manifest = json.loads((self.root / "MANIFEST.json").read_text())
         if self.target:
-            self.assertIn(self.target, VERIFY["CODEX_TARGETS"])
             target = (self.root / "TARGET.json").read_bytes()
-            self.assertEqual(json.loads(target), VERIFY["CODEX_TARGETS"][self.target])
-            for name in VERIFY["CLAUDE_PLUGIN_FILES"]:
+            if self.claude:
+                record = json.loads(target)
+                self.assertEqual(record, VERIFY["CLAUDE_TARGETS"][self.target])
+                self.assertEqual(record["client"], "claude")
+                self.assertEqual(record["selectedSourceMapSHA256"],
+                                 "39c8fbc04b51c44201fcc65656ebc9bc4800b1b14e577fb07c14d73cba476a84")
+                self.assertEqual(record["sourceDigest"],
+                                 "491382874c052da485216de642254bc4b84a558045fe28ff41f19a71d401b874")
+                present, absent = VERIFY["CLAUDE_PLUGIN_FILES"], VERIFY["CODEX_PLUGIN_FILES"]
+            else:
+                self.assertIn(self.target, VERIFY["CODEX_TARGETS"])
+                self.assertEqual(json.loads(target), VERIFY["CODEX_TARGETS"][self.target])
+                present, absent = VERIFY["CODEX_PLUGIN_FILES"], VERIFY["CLAUDE_PLUGIN_FILES"]
+            for name in present:
+                self.assertTrue((self.root / name).is_file())
+            for name in absent:
                 self.assertFalse((self.root / name).exists())
             for entry in VERIFY["SKILLS"]:
                 skill = self.root / "skills" / entry
@@ -183,13 +209,17 @@ class RepositoryTests(unittest.TestCase):
             for name in VERIFY["CLAUDE_PLUGIN_FILES"] | VERIFY["CODEX_PLUGIN_FILES"]:
                 self.assertTrue((self.root / name).is_file())
 
-    def test_wrong_plugin_skill_path_fails_before_sync_writes(self):
-        path = self.root / ".codex-plugin/plugin.json"
+    def test_wrong_plugin_location_fails_before_sync_writes(self):
+        path = self.root / (".claude-plugin/marketplace.json" if self.claude
+                            else ".codex-plugin/plugin.json")
         plugin = json.loads(path.read_text())
-        plugin["skills"] = "./private-skills/"
+        if self.claude:
+            plugin["plugins"][0]["source"] = "../private-plugin/"
+        else:
+            plugin["skills"] = "./private-skills/"
         path.write_text(json.dumps(plugin), encoding="utf-8")
         previous = (self.root / "MANIFEST.json").read_bytes()
-        with self.assertRaisesRegex(ValueError, "installed skills directory"):
+        with self.assertRaisesRegex(ValueError, "repository.*plugin" if self.claude else "installed skills directory"):
             MANAGE["sync"](self.root)
         self.assertEqual((self.root / "MANIFEST.json").read_bytes(), previous)
 
@@ -203,7 +233,7 @@ class RepositoryTests(unittest.TestCase):
         reference = self.root / "references" / (VERIFY["REFERENCES"][0] + ".md")
         reference.write_bytes(reference.read_bytes() + b"\n[Missing](not-a-reference.md).\n")
         previous = (self.root / "MANIFEST.json").read_bytes()
-        expected = "Pinned Codex source digest" if self.target else "allowlist"
+        expected = self.pinned_error if self.target else "allowlist"
         with self.assertRaisesRegex(ValueError, expected):
             MANAGE["sync"](self.root)
         self.assertEqual((self.root / "MANIFEST.json").read_bytes(), previous)

@@ -2,7 +2,7 @@
 
 DAS helps agents work from a product request to a design decision and engineering handoff, then compare the built result with the approved design. Its skills share guidance for context, decisions, and verification.
 
-See the [worked example](worked-example.md) for a concrete brief, design options, and a handoff built around one illustrative choice.
+The [Claude Code guide](claude-code.md) explains how to supply a task and its governing sources.
 
 ## Start from the task
 
@@ -52,4 +52,4 @@ A proposal or prototype is evidence for a change. The responsible person approve
 
 DAS does not replace product research, testing with users, or accountable human decisions. It has no universal visual style or guarantee of commercial success. Production implementation and engineering architecture remain with the coding workflow.
 
-The instructions use the tools and permissions in your environment. Review source fidelity, coverage, authority, and the usability of the handoff for the task at hand. [Getting started](getting-started.md) helps you supply that context.
+The instructions use the tools and permissions in your environment. Review source fidelity, coverage, authority, and the usability of the handoff for the task at hand. [Supply the product context](claude-code.md#supply-the-product-context) before beginning the work.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Maintain and build DAS from this public repository; Python 3.9+ standard library."""
+"""Maintain and build a DAS repository package; Python 3.9+ standard library."""
 
 import argparse
 import json
@@ -12,18 +12,26 @@ import tempfile
 import zipfile
 
 
-REPOSITORY_FILES = (
-    "README.md", "INSTALL.md", "LICENSE", "CHANGELOG.md", "CONTRIBUTING.md", "AGENTS.md", "CLAUDE.md",
-    "SUPPORT.md", "SECURITY.md", ".github/VULNERABILITY_REPORT.yml",
-    "docs/codex.md", "docs/claude-code.md", "docs/claude-desktop.md", "docs/getting-started.md",
-    "docs/skills.md", "docs/advanced-installation.md", "docs/how-das-works.md",
-    "scripts/manage.py", "tests/test_repository.py", ".github/workflows/validate.yml",
-    ".github/ISSUE_TEMPLATE/bug_report.yml", ".github/ISSUE_TEMPLATE/feature_request.yml",
-    ".github/PULL_REQUEST_TEMPLATE.md",
-    ".gitignore", "VERSION", "verify.py",
-    "assets/design-agent-skills-hero.svg", ".claude-plugin/plugin.json", ".claude-plugin/marketplace.json",
-    ".codex-plugin/plugin.json", ".agents/plugins/marketplace.json",
-)
+REPOSITORY_FILES = ('.claude-plugin/marketplace.json',
+ '.claude-plugin/plugin.json',
+ '.gitignore',
+ 'AGENTS.md',
+ 'CHANGELOG.md',
+ 'CONTRIBUTING.md',
+ 'INSTALL.md',
+ 'LICENSE',
+ 'README.md',
+ 'SECURITY.md',
+ 'SUPPORT.md',
+ 'VERSION',
+ 'assets/design-agent-skills-hero.svg',
+ 'docs/advanced-installation.md',
+ 'docs/claude-code.md',
+ 'docs/how-das-works.md',
+ 'docs/skills.md',
+ 'scripts/manage.py',
+ 'tests/test_repository.py',
+ 'verify.py')
 ROOT_METADATA = {".git", ".idea", ".vscode", "dist"}
 ZIP_DATE = (2026, 10, 13, 0, 0, 0)
 
@@ -70,12 +78,14 @@ def expected_payload(root):
             metadata["version"] = version
             payload[name] = json_bytes(metadata)
     originals = {}
-    for name in api["SOURCES"]:
+    source_paths = api["sources_for_target"](target)
+    for name in source_paths:
         data = read_file(root, name, api)
         if name.startswith("skills/"):
             entry = name.split("/")[1]
-            inverse = {export: source for source, export in api["path_mapping"](entry).items()}
-            originals[name] = api["transform"](data, "SKILL.md", inverse)
+            mapping = api["path_mapping"](entry, target)
+            inverse = {export: source for source, export in mapping.items()}
+            originals[name] = api["transform"](data, mapping[name], inverse)
         else:
             originals[name] = data
             payload[name] = data
@@ -92,7 +102,7 @@ def expected_payload(root):
                 for name, data in sorted(files.items())]
 
     for entry in api["SKILLS"]:
-        mapping = api["path_mapping"](entry)
+        mapping = api["path_mapping"](entry, target)
         files = {name: payload[name] for name in ("VERSION", "verify.py", "LICENSE")}
         if target:
             files["TARGET.json"] = payload["TARGET.json"]
@@ -115,7 +125,7 @@ def expected_payload(root):
     payload["MANIFEST.json"] = json_bytes({
         "schema": "das-portable-v1", "kind": "bundle", "version": version,
         "entrypoints": list(api["SKILLS"]), "sourceDigest": digest,
-        "sourceFiles": list(api["SOURCES"]), "files": file_records(payload),
+        "sourceFiles": list(source_paths), "files": file_records(payload),
         **({"clientTarget": target} if target else {}),
     })
     return payload

@@ -1,107 +1,36 @@
 ---
 name: write-design-contract
-description: Assemble approved material design decisions and unchanged normative sources into a scoped, testable Design Contract and implementation handoff. Use when a selected material direction needs specification; routine conformance should use effective product canon, effective design-system canon, or an effective Design Contract without creating a new contract.
+description: Write a complete, testable Design Contract and implementation handoff for a selected material design direction. Use when that direction needs specification; routine conformance uses existing effective canon without a new contract.
 ---
 
 # Write Design Contract
 
-Assemble the approved experience from its exact sources so a coding agent can implement it without inventing material design decisions.
+Read the task's original sources and owner decision. Write the actual contract, concrete acceptance checks, validation conclusion and current handoff status that the commission needs.
 
-## Packet mode
+Read [native authority and delivery](../references/native-design-delivery.md) once for this chain; reuse its current text at later steps. Its source, authority, carried-packet, freshness and copied-view rules apply.
 
-- **Carried:** use and update the supplied valid Design Work Packet. Do not reconstruct its intake or reread pinned authority merely to confirm it.
-- **Direct single-skill:** when the Design Contract or routine handoff is the complete requested outcome, return that native output without creating a packet.
-- **Direct expansion:** when direct specification becomes a material or uncertain multi-skill chain, create exactly one [Design Work Packet](../references/packet-projections.md#design-work-packet) before the first downstream handoff, using the [governed-view assembly](../references/packet-projections.md#governed-view-assembly) from the existing sources and native records.
+## Write the native result
 
-Refresh a carried packet only when a required field is missing, a source is stale or conflicting, scope or authority changes, or genuinely new evidence appears.
+For material work, use the actual scoped human selection and evidence lineage. When a needed selection, system posture or authority is unresolved, finish safe preparation and present the supported options, recommendation/trade-offs and smallest decision needed; keep the dependent contract draft.
 
-Without a valid packet, read [authority and status](../references/authority-and-status.md). Use the native [contract template](../references/contract-review-templates.md#design-contract) for substantive authoring. The handoff fields are assembly targets sourced from that contract, not a separate writing assignment. Load [practical design checklists](../references/quality-checklists.md) for applicable contract lenses and [packet projections](../references/packet-projections.md) when producing a Human Decision Brief or Coding-Agent Execution Packet.
+For routine conformance, return the six-label handoff under the controlling effective product canon, system canon or contract. There is no new contract or effectivity decision merely for applying its determined rule.
 
-## Preconditions
+Use a normal document suited to the task. Give the contract its exact ID/revision/status and authority/scope. Make its operative requirements, acceptance checks and current handoff meaning directly usable; supporting records may share the file or have their own locators.
 
-- For material work, require a scoped approved design decision and its evidence lineage.
-- For routine conformance, use the compact routine packet: a concise engineering handoff from the controlling effective product canon, effective design-system canon, or effective Design Contract, including scope, evidence, acceptance check, and parity plan. Do not create a new Design Contract, effectivity gate, source inventory form or approval ritual.
-- Confirm the current design-system operating posture when system rules are missing, deficient, or disputed.
+- Before interpreting source-governed actions, joint obligations or stage gates, read the worked source and observation contrasts in [source-version reading](write-design-contract/references/source-version-reading.md). Apply the demonstrated source → behavior → contract/check derivation to this task's own controlling text: establish its stated action class, rule scope and relevant history; combine jointly satisfiable obligations; attach each actual gate to its stated stage and authority. An exception or exclusion in a teaching version belongs to that version, not to this task. Then specify the complete requested experience using the original sources and actual selected choices, with exact owner/revision locators and full unchanged controlling text available. Preserve all applicable conditions, exceptions, overlaps, states, content strings and protected boundaries. A source already supplies its own authority and meaning; the contract's explanation or check procedure supplies no competing rule.
+- Where a genuinely new material design choice is necessary, keep its exact proposed text, alternatives, recommendation/trade-offs and dependent scope visibly separate from consumed requirements. Unstructured notes retain their evidence status; a proposed normalization is not an approved source. Preserve real unresolved conflicts and supplied precedence/supersession.
+- Own each acceptance procedure once. For a source-required incoming event, first write its independent procedure with the source-supported setup, arrival and observable outcomes. Write any optional command that can obtain the same result as a separate procedure with its own capability, permission and activation prerequisites. Share only applicable outcome steps, keeping different source-supported consequences separate; do not inherit command prerequisites into the event procedure, because a command-only condition must not narrow event coverage. Where the source gates only the command on a capability, cover the event's source-supported capability-absent and capability-present cases; retain any actual gate on the event itself. Where a required observation supplies a fact governing a later action, first write that action's continuations for the source-supported results of that observation. Put the dependent action inside each permitting branch; keep it unissued where its source prerequisite is unmet or unestablished, carrying only the source-backed return/recovery step. Retain actions and reads whose conditions remain satisfied; an unrelated changed observation supplies no reason to block them. Then render the complete procedure with those branches in its operative steps and expected results. For checks supported by the commissioned execution binding, execute through [executable acceptance](../references/executable-acceptance.md) and carry actual receipts. For obligations outside that supplied execution binding, give concrete source-backed checks and their actual observation limits in the same acceptance index. Preserve combined conditions, history, negative paths and recovery across all checks. Unobserved checks remain unobserved.
+- State actual implementation authorization, remaining gates/return conditions, protected boundaries, technical freedoms and required parity evidence/environments. Keep these meanings in this native result for any commissioned handoff. A framework, API, component internal or code structure is constrained only when an approved consumer constraint makes it part of the design outcome.
 
-If a material selection or authority is missing, complete safe specification preparation. Then return findings, viable options, a recommendation, trade-offs, and the smallest owner question. Keep the contract `draft`.
+Cover relevant interaction, content, information architecture, permissions, accessibility, layout/localization, system use and failure/recovery meaning. Carry commissioned visual projections, approved motion meaning and eligible assets under the shared delivery rules when they apply. Use the sources and requested outcomes to organize the document; there is no separate full-template, source-inventory or projection-writing assignment.
 
-## Write the contract
+## Validate and deliver
 
-Author the native contract, proposed choices and concrete acceptance procedures. Record actual implementation authorization, remaining gates/return conditions, parity request and all required handoff meaning in the native contract. Keep every required outcome complete.
+Send the material draft with its original sources and relevant native decisions/proposals to [validate-design-contract](../SKILL.md). Complete source-backed non-material corrections and dependent safe work in the same turn. Keep draft while material gaps remain, review-ready only after passing validation, and effective only after actual exact authorized human effectivity.
 
-### Bind sources and scope
+Return the complete native contract and validation, including the remaining gate and dependent scope. Materialize any commissioned human brief or coding packet from these same native records under the shared delivery rules. A draft packet stays NOT AUTHORIZED FOR IMPLEMENTATION; a routine packet instead cites its already effective controlling rule. Keep source copies and current records accessible to the actual receiver.
 
-Identify the supplied sources, exact revisions, authority and applicable scope. Distinguish effective canon, approved choices, proposals and observations. Keep each source-owned rule at its existing owner.
+Use/update a required or carried packet according to the shared validity/refresh bounds, carrying the contract/view revisions, sources, actual findings/resolved and remaining gates, current sequence and next step/stop. Direct native work creates no extra packet solely because validation is part of it.
 
-Include every applicable normative source unit, including its conditions, exceptions and co-applicable rules; account for exclusions against the commissioned scope. A coverage index routes the reader to source text; it cannot narrow that text. An unavailable source or unresolved conflict remains visible and blocks only dependent work. Apply an existing precedence or supersession decision when supplied; otherwise do not silently choose a winner.
+If the work establishes reusable cross-task pattern metadata, a source boundary or a known non-fit, return that metadata to the consumer's knowledge-maintenance route. Requirements remain at their effective source; indexing them creates no second authority.
 
-### Assemble Required experience
-
-Assemble **Required experience** from unchanged source text. Include complete small sources; for a larger source, include complete applicable sections with their definitions and dependencies. Preserve source IDs, revisions and status, and make their full text available with the contract.
-
-Do not translate existing behavior into new requirements, state tables, boundaries, freedoms or gate rules. Headings, indexes and summaries organize sources and carry no independent behavioral meaning.
-
-### Separate proposals
-
-For a genuine material gap, draft a separately identified proposal with its evidence, alternatives, recommendation, trade-offs and exact scope. Keep each new proposed design choice at its exact proposal. Never put proposed behavior among consumed norms or change their meaning through a proposal.
-
-Unstructured tickets, notes or discussions retain their original wording and evidence status; a proposed normalization is not an approved source. Use the existing decision/effectivity process for new material behavior, without reopening already determined facts or routine choices.
-
-### Write acceptance procedures
-
-1. Give each procedure a complete starting history, ordered actions/events, the exact source units supplying expected behavior, and evidence to collect.
-2. For each source-defined alternative applicable at a setup, event or outcome, make that step an explicit parameter with its complete source-supported values.
-3. Require the entire procedure for every applicable combination, preserving event position, operation identity and the other givens. Do not count a value exercised in a different history as this variant.
-4. Where a combination is inapplicable, identify the source condition; retain the required applicable continuation rather than silently dropping it.
-5. Try to complete all mandatory histories while avoiding each claimed obligation, and tighten the closest procedure when such an execution exists.
-6. Preserve source-owned acceptance rules unchanged; unsupported choices and unobserved checks remain explicit. No found escape alone proves completeness.
-
-### Check coverage
-
-Check coverage from the sources into the assembly and checks, as well as every output claim back to its source. Cover relevant entry, eligibility, structure, actions, state/recovery, content, permissions, accessibility, responsive/localization, system use and implementation freedoms. Missing source content is not an implementation freedom. Do not turn a checklist lens or absent observation into a new product rule or approval gate.
-
-Apply these boundaries throughout the contract and its handoff: source locators or exact text supply existing norms; authored prose supplies navigation, evidence, check procedures or visibly separate proposals. Keep genuine design choices in exploration and proposals rather than treating them as approved behavior.
-
-When applicable, use the canonical [contract template](../references/contract-review-templates.md) to locate:
-
-- the optional Visual System Projection;
-- approved material Motion Choice Records;
-- production-eligible External Asset Candidate Records;
-- prototype-only replacement blockers.
-
-The projection may restate approved visual meaning but cannot replace the contract or add authority. A prototype asset awaiting replacement remains a bounded blocker for dependent shipping scope. It does not become implementation freedom.
-
-Do not prescribe framework APIs, component internals, or code structure unless the consumer has made them approved constraints and they affect the design contract.
-
-## Status and handoff
-
-Use `draft` while material gaps remain. Use `review-ready` only after internal checks support review. Only the authorized human makes the contract `effective`.
-
-Materialize any required packet, brief or handoff through [governed-view assembly](../references/packet-projections.md#governed-view-assembly). Do not author their behavioral, scope or authority prose again.
-
-Once a material contract is effective, materialize a Coding-Agent Execution Packet from its native handoff content, unchanged sources and real approval/publication records. It contains:
-
-- the exact contract revision, source assembly and actual authority references;
-- accessible unchanged normative source units and their coverage index;
-- evidence and acceptance procedures with source-supplied expectations;
-- source locators for protected boundaries, freedoms and return conditions;
-- required parity evidence and any real outstanding gate with its dependent scope.
-
-A routine packet instead cites the controlling effective product canon, effective design-system canon, or effective Design Contract that already governs the result.
-
-When a Design Work Packet exists, pin the execution packet and any Human Decision Brief to its exact revision and the normative revisions it carries. Without one, pin projections directly to the exact native decision, contract, and canon revisions. Run the freshness/equivalence check before handoff.
-
-If any required source is not effective, label the execution packet `NOT AUTHORIZED FOR IMPLEMENTATION` and name the exact gate. Do not hide the gate behind an otherwise complete handoff.
-
-Include only production-eligible assets in a Coding-Agent Execution Packet. Carry motion requirements only from the controlling effective product canon, effective design-system canon, or effective Design Contract. Retain their purpose, state relationship, reduced- or non-motion fallback, performance/lifecycle constraint, and requirement reference. An approved Motion Choice Record may be cited as decision evidence but cannot authorize implementation.
-
-The handoff carries the same source assembly and checks, without another specification of behavior or new gate. Verify that the receiver can open the controlling text and implement the scoped result without resolving a hidden material choice; links and byte equality alone do not establish completeness or compatibility. Send a material draft to [validate-design-contract](../SKILL.md). Continue through safe corrections. Stop only when selection or effectivity authority is genuinely required.
-
-If contract work establishes a reusable cross-task pattern, source boundary, or known non-fit, route only that metadata to [maintain-design-knowledge](maintain-design-knowledge.md). Contract requirements remain owned by their effective source and are never copied into the index.
-
-In carried or direct-expansion mode, mechanically update the packet from the contract, validation/authority records and actual workflow events:
-
-- Design Contract and projection locators, revisions, and statuses;
-- controlling sources and findings to preserve;
-- resolved and remaining gaps, and the validation/effectivity gate;
-- the current step, active sequence, next step and stop.

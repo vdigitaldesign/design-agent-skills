@@ -41,8 +41,11 @@ Classify maturity for the exact scope, with evidence:
 
 - **healthy:** coherent, sufficiently complete, authoritative, and maintained for the scope;
 - **partial:** useful authority exists but coverage or consistency has material gaps;
-- **absent:** no adequate system authority exists for the scope;
-- **harmful:** following the current system in the scope would preserve material user harm, contradiction, or inaccessible behavior.
+- **absent:** the permitted evidence shows that no adequate system authority exists for the scope;
+- **harmful:** following the current system in the scope would preserve material user harm, contradiction, or inaccessible behavior;
+- **unknown:** the permitted evidence does not establish the state. Record the inspected boundary and the evidence that would settle it. A provisional posture may still follow; name the finding that would change it.
+
+Silence is not absence. When sources do not mention owners, documentation, adoption, or another signal, classify it **unknown**, not absent. Existing evidence, such as a brand guideline that defines some values, makes that signal at least partial.
 
 Do not apply one label to an entire product when different scopes differ.
 

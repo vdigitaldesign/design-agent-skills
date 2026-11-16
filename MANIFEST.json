@@ -1,5 +1,5 @@
 {
-  "clientTarget": "codex-0.1.4",
+  "clientTarget": "claude-0.1.0",
   "entrypoints": [
     "assess-design-reuse",
     "audit-design-surface",
@@ -20,39 +20,14 @@
   ],
   "files": [
     {
-      "bytes": 377,
-      "path": ".agents/plugins/marketplace.json",
-      "sha256": "8556952959a90a4cf27dd4e1842fe7ee8ff2e6809fccd553fc51db7cb5ced003"
+      "bytes": 342,
+      "path": ".claude-plugin/marketplace.json",
+      "sha256": "8c0d2f25c9108321f1e72458db46584fa7b450bf7bb644b4f4cd06723be22f72"
     },
     {
-      "bytes": 1944,
-      "path": ".codex-plugin/plugin.json",
-      "sha256": "6d0f8abc16c6da37a20353af182837cec1d1959a9e0abac8362061bf8f584a58"
-    },
-    {
-      "bytes": 1767,
-      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
-      "sha256": "4cce0309e1f3dfd195116256b5232f9c2da6a2f4e008554d927d7a9b894e19d5"
-    },
-    {
-      "bytes": 874,
-      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
-      "sha256": "995f9b7263d8ba2d34e6a59f4ed947065579b0c690b69ca759a34df63dbb2667"
-    },
-    {
-      "bytes": 656,
-      "path": ".github/PULL_REQUEST_TEMPLATE.md",
-      "sha256": "f73a0ca57d4b38496ed96dbde7476d5f120897cab5ba4fabe94e47bbad6ece71"
-    },
-    {
-      "bytes": 1607,
-      "path": ".github/VULNERABILITY_REPORT.yml",
-      "sha256": "22231e55eb337e54a0f3747c7535b19519d34e8bfd6f6eeb45c40c6f22635779"
-    },
-    {
-      "bytes": 879,
-      "path": ".github/workflows/validate.yml",
-      "sha256": "e592f51c9303e3a42972220cb3959dfeb6a5ce75e9cdcb9c49ae36b7898c7aef"
+      "bytes": 628,
+      "path": ".claude-plugin/plugin.json",
+      "sha256": "87909bcd7592e0ad8cdd72480154672f31c0af74a3b08a1ae81d269a036c539a"
     },
     {
       "bytes": 56,
@@ -60,29 +35,24 @@
       "sha256": "0dfab376e12a5820c67468bd154af9fba8c6d17078e2f1af5a26bf530a583caf"
     },
     {
-      "bytes": 1531,
+      "bytes": 1241,
       "path": "AGENTS.md",
-      "sha256": "043038bfaa52fb50f2cd0eb848cac72c0ab2aa8b441fa35dafe09af0e1fb5376"
+      "sha256": "ba35aebc2edd764859926716938b94992b5c31df690ac3ce273e39015059b27b"
     },
     {
-      "bytes": 3166,
+      "bytes": 637,
       "path": "CHANGELOG.md",
-      "sha256": "a1daed5334f545ebfdd6059101614f1795db61dad901848a3b633ee7ed081bdf"
+      "sha256": "1a882a892a987e9f94c6d8e149c90d0ce09bc9b0c75b3a30d16fa88a46ec4ae4"
     },
     {
-      "bytes": 11,
-      "path": "CLAUDE.md",
-      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
-    },
-    {
-      "bytes": 3445,
+      "bytes": 2522,
       "path": "CONTRIBUTING.md",
-      "sha256": "d1ed25dcb48c9d1d74e25dea3459ec79028b78a1a75eb59428ff574365ed6610"
+      "sha256": "f8c0c6138df3413d68d1034c9afd1539a4edf5cc9bff87984f0f50aa834e99d7"
     },
     {
-      "bytes": 5184,
+      "bytes": 3951,
       "path": "INSTALL.md",
-      "sha256": "eecf5125300b1c99cefdf259efccfe162ab6f18c73f58d61fb7240f3bc39787b"
+      "sha256": "71abd0e7a85414ceae39c0607fb49695bdfedb9964cd8d7f7745631429014947"
     },
     {
       "bytes": 1078,
@@ -90,29 +60,29 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 13301,
+      "bytes": 3327,
       "path": "README.md",
-      "sha256": "2f82ff2aa673912696d00089187d239ebe3cececd4d2265e748b553cdd5d49bb"
+      "sha256": "d4b5c8f77e1198fc421e80a5c2088eb72e3227cff0a706da8f86f1bdcb6d4bd5"
     },
     {
-      "bytes": 1444,
+      "bytes": 900,
       "path": "SECURITY.md",
-      "sha256": "378e3405aa24a6eb40c8977fccc5229a18e1bed094487ea2339f00dd48330760"
+      "sha256": "3ad231c75f9fcf8e517e26ce0d4edf073dabc7108c822ec7e126552e826e025a"
     },
     {
-      "bytes": 1935,
+      "bytes": 1334,
       "path": "SUPPORT.md",
-      "sha256": "cf0f2917f05e9f2cd9c202c407b13d623998d9eb5a2c796ac628c642e7fb6568"
+      "sha256": "15ccbe8655ff1922fd869667e7c86c563611bfc26878225ad64d2a5b07aa5d12"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
       "bytes": 43773,
@@ -130,29 +100,19 @@
       "sha256": "26a3c8e717b9c3b1bca6e88a6942fcd12b4d860a68c8e0967e63ecffe680ded2"
     },
     {
-      "bytes": 12702,
+      "bytes": 2775,
       "path": "docs/advanced-installation.md",
-      "sha256": "378a5a9478c849f69d4422fea820d964505c0b3b689af0805f9754bb86ff8c87"
+      "sha256": "b2822836c62dc04c2a9bf02ab8db7a60b4f0f706807b8c4d6a5a5cbace61e484"
     },
     {
-      "bytes": 2796,
-      "path": "docs/codex.md",
-      "sha256": "1d250847d96dd4d593f350cd14cd30739a2e1cafda0f300b86dc8975a72bd0a8"
+      "bytes": 1917,
+      "path": "docs/claude-code.md",
+      "sha256": "696140448edf79f415a2e05488765bcd04517c5cced859c4b50d366cd23faaa2"
     },
     {
-      "bytes": 4240,
-      "path": "docs/getting-started.md",
-      "sha256": "df2b01d97a8b66ceb1b1bc1fa88f25403694ab797e854f82abb0bc5dae675636"
-    },
-    {
-      "bytes": 4759,
+      "bytes": 4752,
       "path": "docs/how-das-works.md",
-      "sha256": "41486ab83c3e3eef11d7761248370a9d22ac0998c3c2bdb705accade8f837baf"
-    },
-    {
-      "bytes": 2642,
-      "path": "docs/release-notes.md",
-      "sha256": "e95ce461d665a8b903939c19dab4dc9b02a278d84f3bb7e785a63d1c3d342f7c"
+      "sha256": "aacb7475039a2312c55a59f90515fee0294918f52383f22d45c15d42652b5334"
     },
     {
       "bytes": 3669,
@@ -160,14 +120,9 @@
       "sha256": "9203226a37218fa1dbb6b0fa39a66f2652100a34b6bafcf21f03b132757e89a6"
     },
     {
-      "bytes": 5776,
-      "path": "docs/worked-example.md",
-      "sha256": "b61681f12e56984c1bad3bfce40fd67e92932e8a873c0e077f0846e239189e55"
-    },
-    {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -175,9 +130,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2671,
       "path": "references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "db02aba7831566288ef4e1893d24afd1e62bd41252c2f95ed699ca84fdff19bf"
     },
     {
       "bytes": 2864,
@@ -200,9 +155,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -225,9 +190,9 @@
       "sha256": "61b558e5beed0d85599cc4c9a44a4cf7ecb4f162f31b6f4c18762118f8b10831"
     },
     {
-      "bytes": 11365,
+      "bytes": 11091,
       "path": "scripts/manage.py",
-      "sha256": "22f078041cfc3a9082b0e75411601780cb5b1e17de72a20888f5327ef21efc6f"
+      "sha256": "9a90e3400d4dc2625ad2251a77a2cae81b925c9ae79fa1e95007ef5957cdf558"
     },
     {
       "bytes": 1078,
@@ -235,9 +200,9 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14233,
+      "bytes": 15769,
       "path": "skills/assess-design-reuse/MANIFEST.json",
-      "sha256": "88f3cfc0bd15c4d40c3f77b4f0faa35f2dadc885b6bc112e284a422fd51b47a5"
+      "sha256": "9277f27dcaa941ea6b13f214fa8d68478b0eeab6c451647d564710b793230b67"
     },
     {
       "bytes": 4172,
@@ -245,19 +210,19 @@
       "sha256": "e867b4cb4bad88c5f82b08d9ebfd9caddfd46a1230eb9db4e1e13661052e46b9"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/assess-design-reuse/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/assess-design-reuse/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/assess-design-reuse/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -265,9 +230,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2661,
       "path": "skills/assess-design-reuse/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff"
     },
     {
       "bytes": 2859,
@@ -290,9 +255,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/assess-design-reuse/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/assess-design-reuse/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/assess-design-reuse/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -320,14 +295,14 @@
       "sha256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66"
     },
     {
-      "bytes": 5292,
+      "bytes": 5791,
       "path": "skills/assess-design-reuse/related/audit-design-system.md",
-      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+      "sha256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e"
     },
     {
-      "bytes": 8858,
+      "bytes": 10120,
       "path": "skills/assess-design-reuse/related/design-router.md",
-      "sha256": "67074e3c3e6983981b9f2cbd456a43f270e1c0de88ad20ae2133af0cc53a8b27"
+      "sha256": "10bd4855e401522d409fa3ec761dddf509d45c4b397a9d5edc56e72e4bf429c6"
     },
     {
       "bytes": 7474,
@@ -335,14 +310,14 @@
       "sha256": "7d5ad6ecba81b6329397f3cacc55a17170f05f51cb476cdb4021ee3d92c2f3d7"
     },
     {
-      "bytes": 5390,
+      "bytes": 5573,
       "path": "skills/assess-design-reuse/related/evolve-design-system.md",
-      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+      "sha256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469"
     },
     {
-      "bytes": 5710,
+      "bytes": 6145,
       "path": "skills/assess-design-reuse/related/explore-design-directions.md",
-      "sha256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293"
+      "sha256": "29975e01acc6770ce34b884521bbfa2fca674144075cbacbd6175217a35734ab"
     },
     {
       "bytes": 4858,
@@ -360,9 +335,9 @@
       "sha256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "skills/assess-design-reuse/related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
       "bytes": 5667,
@@ -370,29 +345,34 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 5167,
+      "bytes": 3514,
       "path": "skills/assess-design-reuse/related/record-design-decision.md",
-      "sha256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707"
+      "sha256": "7cc69a206ffd00ec6625fc56b073112a9924f5b63b00050628a6e6af0f982026"
     },
     {
-      "bytes": 6418,
+      "bytes": 5403,
       "path": "skills/assess-design-reuse/related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610"
     },
     {
-      "bytes": 6610,
+      "bytes": 7028,
       "path": "skills/assess-design-reuse/related/verify-design-implementation.md",
-      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+      "sha256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd"
     },
     {
-      "bytes": 10614,
+      "bytes": 6897,
       "path": "skills/assess-design-reuse/related/write-design-contract.md",
-      "sha256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8"
+      "sha256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "skills/assess-design-reuse/related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "skills/assess-design-reuse/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
       "bytes": 1078,
@@ -400,9 +380,9 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14232,
+      "bytes": 15768,
       "path": "skills/audit-design-surface/MANIFEST.json",
-      "sha256": "e48299c7669a035b4c308dbca3224c1960b96595e0ddb68e4f7081fa00175c64"
+      "sha256": "c53a7ba91a8191ee7dce5886cf33860a198eaee4ff8571f5f14744c757d064f6"
     },
     {
       "bytes": 5828,
@@ -410,19 +390,19 @@
       "sha256": "2fd3c61e7ee38248cd9beffe23172fa1e6a39d131504f9e9d270da90ec1df054"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/audit-design-surface/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/audit-design-surface/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/audit-design-surface/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -430,9 +410,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2661,
       "path": "skills/audit-design-surface/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff"
     },
     {
       "bytes": 2859,
@@ -455,9 +435,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/audit-design-surface/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/audit-design-surface/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/audit-design-surface/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -485,14 +475,14 @@
       "sha256": "6c1438a2e3d852ebeaf4c4b6448a96aedfde48b07fa7c628a6673869d3a25506"
     },
     {
-      "bytes": 5292,
+      "bytes": 5791,
       "path": "skills/audit-design-surface/related/audit-design-system.md",
-      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+      "sha256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e"
     },
     {
-      "bytes": 8857,
+      "bytes": 10119,
       "path": "skills/audit-design-surface/related/design-router.md",
-      "sha256": "ac831786eaaa5fe3b9099337a357efaaa56ca5e93affff8ad00762a4856b1a90"
+      "sha256": "542ffe9d2b3434fa9650d42dae97b8ce0867f40d185b9bc4633f2d49c9a1b72b"
     },
     {
       "bytes": 7474,
@@ -500,14 +490,14 @@
       "sha256": "7d5ad6ecba81b6329397f3cacc55a17170f05f51cb476cdb4021ee3d92c2f3d7"
     },
     {
-      "bytes": 5390,
+      "bytes": 5573,
       "path": "skills/audit-design-surface/related/evolve-design-system.md",
-      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+      "sha256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469"
     },
     {
-      "bytes": 5710,
+      "bytes": 6145,
       "path": "skills/audit-design-surface/related/explore-design-directions.md",
-      "sha256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293"
+      "sha256": "29975e01acc6770ce34b884521bbfa2fca674144075cbacbd6175217a35734ab"
     },
     {
       "bytes": 4857,
@@ -525,9 +515,9 @@
       "sha256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "skills/audit-design-surface/related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
       "bytes": 5667,
@@ -535,29 +525,34 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 5167,
+      "bytes": 3514,
       "path": "skills/audit-design-surface/related/record-design-decision.md",
-      "sha256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707"
+      "sha256": "7cc69a206ffd00ec6625fc56b073112a9924f5b63b00050628a6e6af0f982026"
     },
     {
-      "bytes": 6418,
+      "bytes": 5403,
       "path": "skills/audit-design-surface/related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610"
     },
     {
-      "bytes": 6610,
+      "bytes": 7028,
       "path": "skills/audit-design-surface/related/verify-design-implementation.md",
-      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+      "sha256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd"
     },
     {
-      "bytes": 10614,
+      "bytes": 6897,
       "path": "skills/audit-design-surface/related/write-design-contract.md",
-      "sha256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8"
+      "sha256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "skills/audit-design-surface/related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "skills/audit-design-surface/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
       "bytes": 1078,
@@ -565,29 +560,29 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14233,
+      "bytes": 15769,
       "path": "skills/audit-design-system/MANIFEST.json",
-      "sha256": "e6a2c4270378ca22656d9a35331fd3c1a1f29843f914fddcfb64fe8844a656f0"
+      "sha256": "22fcc5bdb4a58247e29d8258bffdb91a771e3f8ce9294a37131a71b362798450"
     },
     {
-      "bytes": 5285,
+      "bytes": 5784,
       "path": "skills/audit-design-system/SKILL.md",
-      "sha256": "f67a0e381f76b946a0cf530c6f922402f75a99c0ef075ccb1c37f9afa3b930d5"
+      "sha256": "0629ab8fb7dd277c046411fcb1163247e96399fe317487f8bd983ff6afa732c2"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/audit-design-system/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/audit-design-system/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/audit-design-system/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -595,9 +590,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2661,
       "path": "skills/audit-design-system/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff"
     },
     {
       "bytes": 2859,
@@ -620,9 +615,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/audit-design-system/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/audit-design-system/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/audit-design-system/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -655,9 +660,9 @@
       "sha256": "9e63d4816684b61e219138f7b075a335702c4f532d152b59005ab8f109fbe331"
     },
     {
-      "bytes": 8858,
+      "bytes": 10120,
       "path": "skills/audit-design-system/related/design-router.md",
-      "sha256": "2c6cb69cde50a263a8c5f819587cb10ebc463676994819eed9ade420916959d2"
+      "sha256": "194d35e5aae1f489b7e00eaeb2e8007ebddce4c16dfb72b4eb469176a9866080"
     },
     {
       "bytes": 7463,
@@ -665,14 +670,14 @@
       "sha256": "377fd0bcfacfbcfb6ae95942fad8dd465d817a37e7ac7dbf4bb5146a90076794"
     },
     {
-      "bytes": 5390,
+      "bytes": 5573,
       "path": "skills/audit-design-system/related/evolve-design-system.md",
-      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+      "sha256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469"
     },
     {
-      "bytes": 5710,
+      "bytes": 6145,
       "path": "skills/audit-design-system/related/explore-design-directions.md",
-      "sha256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293"
+      "sha256": "29975e01acc6770ce34b884521bbfa2fca674144075cbacbd6175217a35734ab"
     },
     {
       "bytes": 4858,
@@ -690,9 +695,9 @@
       "sha256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "skills/audit-design-system/related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
       "bytes": 5667,
@@ -700,29 +705,34 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 5167,
+      "bytes": 3514,
       "path": "skills/audit-design-system/related/record-design-decision.md",
-      "sha256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707"
+      "sha256": "7cc69a206ffd00ec6625fc56b073112a9924f5b63b00050628a6e6af0f982026"
     },
     {
-      "bytes": 6418,
+      "bytes": 5403,
       "path": "skills/audit-design-system/related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610"
     },
     {
-      "bytes": 6610,
+      "bytes": 7028,
       "path": "skills/audit-design-system/related/verify-design-implementation.md",
-      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+      "sha256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd"
     },
     {
-      "bytes": 10614,
+      "bytes": 6897,
       "path": "skills/audit-design-system/related/write-design-contract.md",
-      "sha256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8"
+      "sha256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "skills/audit-design-system/related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "skills/audit-design-system/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
       "bytes": 1078,
@@ -730,29 +740,29 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14239,
+      "bytes": 15775,
       "path": "skills/design-router/MANIFEST.json",
-      "sha256": "cf5d46e59a2697c6bee9bcd974254cb32a259623f32b0212e6b0629285186777"
+      "sha256": "d2da2a1fd770293c6eed0eda3221c0f8a3a84c91651c1bf641ddfc1bee6ea6f2"
     },
     {
-      "bytes": 8998,
+      "bytes": 10260,
       "path": "skills/design-router/SKILL.md",
-      "sha256": "bfa960450df8e5cfbcace81e6e112b81f1cd44fbf4c198a677e090887411b7a2"
+      "sha256": "5395bcda6d47db9533a52e42778683241707e99d1466ea4f7f939f0d137a8c3c"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/design-router/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/design-router/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/design-router/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -760,9 +770,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2661,
       "path": "skills/design-router/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff"
     },
     {
       "bytes": 2859,
@@ -785,9 +795,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/design-router/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/design-router/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/design-router/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -820,9 +840,9 @@
       "sha256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66"
     },
     {
-      "bytes": 5292,
+      "bytes": 5791,
       "path": "skills/design-router/related/audit-design-system.md",
-      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+      "sha256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e"
     },
     {
       "bytes": 7474,
@@ -830,14 +850,14 @@
       "sha256": "7d5ad6ecba81b6329397f3cacc55a17170f05f51cb476cdb4021ee3d92c2f3d7"
     },
     {
-      "bytes": 5390,
+      "bytes": 5573,
       "path": "skills/design-router/related/evolve-design-system.md",
-      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+      "sha256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469"
     },
     {
-      "bytes": 5710,
+      "bytes": 6145,
       "path": "skills/design-router/related/explore-design-directions.md",
-      "sha256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293"
+      "sha256": "29975e01acc6770ce34b884521bbfa2fca674144075cbacbd6175217a35734ab"
     },
     {
       "bytes": 4869,
@@ -855,9 +875,9 @@
       "sha256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "skills/design-router/related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
       "bytes": 5667,
@@ -865,29 +885,34 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 5167,
+      "bytes": 3514,
       "path": "skills/design-router/related/record-design-decision.md",
-      "sha256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707"
+      "sha256": "7cc69a206ffd00ec6625fc56b073112a9924f5b63b00050628a6e6af0f982026"
     },
     {
-      "bytes": 6418,
+      "bytes": 5403,
       "path": "skills/design-router/related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610"
     },
     {
-      "bytes": 6610,
+      "bytes": 7028,
       "path": "skills/design-router/related/verify-design-implementation.md",
-      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+      "sha256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd"
     },
     {
-      "bytes": 10614,
+      "bytes": 6897,
       "path": "skills/design-router/related/write-design-contract.md",
-      "sha256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8"
+      "sha256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "skills/design-router/related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "skills/design-router/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
       "bytes": 1078,
@@ -895,9 +920,9 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14228,
+      "bytes": 15764,
       "path": "skills/develop-visual-direction/MANIFEST.json",
-      "sha256": "333f05059314d2304e0076a92453811974134b1b8e38a208556e6c0c01795835"
+      "sha256": "7be0030126637091d8d2ced686fbd571f53ec5abd5a10964de7793267154a121"
     },
     {
       "bytes": 7482,
@@ -905,19 +930,19 @@
       "sha256": "dcfbb82243ffb672028aa2ed0d8eeb937f8f10a6833bc8fad1fb1c149433dff0"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/develop-visual-direction/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/develop-visual-direction/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/develop-visual-direction/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -925,9 +950,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2661,
       "path": "skills/develop-visual-direction/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff"
     },
     {
       "bytes": 2859,
@@ -950,9 +975,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/develop-visual-direction/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/develop-visual-direction/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/develop-visual-direction/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -985,24 +1020,24 @@
       "sha256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66"
     },
     {
-      "bytes": 5292,
+      "bytes": 5791,
       "path": "skills/develop-visual-direction/related/audit-design-system.md",
-      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+      "sha256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e"
     },
     {
-      "bytes": 8853,
+      "bytes": 10115,
       "path": "skills/develop-visual-direction/related/design-router.md",
-      "sha256": "a8bbdaf2980794a7653bd73fed11c14216388b5a3331a636a92ec401dfa4c1ad"
+      "sha256": "d5a7582bf48b6c94815ebfd01689090de5b8366c4d6c17f8f11cee5c5b819111"
     },
     {
-      "bytes": 5390,
+      "bytes": 5573,
       "path": "skills/develop-visual-direction/related/evolve-design-system.md",
-      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+      "sha256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469"
     },
     {
-      "bytes": 5694,
+      "bytes": 6129,
       "path": "skills/develop-visual-direction/related/explore-design-directions.md",
-      "sha256": "cce9198864218a0b2e8ff55752ff479ec1fb9e7ee391e363ec49cea3b8412236"
+      "sha256": "0780cf5b717e54a50d1f4d8f209dc5337a74427bad26805bd253610f9c915072"
     },
     {
       "bytes": 4869,
@@ -1020,9 +1055,9 @@
       "sha256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "skills/develop-visual-direction/related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
       "bytes": 5667,
@@ -1030,29 +1065,34 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 5167,
+      "bytes": 3514,
       "path": "skills/develop-visual-direction/related/record-design-decision.md",
-      "sha256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707"
+      "sha256": "7cc69a206ffd00ec6625fc56b073112a9924f5b63b00050628a6e6af0f982026"
     },
     {
-      "bytes": 6418,
+      "bytes": 5403,
       "path": "skills/develop-visual-direction/related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610"
     },
     {
-      "bytes": 6610,
+      "bytes": 7028,
       "path": "skills/develop-visual-direction/related/verify-design-implementation.md",
-      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+      "sha256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd"
     },
     {
-      "bytes": 10614,
+      "bytes": 6897,
       "path": "skills/develop-visual-direction/related/write-design-contract.md",
-      "sha256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8"
+      "sha256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "skills/develop-visual-direction/related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "skills/develop-visual-direction/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
       "bytes": 1078,
@@ -1060,29 +1100,29 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14232,
+      "bytes": 15768,
       "path": "skills/evolve-design-system/MANIFEST.json",
-      "sha256": "9e2a6ced920a6317a5506da3fa7ad71aea50c0b426081803118a7ef27fe73f57"
+      "sha256": "e6c6d28163c241411d29719b47497ae78a92ff003dfab7298a1cd2f06b69684d"
     },
     {
-      "bytes": 5380,
+      "bytes": 5578,
       "path": "skills/evolve-design-system/SKILL.md",
-      "sha256": "b9eaf2bb1a96b443b8ed863b8d12c69afcccb353df63badc4788a78964167da7"
+      "sha256": "6645233798b76043e49ec6951557bf67725e24fe41e09e8fad8b68d99369e960"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/evolve-design-system/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/evolve-design-system/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/evolve-design-system/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -1090,9 +1130,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2661,
       "path": "skills/evolve-design-system/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff"
     },
     {
       "bytes": 2859,
@@ -1115,9 +1155,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/evolve-design-system/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/evolve-design-system/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/evolve-design-system/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -1150,14 +1200,14 @@
       "sha256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66"
     },
     {
-      "bytes": 5280,
+      "bytes": 5779,
       "path": "skills/evolve-design-system/related/audit-design-system.md",
-      "sha256": "b74320a1ba570a116fc9fd1fc542f73277896f3c596a3ecabfa40ded9b3b33c6"
+      "sha256": "c5b5fd5a29407ed73582c7aed7d85cab02f48e71b94de2d7008463d812db0a20"
     },
     {
-      "bytes": 8845,
+      "bytes": 10107,
       "path": "skills/evolve-design-system/related/design-router.md",
-      "sha256": "8d19e425c26b7bdacf1b0ca758092752ed3ef7d5abcb56467a30fda73802dc56"
+      "sha256": "65a75ba2e20e23628952d960ddafba1361d28e1aac0a91b12baac8f9c75991ab"
     },
     {
       "bytes": 7462,
@@ -1165,9 +1215,9 @@
       "sha256": "2d1b0d38c19fd9a25187c9869572d003c72ceab857e455abe8d2df8315cdaa54"
     },
     {
-      "bytes": 5710,
+      "bytes": 6145,
       "path": "skills/evolve-design-system/related/explore-design-directions.md",
-      "sha256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293"
+      "sha256": "29975e01acc6770ce34b884521bbfa2fca674144075cbacbd6175217a35734ab"
     },
     {
       "bytes": 4869,
@@ -1185,9 +1235,9 @@
       "sha256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "skills/evolve-design-system/related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
       "bytes": 5667,
@@ -1195,29 +1245,34 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 5167,
+      "bytes": 3514,
       "path": "skills/evolve-design-system/related/record-design-decision.md",
-      "sha256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707"
+      "sha256": "7cc69a206ffd00ec6625fc56b073112a9924f5b63b00050628a6e6af0f982026"
     },
     {
-      "bytes": 6418,
+      "bytes": 5403,
       "path": "skills/evolve-design-system/related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610"
     },
     {
-      "bytes": 6610,
+      "bytes": 7028,
       "path": "skills/evolve-design-system/related/verify-design-implementation.md",
-      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+      "sha256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd"
     },
     {
-      "bytes": 10614,
+      "bytes": 6897,
       "path": "skills/evolve-design-system/related/write-design-contract.md",
-      "sha256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8"
+      "sha256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "skills/evolve-design-system/related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "skills/evolve-design-system/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
       "bytes": 1078,
@@ -1225,29 +1280,29 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14227,
+      "bytes": 15763,
       "path": "skills/explore-design-directions/MANIFEST.json",
-      "sha256": "ba864417823f087bb5412838d11e5dd98c69a2a42dcc6b25212c0e23a45e861f"
+      "sha256": "67dbb27eb9b8876d9bb3be82eda8ee7770d751523828fbe9a250d161e057eaa8"
     },
     {
-      "bytes": 5716,
+      "bytes": 6151,
       "path": "skills/explore-design-directions/SKILL.md",
-      "sha256": "fa3156095faf7473680a3ecf834f6de22c5e2bcf0e247506e5c7009ae4b5b87c"
+      "sha256": "b7b7d722c9ac77e82ffa5facc32d040c65956cb88078c9e986a386805f91de6e"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/explore-design-directions/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/explore-design-directions/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/explore-design-directions/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -1255,9 +1310,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2661,
       "path": "skills/explore-design-directions/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff"
     },
     {
       "bytes": 2859,
@@ -1280,9 +1335,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/explore-design-directions/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/explore-design-directions/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/explore-design-directions/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -1315,14 +1380,14 @@
       "sha256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66"
     },
     {
-      "bytes": 5292,
+      "bytes": 5791,
       "path": "skills/explore-design-directions/related/audit-design-system.md",
-      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+      "sha256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e"
     },
     {
-      "bytes": 8852,
+      "bytes": 10114,
       "path": "skills/explore-design-directions/related/design-router.md",
-      "sha256": "4c04a0867621055243c7467347327ed51d089ed2b78f7be4ce224ac8e3826f8d"
+      "sha256": "161300135416284c2c87707f37d8b34c7a71623deeb6ee43a0e324492ec88adc"
     },
     {
       "bytes": 7474,
@@ -1330,9 +1395,9 @@
       "sha256": "7d5ad6ecba81b6329397f3cacc55a17170f05f51cb476cdb4021ee3d92c2f3d7"
     },
     {
-      "bytes": 5390,
+      "bytes": 5573,
       "path": "skills/explore-design-directions/related/evolve-design-system.md",
-      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+      "sha256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469"
     },
     {
       "bytes": 4852,
@@ -1350,9 +1415,9 @@
       "sha256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "skills/explore-design-directions/related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
       "bytes": 5667,
@@ -1360,29 +1425,34 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 5150,
+      "bytes": 3497,
       "path": "skills/explore-design-directions/related/record-design-decision.md",
-      "sha256": "4a31d666486301ad51f6055536041db4154b61b71f3336cb886b9de4a2a2957e"
+      "sha256": "026bde425e384cb886b33b088578c183081657a01291ac88777cbc83f705d1a3"
     },
     {
-      "bytes": 6418,
+      "bytes": 5403,
       "path": "skills/explore-design-directions/related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610"
     },
     {
-      "bytes": 6610,
+      "bytes": 7028,
       "path": "skills/explore-design-directions/related/verify-design-implementation.md",
-      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+      "sha256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd"
     },
     {
-      "bytes": 10614,
+      "bytes": 6897,
       "path": "skills/explore-design-directions/related/write-design-contract.md",
-      "sha256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8"
+      "sha256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "skills/explore-design-directions/related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "skills/explore-design-directions/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
       "bytes": 1078,
@@ -1390,9 +1460,9 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14235,
+      "bytes": 15771,
       "path": "skills/frame-design-task/MANIFEST.json",
-      "sha256": "54da6b1f8b264322eed21af44cc4038fc0eb9bae07b2a9494f920c254c3f6d92"
+      "sha256": "e824d0461899370dfc7b8b4ad639c1d77ecb0629a697da04ec4f20f224f693b2"
     },
     {
       "bytes": 4894,
@@ -1400,19 +1470,19 @@
       "sha256": "a63cc4763e97cec9b8177b3e42861ada1cea0519dc89e75cdeb8c93233407b7c"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/frame-design-task/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/frame-design-task/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/frame-design-task/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -1420,9 +1490,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2661,
       "path": "skills/frame-design-task/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff"
     },
     {
       "bytes": 2859,
@@ -1445,9 +1515,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/frame-design-task/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/frame-design-task/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/frame-design-task/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -1480,14 +1560,14 @@
       "sha256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66"
     },
     {
-      "bytes": 5292,
+      "bytes": 5791,
       "path": "skills/frame-design-task/related/audit-design-system.md",
-      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+      "sha256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e"
     },
     {
-      "bytes": 8860,
+      "bytes": 10122,
       "path": "skills/frame-design-task/related/design-router.md",
-      "sha256": "c6779ed6692cdf186fd8709a82cf4f24b84e80981d28a912305f5af1cddeadb9"
+      "sha256": "f713fdbc216de77c6fabdec620156711a3b1c14d01bd44d60437a8967e1b992c"
     },
     {
       "bytes": 7474,
@@ -1495,14 +1575,14 @@
       "sha256": "7d5ad6ecba81b6329397f3cacc55a17170f05f51cb476cdb4021ee3d92c2f3d7"
     },
     {
-      "bytes": 5390,
+      "bytes": 5573,
       "path": "skills/frame-design-task/related/evolve-design-system.md",
-      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+      "sha256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469"
     },
     {
-      "bytes": 5710,
+      "bytes": 6145,
       "path": "skills/frame-design-task/related/explore-design-directions.md",
-      "sha256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293"
+      "sha256": "29975e01acc6770ce34b884521bbfa2fca674144075cbacbd6175217a35734ab"
     },
     {
       "bytes": 4861,
@@ -1515,9 +1595,9 @@
       "sha256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "skills/frame-design-task/related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
       "bytes": 5667,
@@ -1525,29 +1605,34 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 5167,
+      "bytes": 3514,
       "path": "skills/frame-design-task/related/record-design-decision.md",
-      "sha256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707"
+      "sha256": "7cc69a206ffd00ec6625fc56b073112a9924f5b63b00050628a6e6af0f982026"
     },
     {
-      "bytes": 6418,
+      "bytes": 5403,
       "path": "skills/frame-design-task/related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610"
     },
     {
-      "bytes": 6610,
+      "bytes": 7028,
       "path": "skills/frame-design-task/related/verify-design-implementation.md",
-      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+      "sha256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd"
     },
     {
-      "bytes": 10614,
+      "bytes": 6897,
       "path": "skills/frame-design-task/related/write-design-contract.md",
-      "sha256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8"
+      "sha256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "skills/frame-design-task/related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "skills/frame-design-task/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
       "bytes": 1078,
@@ -1555,9 +1640,9 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14227,
+      "bytes": 15763,
       "path": "skills/maintain-design-knowledge/MANIFEST.json",
-      "sha256": "17efcef2fb0ec6b95f57c2b75ea6094a34bc7ea9c0fe88f5f8e424551fc5b188"
+      "sha256": "65f15691988863d34d50154421633d75b832e966d6d70d567637a6159b0bad20"
     },
     {
       "bytes": 4852,
@@ -1565,19 +1650,19 @@
       "sha256": "ec79a242e921c3242c797eae183ae20f069b17d52cd42964e0a551127f0cbaa1"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/maintain-design-knowledge/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/maintain-design-knowledge/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/maintain-design-knowledge/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -1585,9 +1670,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2661,
       "path": "skills/maintain-design-knowledge/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff"
     },
     {
       "bytes": 2831,
@@ -1610,9 +1695,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/maintain-design-knowledge/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/maintain-design-knowledge/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/maintain-design-knowledge/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -1645,14 +1740,14 @@
       "sha256": "a601aa01be328d3aec34335dbff5e029df406e841d020fce5aa7534d5d40d485"
     },
     {
-      "bytes": 5292,
+      "bytes": 5791,
       "path": "skills/maintain-design-knowledge/related/audit-design-system.md",
-      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+      "sha256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e"
     },
     {
-      "bytes": 8852,
+      "bytes": 10114,
       "path": "skills/maintain-design-knowledge/related/design-router.md",
-      "sha256": "1f5e02785df58b54a1caa7544b8b332ee9d91f9a0de55bc5bbf1d2be521d835e"
+      "sha256": "69d233f17cd175093893ce40e5c0056a6362060727c3028f09152d70446d27f4"
     },
     {
       "bytes": 7457,
@@ -1660,14 +1755,14 @@
       "sha256": "be22652ee79133d4bc34baeda2d2bb560cb672ea251a07d58d36e2e1e25c48e6"
     },
     {
-      "bytes": 5390,
+      "bytes": 5573,
       "path": "skills/maintain-design-knowledge/related/evolve-design-system.md",
-      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+      "sha256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469"
     },
     {
-      "bytes": 5710,
+      "bytes": 6145,
       "path": "skills/maintain-design-knowledge/related/explore-design-directions.md",
-      "sha256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293"
+      "sha256": "29975e01acc6770ce34b884521bbfa2fca674144075cbacbd6175217a35734ab"
     },
     {
       "bytes": 4869,
@@ -1680,9 +1775,9 @@
       "sha256": "5c46bc24b4148d21c59f593d251041e2d5663b8ab6841ba29fb3ec4236e90cce"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "skills/maintain-design-knowledge/related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
       "bytes": 5667,
@@ -1690,29 +1785,34 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 5167,
+      "bytes": 3514,
       "path": "skills/maintain-design-knowledge/related/record-design-decision.md",
-      "sha256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707"
+      "sha256": "7cc69a206ffd00ec6625fc56b073112a9924f5b63b00050628a6e6af0f982026"
     },
     {
-      "bytes": 6418,
+      "bytes": 5403,
       "path": "skills/maintain-design-knowledge/related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610"
     },
     {
-      "bytes": 6593,
+      "bytes": 7011,
       "path": "skills/maintain-design-knowledge/related/verify-design-implementation.md",
-      "sha256": "5e160cf6d4c42a0ae77ab9bab5357819079797905c013ddcf1611466dd127249"
+      "sha256": "9935bb6131dc0ef1211be081caff8450cdef239152ae853b8d6e6af08c04599d"
     },
     {
-      "bytes": 10597,
+      "bytes": 6897,
       "path": "skills/maintain-design-knowledge/related/write-design-contract.md",
-      "sha256": "90609c278bd13da45ae31a4288d30bc1759b340519395e7209516158f47673e3"
+      "sha256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "skills/maintain-design-knowledge/related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "skills/maintain-design-knowledge/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
       "bytes": 1078,
@@ -1720,9 +1820,9 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14225,
+      "bytes": 15761,
       "path": "skills/prototype-design-directions/MANIFEST.json",
-      "sha256": "9f8e17ca6b794a7ad806251542be0cf34e802d662f73d758c217fc5078d60358"
+      "sha256": "5a46ed6eb9ed79209a409e3c41ec8bb75610ce7a5387e4c604be2249ee364a8e"
     },
     {
       "bytes": 7166,
@@ -1730,19 +1830,19 @@
       "sha256": "a754d95c9d09c2387407ddccfb0fead624d4d56720c26f4e6f636704ca4514eb"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/prototype-design-directions/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/prototype-design-directions/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/prototype-design-directions/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -1750,9 +1850,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2661,
       "path": "skills/prototype-design-directions/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff"
     },
     {
       "bytes": 2859,
@@ -1775,9 +1875,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/prototype-design-directions/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/prototype-design-directions/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/prototype-design-directions/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -1810,14 +1920,14 @@
       "sha256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66"
     },
     {
-      "bytes": 5292,
+      "bytes": 5791,
       "path": "skills/prototype-design-directions/related/audit-design-system.md",
-      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+      "sha256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e"
     },
     {
-      "bytes": 8850,
+      "bytes": 10112,
       "path": "skills/prototype-design-directions/related/design-router.md",
-      "sha256": "d89daae47ac71647f52638b7cd104477e17e9201d447ba73b0fcb5450d8b6150"
+      "sha256": "ccd4dc033d7b7c6e656e6585ca88f350ae13122c55654ccb8449cc7fbc06aaae"
     },
     {
       "bytes": 7474,
@@ -1825,14 +1935,14 @@
       "sha256": "7d5ad6ecba81b6329397f3cacc55a17170f05f51cb476cdb4021ee3d92c2f3d7"
     },
     {
-      "bytes": 5390,
+      "bytes": 5573,
       "path": "skills/prototype-design-directions/related/evolve-design-system.md",
-      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+      "sha256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469"
     },
     {
-      "bytes": 5691,
+      "bytes": 6126,
       "path": "skills/prototype-design-directions/related/explore-design-directions.md",
-      "sha256": "8b93a5b0ccf9cf098c79c87a8a9c247f56df3e590c589df0ba01497cece99ded"
+      "sha256": "bdbe151c3aa97d76fe2f6b730961dc060ba0e12b92ea1064a76efa2e4f24aafe"
     },
     {
       "bytes": 4869,
@@ -1845,9 +1955,9 @@
       "sha256": "bca7b73142b343803e2e4bc0212437a284a922a7bfa2af6fddaf214c0d171198"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "skills/prototype-design-directions/related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
       "bytes": 5667,
@@ -1855,29 +1965,34 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 5167,
+      "bytes": 3514,
       "path": "skills/prototype-design-directions/related/record-design-decision.md",
-      "sha256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707"
+      "sha256": "7cc69a206ffd00ec6625fc56b073112a9924f5b63b00050628a6e6af0f982026"
     },
     {
-      "bytes": 6418,
+      "bytes": 5403,
       "path": "skills/prototype-design-directions/related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610"
     },
     {
-      "bytes": 6610,
+      "bytes": 7028,
       "path": "skills/prototype-design-directions/related/verify-design-implementation.md",
-      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+      "sha256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd"
     },
     {
-      "bytes": 10614,
+      "bytes": 6897,
       "path": "skills/prototype-design-directions/related/write-design-contract.md",
-      "sha256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8"
+      "sha256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "skills/prototype-design-directions/related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "skills/prototype-design-directions/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
       "bytes": 1078,
@@ -1885,29 +2000,29 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14225,
+      "bytes": 15761,
       "path": "skills/publish-design-system-canon/MANIFEST.json",
-      "sha256": "877291ffae1fef4964171b2f3f938f8d16fbef393e443ff81402ec8c16620abc"
+      "sha256": "228b55261b901d1f6490eb1186fb3f4ce8f1a8f55d2b775f6d2377c86fcb30ee"
     },
     {
-      "bytes": 7064,
+      "bytes": 6851,
       "path": "skills/publish-design-system-canon/SKILL.md",
-      "sha256": "37f0fc34a4d9ead3f2c4252cdb6c5bbc64e023ad753834a3e37dffc78bbb6905"
+      "sha256": "e2b0535b376b9adf2efdfa2374be260c3201ed949d2e277d6b4b53a90fd6e159"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/publish-design-system-canon/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/publish-design-system-canon/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/publish-design-system-canon/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -1915,9 +2030,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2661,
       "path": "skills/publish-design-system-canon/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff"
     },
     {
       "bytes": 2859,
@@ -1940,9 +2055,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/publish-design-system-canon/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/publish-design-system-canon/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/publish-design-system-canon/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -1975,14 +2100,14 @@
       "sha256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66"
     },
     {
-      "bytes": 5292,
+      "bytes": 5791,
       "path": "skills/publish-design-system-canon/related/audit-design-system.md",
-      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+      "sha256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e"
     },
     {
-      "bytes": 8831,
+      "bytes": 10093,
       "path": "skills/publish-design-system-canon/related/design-router.md",
-      "sha256": "45f03f47083cc965a8daa3fb2590080691a7755645e5b15f42d6a063e4d4f3b3"
+      "sha256": "33ab1d462400f8686c9630a81277737664bb3898657179dff9ce48daf8f77127"
     },
     {
       "bytes": 7474,
@@ -1990,14 +2115,14 @@
       "sha256": "7d5ad6ecba81b6329397f3cacc55a17170f05f51cb476cdb4021ee3d92c2f3d7"
     },
     {
-      "bytes": 5371,
+      "bytes": 5554,
       "path": "skills/publish-design-system-canon/related/evolve-design-system.md",
-      "sha256": "ca7e4b8578eb6c06ee68709dac2746e060984b7b4a640d645a27a92a2aecf5c6"
+      "sha256": "5ea9ad82c4cefc930d942f66764c1641bdf958f33fa18022862d58a1a052eb24"
     },
     {
-      "bytes": 5710,
+      "bytes": 6145,
       "path": "skills/publish-design-system-canon/related/explore-design-directions.md",
-      "sha256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293"
+      "sha256": "29975e01acc6770ce34b884521bbfa2fca674144075cbacbd6175217a35734ab"
     },
     {
       "bytes": 4869,
@@ -2020,29 +2145,34 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 5167,
+      "bytes": 3514,
       "path": "skills/publish-design-system-canon/related/record-design-decision.md",
-      "sha256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707"
+      "sha256": "7cc69a206ffd00ec6625fc56b073112a9924f5b63b00050628a6e6af0f982026"
     },
     {
-      "bytes": 6418,
+      "bytes": 5403,
       "path": "skills/publish-design-system-canon/related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610"
     },
     {
-      "bytes": 6610,
+      "bytes": 7028,
       "path": "skills/publish-design-system-canon/related/verify-design-implementation.md",
-      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+      "sha256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd"
     },
     {
-      "bytes": 10614,
+      "bytes": 6897,
       "path": "skills/publish-design-system-canon/related/write-design-contract.md",
-      "sha256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8"
+      "sha256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "skills/publish-design-system-canon/related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "skills/publish-design-system-canon/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
       "bytes": 1078,
@@ -2050,9 +2180,9 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14226,
+      "bytes": 15762,
       "path": "skills/reconstruct-design-context/MANIFEST.json",
-      "sha256": "5f730a1d545e17ea842edc0e6f92d181280b274e56f74813fe8c4b9d89f729d2"
+      "sha256": "869903be6fb249f3528733d523a82c741b696e171cfcfb29b46eb16b34988ca3"
     },
     {
       "bytes": 5655,
@@ -2060,19 +2190,19 @@
       "sha256": "83e5279ffdb081f535debda45d9e8d5583e0827e19498c67b1fd1f693e09024b"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/reconstruct-design-context/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/reconstruct-design-context/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/reconstruct-design-context/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -2080,9 +2210,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2661,
       "path": "skills/reconstruct-design-context/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff"
     },
     {
       "bytes": 2859,
@@ -2105,9 +2235,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/reconstruct-design-context/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/reconstruct-design-context/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/reconstruct-design-context/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -2140,14 +2280,14 @@
       "sha256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66"
     },
     {
-      "bytes": 5292,
+      "bytes": 5791,
       "path": "skills/reconstruct-design-context/related/audit-design-system.md",
-      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+      "sha256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e"
     },
     {
-      "bytes": 8851,
+      "bytes": 10113,
       "path": "skills/reconstruct-design-context/related/design-router.md",
-      "sha256": "89c130de2255940fbeb1c0895d1afee93d3277de9de1adcfe290affc7e3a1f50"
+      "sha256": "8b2e8cb5ad8bd25d7c057bc6a648df50402fa0243413f02b02675b793ed19fa0"
     },
     {
       "bytes": 7474,
@@ -2155,14 +2295,14 @@
       "sha256": "7d5ad6ecba81b6329397f3cacc55a17170f05f51cb476cdb4021ee3d92c2f3d7"
     },
     {
-      "bytes": 5390,
+      "bytes": 5573,
       "path": "skills/reconstruct-design-context/related/evolve-design-system.md",
-      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+      "sha256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469"
     },
     {
-      "bytes": 5710,
+      "bytes": 6145,
       "path": "skills/reconstruct-design-context/related/explore-design-directions.md",
-      "sha256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293"
+      "sha256": "29975e01acc6770ce34b884521bbfa2fca674144075cbacbd6175217a35734ab"
     },
     {
       "bytes": 4851,
@@ -2180,34 +2320,39 @@
       "sha256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "skills/reconstruct-design-context/related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
-      "bytes": 5167,
+      "bytes": 3514,
       "path": "skills/reconstruct-design-context/related/record-design-decision.md",
-      "sha256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707"
+      "sha256": "7cc69a206ffd00ec6625fc56b073112a9924f5b63b00050628a6e6af0f982026"
     },
     {
-      "bytes": 6418,
+      "bytes": 5403,
       "path": "skills/reconstruct-design-context/related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610"
     },
     {
-      "bytes": 6610,
+      "bytes": 7028,
       "path": "skills/reconstruct-design-context/related/verify-design-implementation.md",
-      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+      "sha256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd"
     },
     {
-      "bytes": 10614,
+      "bytes": 6897,
       "path": "skills/reconstruct-design-context/related/write-design-contract.md",
-      "sha256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8"
+      "sha256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "skills/reconstruct-design-context/related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "skills/reconstruct-design-context/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
       "bytes": 1078,
@@ -2215,29 +2360,29 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14230,
+      "bytes": 15766,
       "path": "skills/record-design-decision/MANIFEST.json",
-      "sha256": "1866b80d2e2ea0ad3b0ce6a433de300340687c19ae195398a9324c88f44bb6c7"
+      "sha256": "509346277c2fcbca3ac652b1bebf513fe8fecb30f0fd4fcc2d0c4af81d394833"
     },
     {
-      "bytes": 5168,
+      "bytes": 3527,
       "path": "skills/record-design-decision/SKILL.md",
-      "sha256": "237a8bd4187f9e567b93876d18c346d26bebee27a2df3dec9cc47ccad48cbe2c"
+      "sha256": "25518f083854dbe5cdc2d43c7b85c39df7d337c6058d71d4df5d267f3689bbfc"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/record-design-decision/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/record-design-decision/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/record-design-decision/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -2245,9 +2390,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2661,
       "path": "skills/record-design-decision/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff"
     },
     {
       "bytes": 2859,
@@ -2270,9 +2415,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/record-design-decision/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/record-design-decision/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/record-design-decision/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -2305,14 +2460,14 @@
       "sha256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66"
     },
     {
-      "bytes": 5292,
+      "bytes": 5791,
       "path": "skills/record-design-decision/related/audit-design-system.md",
-      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+      "sha256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e"
     },
     {
-      "bytes": 8855,
+      "bytes": 10117,
       "path": "skills/record-design-decision/related/design-router.md",
-      "sha256": "a806e3e61dc4373c8fb9b34f35c7f4862d3e30e4cfc1d112403a16db70b03986"
+      "sha256": "d632ccf3d179fa5d942481c075528cf2264f3d85dfeae116e14cb59497a1a339"
     },
     {
       "bytes": 7460,
@@ -2320,14 +2475,14 @@
       "sha256": "98a1a4cdd5001ffae4def17b41c4792491f2c83e5ed0099e61794af5b599497a"
     },
     {
-      "bytes": 5390,
+      "bytes": 5573,
       "path": "skills/record-design-decision/related/evolve-design-system.md",
-      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+      "sha256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469"
     },
     {
-      "bytes": 5696,
+      "bytes": 6131,
       "path": "skills/record-design-decision/related/explore-design-directions.md",
-      "sha256": "ac8e5509d5b5f923c6025bf2f6a2b8935223ffb1f096efcde011fc13e7d51f9c"
+      "sha256": "95b927cfc23fb2126e8103ea569cd2ac81419e400f2fd7fde001834834c483d7"
     },
     {
       "bytes": 4869,
@@ -2345,9 +2500,9 @@
       "sha256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "skills/record-design-decision/related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
       "bytes": 5667,
@@ -2355,24 +2510,29 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 6418,
+      "bytes": 5403,
       "path": "skills/record-design-decision/related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610"
     },
     {
-      "bytes": 6610,
+      "bytes": 7028,
       "path": "skills/record-design-decision/related/verify-design-implementation.md",
-      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+      "sha256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd"
     },
     {
-      "bytes": 10614,
+      "bytes": 6897,
       "path": "skills/record-design-decision/related/write-design-contract.md",
-      "sha256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8"
+      "sha256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "skills/record-design-decision/related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "skills/record-design-decision/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
       "bytes": 1078,
@@ -2380,29 +2540,29 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14228,
+      "bytes": 15764,
       "path": "skills/validate-design-contract/MANIFEST.json",
-      "sha256": "5f4e1c93662d1f236936b8df0d82bebdad956666a692f087f7f0c79def43e0f1"
+      "sha256": "e3487eb7afe3141d4f1fe4a2d7866093c4511d4058ecb199bfceef2e464ff0f3"
     },
     {
-      "bytes": 6403,
+      "bytes": 5405,
       "path": "skills/validate-design-contract/SKILL.md",
-      "sha256": "c48d8f5d41a6b56502b0a30b463b9830f0a4f8c01b0a156e118a771f65657850"
+      "sha256": "9ad241455ae3313d8e9a8bf1842c38eda2453fb0aba97214c274ad4a295b6b37"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/validate-design-contract/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/validate-design-contract/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/validate-design-contract/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -2410,9 +2570,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2634,
       "path": "skills/validate-design-contract/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "9b4d2985b72407bee35af8f9c2a78576c78ef20bbecff2732b2db43b1d525b81"
     },
     {
       "bytes": 2859,
@@ -2435,9 +2595,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/validate-design-contract/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/validate-design-contract/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/validate-design-contract/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -2470,14 +2640,14 @@
       "sha256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66"
     },
     {
-      "bytes": 5292,
+      "bytes": 5791,
       "path": "skills/validate-design-contract/related/audit-design-system.md",
-      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+      "sha256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e"
     },
     {
-      "bytes": 8853,
+      "bytes": 10115,
       "path": "skills/validate-design-contract/related/design-router.md",
-      "sha256": "928fb6b6a44f43be5cc268ce5b20d8e6c9ae7991bc23c77f5d2b01ca90a20de6"
+      "sha256": "2a61b8d001a800e83d36c7a4e09cf947a7c6cbf0ca3d14f6102bd9b065aa0a21"
     },
     {
       "bytes": 7474,
@@ -2485,14 +2655,14 @@
       "sha256": "7d5ad6ecba81b6329397f3cacc55a17170f05f51cb476cdb4021ee3d92c2f3d7"
     },
     {
-      "bytes": 5390,
+      "bytes": 5573,
       "path": "skills/validate-design-contract/related/evolve-design-system.md",
-      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+      "sha256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469"
     },
     {
-      "bytes": 5710,
+      "bytes": 6145,
       "path": "skills/validate-design-contract/related/explore-design-directions.md",
-      "sha256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293"
+      "sha256": "29975e01acc6770ce34b884521bbfa2fca674144075cbacbd6175217a35734ab"
     },
     {
       "bytes": 4869,
@@ -2510,9 +2680,9 @@
       "sha256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "skills/validate-design-contract/related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
       "bytes": 5667,
@@ -2520,24 +2690,29 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 5167,
+      "bytes": 3514,
       "path": "skills/validate-design-contract/related/record-design-decision.md",
-      "sha256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707"
+      "sha256": "7cc69a206ffd00ec6625fc56b073112a9924f5b63b00050628a6e6af0f982026"
     },
     {
-      "bytes": 6610,
+      "bytes": 7028,
       "path": "skills/validate-design-contract/related/verify-design-implementation.md",
-      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+      "sha256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd"
     },
     {
-      "bytes": 10598,
+      "bytes": 6881,
       "path": "skills/validate-design-contract/related/write-design-contract.md",
-      "sha256": "ec0e8fc859b0068facd9515908490c75a0aafff33bf81c8b946d32662c41c6dd"
+      "sha256": "52d6d7fe8f3064755ea9eea27ee1727cbee19e08ab11dd5745c08b6cbd6ae57d"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "skills/validate-design-contract/related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "skills/validate-design-contract/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
       "bytes": 1078,
@@ -2545,29 +2720,29 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14224,
+      "bytes": 15760,
       "path": "skills/verify-design-implementation/MANIFEST.json",
-      "sha256": "faf3f791b97aac54f1edd28a7d77e72de761c3201722c4e2499319f39fc95ca8"
+      "sha256": "1ef060f5a47a0cb9861752f7a5a4a60fa8d69204e70ef87a985a98223795125f"
     },
     {
-      "bytes": 6600,
+      "bytes": 7015,
       "path": "skills/verify-design-implementation/SKILL.md",
-      "sha256": "31a43c0e053e5871e7f06008f0e773df427a1d90e4857ebb6ee8cd83a8e6ab8d"
+      "sha256": "0aae1e1bccd053f780faa00259b93ed4095d1c650d5df3ffdf9e14aba0ac6e3b"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/verify-design-implementation/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/verify-design-implementation/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/verify-design-implementation/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -2575,9 +2750,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2661,
       "path": "skills/verify-design-implementation/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "a03cbc7eeffaac3f199845ea898068ee67fce3af1c73895dbd71cb4e813c56ff"
     },
     {
       "bytes": 2859,
@@ -2600,9 +2775,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/verify-design-implementation/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/verify-design-implementation/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/verify-design-implementation/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -2635,14 +2820,14 @@
       "sha256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66"
     },
     {
-      "bytes": 5292,
+      "bytes": 5791,
       "path": "skills/verify-design-implementation/related/audit-design-system.md",
-      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+      "sha256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e"
     },
     {
-      "bytes": 8829,
+      "bytes": 10091,
       "path": "skills/verify-design-implementation/related/design-router.md",
-      "sha256": "538813fff8195e776029ab31cb38a0d7ba85247df6ca94662bb0dbb961169c97"
+      "sha256": "6ce2f182ba28aeb25665c8b7ff052a39e5c61c48d6f63df33a9671becb3baf17"
     },
     {
       "bytes": 7474,
@@ -2650,14 +2835,14 @@
       "sha256": "7d5ad6ecba81b6329397f3cacc55a17170f05f51cb476cdb4021ee3d92c2f3d7"
     },
     {
-      "bytes": 5390,
+      "bytes": 5573,
       "path": "skills/verify-design-implementation/related/evolve-design-system.md",
-      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+      "sha256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469"
     },
     {
-      "bytes": 5710,
+      "bytes": 6145,
       "path": "skills/verify-design-implementation/related/explore-design-directions.md",
-      "sha256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293"
+      "sha256": "29975e01acc6770ce34b884521bbfa2fca674144075cbacbd6175217a35734ab"
     },
     {
       "bytes": 4869,
@@ -2675,9 +2860,9 @@
       "sha256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "skills/verify-design-implementation/related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
       "bytes": 5667,
@@ -2685,24 +2870,29 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 5167,
+      "bytes": 3514,
       "path": "skills/verify-design-implementation/related/record-design-decision.md",
-      "sha256": "a8c8598793569fd54fee7c489c1bb71fb2bf066c76d346d85745e0089fea2707"
+      "sha256": "7cc69a206ffd00ec6625fc56b073112a9924f5b63b00050628a6e6af0f982026"
     },
     {
-      "bytes": 6418,
+      "bytes": 5403,
       "path": "skills/verify-design-implementation/related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "1a78fbe944725808baf63408e07c8d22b4b1aad44e0855cfb20f69f45dd7c610"
     },
     {
-      "bytes": 10614,
+      "bytes": 6897,
       "path": "skills/verify-design-implementation/related/write-design-contract.md",
-      "sha256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8"
+      "sha256": "74523111d4abc987c46bd1a855065d7d7ad109c5708f82c8c8f79c537b34778f"
     },
     {
-      "bytes": 24523,
+      "bytes": 6675,
+      "path": "skills/verify-design-implementation/related/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
+    },
+    {
+      "bytes": 20441,
       "path": "skills/verify-design-implementation/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
       "bytes": 1078,
@@ -2710,29 +2900,29 @@
       "sha256": "a65066d8f08756ebd09fa30790f3dbd2be2470a08553300606e15d98eb96c358"
     },
     {
-      "bytes": 14231,
+      "bytes": 15707,
       "path": "skills/write-design-contract/MANIFEST.json",
-      "sha256": "2953366612fb043bce17789459404d40026429e881a5442b861c5e6ed5ff0445"
+      "sha256": "527271be9609885e36f8a5ade5c1dea5bc119d9f8c6bed33dfb290c92b852445"
     },
     {
-      "bytes": 10606,
+      "bytes": 6877,
       "path": "skills/write-design-contract/SKILL.md",
-      "sha256": "424287610a3efb6f1af8ff03f009542445067257af0917791fb239d469d36211"
+      "sha256": "bef4ddcc4f50ae4d547654a7d12514fc5744696deeff212dc70107bf29b3a212"
     },
     {
-      "bytes": 1113,
+      "bytes": 369,
       "path": "skills/write-design-contract/TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "e48c49a330490961ccd430a01b51559e472bbfecfeed240ef5a54df2b637e237"
     },
     {
       "bytes": 6,
       "path": "skills/write-design-contract/VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
     },
     {
-      "bytes": 5913,
+      "bytes": 5949,
       "path": "skills/write-design-contract/references/audit-exploration-templates.md",
-      "sha256": "41b0542428bd03419e152cbb9e7e803890de25451e3f7adda3060a309585dec3"
+      "sha256": "e8aa3666f49c469a95b9f148b2380db5757c20f64f1d25c2edb60cfa231b6afa"
     },
     {
       "bytes": 9546,
@@ -2740,9 +2930,9 @@
       "sha256": "27593308ba5e1d0769fe580dbce76881c6426afe7ebaa36dc9f50c2034f235a7"
     },
     {
-      "bytes": 8058,
+      "bytes": 2637,
       "path": "skills/write-design-contract/references/contract-review-templates.md",
-      "sha256": "de1255e21d1aca6b5d1b4a977114ef65af0980adf9dc56cc289cc367391932f7"
+      "sha256": "585688e1621ac0f9017bf1d6cec4a9416f395cef85f9d963eb1356d4525f490c"
     },
     {
       "bytes": 2859,
@@ -2765,9 +2955,19 @@
       "sha256": "d16f66d3ce1aae5d9efbf9344a81d1ac0a88a003a1b22bd09e0f6a1a8001d3cf"
     },
     {
-      "bytes": 18698,
+      "bytes": 5534,
+      "path": "skills/write-design-contract/references/executable-acceptance.md",
+      "sha256": "54737bb5fa06414ff6b7bbd1922441d672692f46d4df0dc991c8a48ea3b7553e"
+    },
+    {
+      "bytes": 10804,
+      "path": "skills/write-design-contract/references/native-design-delivery.md",
+      "sha256": "48e946e5e5a81673a02a26f332a5a6cb2e964742b3835e831f6372ded3347294"
+    },
+    {
+      "bytes": 19159,
       "path": "skills/write-design-contract/references/packet-projections.md",
-      "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
+      "sha256": "13785436a1c52a86b805634b1fae9cb53a2cdbe5df06206e53c70af9add9c712"
     },
     {
       "bytes": 9133,
@@ -2778,6 +2978,11 @@
       "bytes": 4658,
       "path": "skills/write-design-contract/references/quality-checklists.md",
       "sha256": "429524d759bb1244005cdd2c356cf0cc85a26cade4716bb44ffe82fb37e2ca84"
+    },
+    {
+      "bytes": 6675,
+      "path": "skills/write-design-contract/references/source-version-reading.md",
+      "sha256": "30d38dc72e23f8da624b80b94082746981e61bbf7ab9f67735b3f91e37fd6beb"
     },
     {
       "bytes": 2967,
@@ -2800,14 +3005,14 @@
       "sha256": "18de2480144efda3ab6afa38f8d8376126ae93645d61281d8af1bf1a7945ac66"
     },
     {
-      "bytes": 5292,
+      "bytes": 5791,
       "path": "skills/write-design-contract/related/audit-design-system.md",
-      "sha256": "c911c6bbba12333e81d2b1335214418441799a56bb08dc99315b9686c8bd860b"
+      "sha256": "506698701c352c1f7eb1dfe81ce293167787b8dc58a611c5cd4decdbb6c9280e"
     },
     {
-      "bytes": 8856,
+      "bytes": 10118,
       "path": "skills/write-design-contract/related/design-router.md",
-      "sha256": "d1647419d2efd2a604436ea4c8258082dbb996e5f10b1bbedb85156b5d0a392a"
+      "sha256": "782a492a2cbd0e2512db2bb8f8242fa9ebb7411d81dc8d8d836eefabc8f245d7"
     },
     {
       "bytes": 7474,
@@ -2815,14 +3020,14 @@
       "sha256": "7d5ad6ecba81b6329397f3cacc55a17170f05f51cb476cdb4021ee3d92c2f3d7"
     },
     {
-      "bytes": 5390,
+      "bytes": 5573,
       "path": "skills/write-design-contract/related/evolve-design-system.md",
-      "sha256": "4ef0d667a0fec9577454c2a0ab7d3d02a3e0fd5ffe61d8f1402d96a921b735f7"
+      "sha256": "1a3a36d3379d35c58d13988b809c7dd1d6f3c804815da0454975e397376b0469"
     },
     {
-      "bytes": 5710,
+      "bytes": 6145,
       "path": "skills/write-design-contract/related/explore-design-directions.md",
-      "sha256": "73897a816afe7a5799f9205be01091476d909addeca41419c3c265afa6fce293"
+      "sha256": "29975e01acc6770ce34b884521bbfa2fca674144075cbacbd6175217a35734ab"
     },
     {
       "bytes": 4869,
@@ -2840,9 +3045,9 @@
       "sha256": "b88a8105335aa08afb3b432c15032451d1df35b7e26beb70d5fe3ec054b98368"
     },
     {
-      "bytes": 7082,
+      "bytes": 6854,
       "path": "skills/write-design-contract/related/publish-design-system-canon.md",
-      "sha256": "7e59f3659aad008e7adb20f594c76c004de4990eba39572d33c795a73c7fcf7e"
+      "sha256": "bbce29350588ebe20dba973009a4aa0e60bee9fbd4b67d5fe09a549c8e74280b"
     },
     {
       "bytes": 5667,
@@ -2850,39 +3055,39 @@
       "sha256": "e0d02caa7460ffe7e03f3a61248fc49a67614640b689a71552fee90078a15e44"
     },
     {
-      "bytes": 5154,
+      "bytes": 3501,
       "path": "skills/write-design-contract/related/record-design-decision.md",
-      "sha256": "60f985a81489d09b88ea0fc61f6d40e6e75c7a88f889b1451776f703cfeceead"
+      "sha256": "f9829544aa5533d8c762e38337aa79be07126fc7bdc2f98f2b87b56456cecc93"
     },
     {
-      "bytes": 6418,
+      "bytes": 5384,
       "path": "skills/write-design-contract/related/validate-design-contract.md",
-      "sha256": "a51c8011e38438d1b170f12ec22942d3b5d09c6632814b0b504fb51567b469e5"
+      "sha256": "cf15ebf86969bcdf7338544330498ad8351bbe91249f1ba3a6683700dfb9f9bd"
     },
     {
-      "bytes": 6610,
+      "bytes": 7028,
       "path": "skills/write-design-contract/related/verify-design-implementation.md",
-      "sha256": "f7f71d08cc17e4656022ef4a2e1183dca1febee38485713c50930aaa9ddf42de"
+      "sha256": "3987e5f09ba4f1e6326e55ac9460df6e3b8a67378004cd93c56b2563490102fd"
     },
     {
-      "bytes": 24523,
+      "bytes": 20441,
       "path": "skills/write-design-contract/verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     },
     {
-      "bytes": 11877,
+      "bytes": 13858,
       "path": "tests/test_repository.py",
-      "sha256": "4d4355aa691539d236f9f3827a7795db98250010a0c44573222b100f2ec99f86"
+      "sha256": "cb1606f65a58c6c5a9e0bf6e859617accc9e5c1409ac47562ee8e1ff1c1020fc"
     },
     {
-      "bytes": 24523,
+      "bytes": 20441,
       "path": "verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "514e76d7c6b6da67b83140395a3c759ca05e5e32a4a147fb6ab4739cbc7e6ac1"
     }
   ],
   "kind": "bundle",
   "schema": "das-portable-v1",
-  "sourceDigest": "cf11aeb980dbfb941c2338579f0aaf43e3ebd47cb8e4b889f58982ec5e9dd857",
+  "sourceDigest": "491382874c052da485216de642254bc4b84a558045fe28ff41f19a71d401b874",
   "sourceFiles": [
     "references/audit-exploration-templates.md",
     "references/authority-and-status.md",
@@ -2891,6 +3096,8 @@
     "references/design-lab-protocol.md",
     "references/design-system-craft.md",
     "references/engineering-integration.md",
+    "references/executable-acceptance.md",
+    "references/native-design-delivery.md",
     "references/packet-projections.md",
     "references/product-profile-and-tools.md",
     "references/quality-checklists.md",
@@ -2911,7 +3118,8 @@
     "skills/record-design-decision/SKILL.md",
     "skills/validate-design-contract/SKILL.md",
     "skills/verify-design-implementation/SKILL.md",
-    "skills/write-design-contract/SKILL.md"
+    "skills/write-design-contract/SKILL.md",
+    "skills/write-design-contract/references/source-version-reading.md"
   ],
-  "version": "0.1.4"
+  "version": "0.1.0"
 }

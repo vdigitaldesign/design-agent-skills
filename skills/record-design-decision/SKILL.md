@@ -5,50 +5,24 @@ description: Turn an authorized human selection, combination, rejection, or requ
 
 # Record Design Decision
 
-Preserve the human’s material choice precisely enough that later specification cannot substitute the agent’s preference.
+Record the human's actual material choice so later work can use it without substituting the agent's preference. Write one ordinary decision record, in the depth and format the task needs. A supplied exact decision already governing the scope is the source; do not reinterpret it merely to fill another form.
 
-## Packet mode
+Read [native design delivery](references/native-design-delivery.md) once for this chain. Reuse its already-read current copy at later stages. It supplies the authority, status, packet-validity and refresh rules and the rules for commissioned copied views; it does not impose another decision-authoring form.
 
-- **Carried:** use and update the supplied valid Design Work Packet. Do not reconstruct its intake or reread pinned authority merely to confirm it.
-- **Direct single-skill:** when recording the decision is the complete requested outcome, return the Owner Decision Record without creating a packet.
-- **Direct expansion:** when direct decision recording becomes a material or uncertain multi-skill chain, create exactly one [Design Work Packet](references/packet-projections.md#design-work-packet) before the first downstream handoff, using the [governed-view assembly](references/packet-projections.md#governed-view-assembly) from the existing sources and native records.
+## Capture the choice
 
-Refresh a carried packet only when a required field is missing, a source is stale or conflicting, scope or authority changes, or genuinely new evidence appears.
+Verify the scope, decision authority, options actually presented, and exact human response. Follow stricter consumer policy; otherwise an explicit scoped selection from the user commissioning the task is valid authority for that scope.
 
-Without a valid packet, read [authority and status](references/authority-and-status.md). Use the [Owner Decision Record template](references/audit-exploration-templates.md) for the native decision. Materialize a commissioned non-normative [Human Decision Brief](references/packet-projections.md#governed-view-assembly) from that exact decision and its evidence; do not independently author its interpretation. When a packet exists, pin the brief to the same source packet revision. For a direct single-skill output, pin it to the exact native evidence/decision revisions.
+Preserve the response and the exact selected artifact, revision, and normative text or an accessible exact locator. State whether the human selected one direction, combined named parts, rejected directions, or requested another round. Carry explicit modifications, rationale, accepted trade-offs, protected boundaries, unchanged facts, and source lineage. A summary helps navigation; it does not replace the selected rule.
 
-## Workflow
+Mark the decision `approved`, `rejected`, or `proposed` according to the actual response. Distinguish unresolved material decisions from implementation freedoms that remain within the chosen direction. Do not fill missing interaction, content, state, or system decisions while recording the selection.
 
-Author the decision meaning once in the Owner Decision Record: actual response, selection/modifications, scope, unresolved material questions and authority. Reuse supplied exact decision text where it already governs. Keep semantic classification here; the assembly step copies its values and locators into the required packet/brief without making another choice.
+“Looks good,” a reaction, silence, vague approval, or an agent ranking is insufficient when the material scope is unclear. An unseen option is not selected. If a combination or modification creates a new material direction, preserve what was actually chosen and ask only the bounded question needed to decide the remainder. Present the viable interpretations, current findings, recommendation, and trade-offs with that question. Do not request another approval for an already exact authorized selection.
 
-1. Verify the decision scope, authority source, options presented, and the exact human response. Follow stricter consumer policy. Otherwise, an explicit scoped selection from the user commissioning the current task is valid authority for that scope.
-2. Record whether the human selected one direction, combined named parts, rejected directions, or requested another round.
-3. Capture explicit modifications, rationale, accepted trade-offs, protected boundaries, and facts that remain unchanged.
-4. Preserve the exact human response, selected artifact/revision and explicit modifications, with evidence and authority scope. Include the selected normative text unchanged when self-contained delivery is needed. A concise rationale or summary is navigation, not a replacement rule. An ambiguous combination or modification remains a scoped question rather than a silently authored source. Preserve the single normative owner; do not request a new approval for an already exact, authorized selection.
-5. Mark the decision `approved`, `rejected`, or still `proposed` according to the actual response.
-6. Identify unresolved details and decide whether each is material or a downstream implementation freedom.
-7. Check that the Human Decision Brief and decision record cite the same option/artifact revisions and have no material addition or omission.
+## Carry the result forward
 
-## Ambiguous selections
+The decision record owns the interpretation of the response. A required Human Decision Brief copies or locates this same decision and evidence without adding or omitting material meaning; its revisions must agree with the native record.
 
-Do not convert “looks good,” a reaction, silence, vague approval, or an agent ranking into approval when the material scope is unclear. Explain the ambiguity and ask the smallest bounded question. Include the current findings, viable interpretations, recommendation, and trade-offs so the human can decide efficiently.
+When a valid packet is carried, update its current step, decision and brief locators, selected/rejected evidence, findings and trade-offs, resolved selection gate, any new gate, active sequence, next step, and stop from this record and actual events. Preserve its existing source context and route authority. Direct decision-only work returns the decision without creating a packet; a genuine downstream expansion follows the shared delivery rule.
 
-Do not fill missing interaction, content, state, or system decisions while recording a selection. If combining directions creates a new material direction, return it for explicit approval. Do not treat it as selected.
-
-## Next step
-
-An approved decision authorizes its recorded material choice, not an entire architecture or implementation. Send it with lineage to [write-design-contract](related/write-design-contract.md) and continue the safe chain in the same turn. If the human requests another round, return to [explore-design-directions](related/explore-design-directions.md) with the feedback preserved.
-
-In carried or direct-expansion mode, materialize the following packet updates from this native decision and actual workflow events. Preserve the packet's uniquely owned route/gate facts; do not rewrite its source context or create another decision interpretation:
-
-
-- the current step;
-- Owner Decision Record and Human Decision Brief locators and revisions;
-- selected/rejected evidence;
-- findings and trade-offs to preserve;
-- the resolved selection gate;
-- any new gate;
-- the active sequence;
-- the next step and stop.
-
-In direct single-skill mode, return the native decision output without a Design Work Packet.
+An approved decision authorizes its recorded material choice, not an entire architecture or implementation. Send the exact decision and lineage to [write-design-contract](related/write-design-contract.md) and continue the safe authorized chain. If another round was requested, return to [explore-design-directions](related/explore-design-directions.md) with the feedback preserved.

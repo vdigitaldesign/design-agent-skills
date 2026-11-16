@@ -1,0 +1,12 @@
+{
+  "name": "design-agent-skills",
+  "displayName": "Design Agent Skills",
+  "version": "0.1.0",
+  "description": "Design skills to understand products, compare alternatives, and carry approved decisions into implementation handoffs.",
+  "author": {"name": "Volodymyr Onishchenko", "url": "https://github.com/vdigitaldesign"},
+  "homepage": "https://github.com/vdigitaldesign/design-agent-skills/tree/claude",
+  "repository": "https://github.com/vdigitaldesign/design-agent-skills",
+  "license": "MIT",
+  "icon": "./assets/plugin-icon.svg",
+  "keywords": ["agent-skills", "product-design", "design-systems", "design-handoff"]
+}

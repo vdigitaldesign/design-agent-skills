@@ -66,6 +66,8 @@ Move to a higher tier when new evidence reveals larger reach, lower reversibilit
 
 Separate semantic authorship from rendering throughout a commissioned chain. Native decision/proposal/contract/acceptance/validation records own the judgments; the packet and human/coding projections locate or reproduce those same values. Author a scope, classification, choice, unknown, gate or verdict only at its native owner. Uniquely owned routing/gate decisions and actual workflow events still belong to the packet; they are recorded once and then carried unchanged, not inferred by a renderer.
 
+For executable AC, the native procedure artifact and its scoped receipts are governed-view inputs under [executable acceptance](executable-acceptance.md). Carry the same code identity, source references, observed results and uncovered scope; a projection locates or copies that artifact rather than rewriting its setup/actions or upgrading a fixture result to implementation parity.
+
 1. Finish the native semantic content needed for the current step, including alternatives/trade-offs, actual authority/status, unresolved choices, concrete procedures and handoff/parity meaning. Keep the original authoritative sources available. Required record identities and outcomes do not disappear.
 2. Materialize the commissioned views with ordinary authorized file operations: copy exact already-owned values/blocks, insert exact accessible source locators, or include the complete scoped native record. Use tool-backed copying for reproduced text rather than composing another summary. A tool-written file containing newly authored projection prose is not mechanical assembly; preserve the exact copied source blocks/locators and their readback evidence. Where records share a file, use their exact existing sections/locators without exporting unrelated scope.
 3. Presentation labels, file names and observed revision/hash/time metadata may be formatted. Behavior, scope, freedoms, risks, unknowns, approval questions and verdicts are copied/located from their native owners; no new prose interpreting them is supplied by assembly. Read back reproduced blocks and their source revisions. Resolve links within the actual delivered unit.
@@ -160,7 +162,7 @@ This is a non-normative implementation projection from effective sources. It con
 - Approved decisions and effectivity references:
 - Accessible unchanged source assembly and requirement locators:
 - Source coverage for relevant state, content, accessibility, responsive, localization, RTL and theme scope:
-- Acceptance procedures, expected-behavior source locators and evidence to collect:
+- Acceptance procedures or exact executable artifact locators/hashes, expected-behavior source locators, actual receipt scope and remaining evidence to collect:
 - Source locators for protected boundaries, forbidden changes and implementation freedoms:
 - Evidence/artifact locators and their non-canonical limitations:
 - Required parity evidence and verification environments:

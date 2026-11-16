@@ -1,68 +1,32 @@
 ---
 name: validate-design-contract
-description: Stress-test a draft or review-ready Design Contract for authority, completeness, contradictions, state coverage, accessibility, responsiveness, and testability before implementation. Use for pre-build design validation; do not approve the contract or silently manufacture material fixes.
+description: Check a draft or review-ready Design Contract against its original sources for authority, completeness, contradictions, state coverage and testability before implementation. Return findings and actual readiness; do not approve material choices.
 ---
 
 # Validate Design Contract
 
-Find specification defects before code begins. Distinguish wording that can be repaired from missing design authority.
+Read the current contract, original sources and actual decision/proposal records. Check whether the complete commissioned result can be implemented without inventing material design meaning.
 
-## Packet mode
+Read [native authority and delivery](../references/native-design-delivery.md) once for this chain; reuse the current text already read. Its authority, source, carried-packet, freshness and copied-view rules apply.
 
-- **Carried:** use and update the supplied valid Design Work Packet. Do not reconstruct its intake or reread pinned authority merely to confirm it.
-- **Direct single-skill:** when validation is the complete requested outcome, return the Validation Record without creating a packet.
-- **Direct expansion:** when direct validation opens a material or uncertain multi-skill chain, create exactly one [Design Work Packet](../references/packet-projections.md#design-work-packet) before the first downstream handoff, using the [governed-view assembly](../references/packet-projections.md#governed-view-assembly) from the existing sources and native records.
+## Check the delivered result
 
-Refresh a carried packet only when a required field is missing, a source is stale or conflicting, scope or authority changes, or genuinely new evidence appears.
+Identify the exact native revisions, status, scope and actual authority being checked. Validate the meaning in the requirements, procedure setups, notes, gaps, boundaries, freedoms and handoff, as well as the required source text available to the receiver.
 
-Without a valid packet, read [authority and status](../references/authority-and-status.md). Use the native [Validation Record template](../references/contract-review-templates.md#validation-record) and [practical design checklists](../references/quality-checklists.md) for applicable validation lenses.
+1. **Fidelity and authority:** read [source-version reading](write-design-contract/references/source-version-reading.md), reusing its current text if already read in this chain. Use its paired derivations to interpret this task's controlling version before classifying a finding: action class, scope and history determine an applicable restriction; jointly satisfiable obligations remain joint; a gate retains its source-defined stage and authority. Do not transfer a teaching version's exception or exclusion into this task. Compare every material output claim with its controlling source or exact approved choice. Preserve original conditions, exceptions, outcomes and authority; inspect source exclusions, definitions, simultaneous rules and supplied supersession. Distinguish effective canon, proposals and observations. Preserve unresolved source/authority conflicts with their dependent scope.
+2. **Coverage and testability:** trace applicable source meaning into concrete observable checks and trace each authored check back to its source. For carried executable procedures, inspect their actual setup/actions/assertions and the exact tested artifact under [executable acceptance](../references/executable-acceptance.md). Assess its runtime result and bounded reference/fault sensitivity separately from source coverage and contract meaning. Walk relevant entry/eligibility, main flow, no-selection/empty, progress/success, permissions/conflict, error/partial success, cancellation/retry/undo/recovery/exit. A citation, copied source, procedure count or green fixture matrix alone does not establish applicability or coverage.
+3. **Design and system fit:** check applicable information architecture, content, visual-system, accessibility, responsive/localization/RTL and motion meaning against the actual sources. A motion requirement needs its purpose, affected states, fallback, performance/lifecycle constraint and proportionate evidence; an approved material motion choice cites the exact owner decision and scope. Implementation-authorized inputs contain only eligible assets, with prototype replacements blocking only dependent shipping work.
+4. **Usable delivery:** confirm that full controlling text/current revisions and concrete checks are accessible in the actual receiver unit. Check contradictions among consumed rules, proposals, contract and handoff. Check commissioned views for freshness, required content, equivalence and honest authorization. A projection cannot fill a native gap, grant authority or hide an unknown.
 
-## Validation procedure
+The result is a Validation Record with pass, fail or inconclusive, findings/evidence, limitations and recommended contract status. It may be a section of the delivered document or a separate native record; its identity and validated revisions remain explicit.
 
-Perform the semantic checks on the original sources and current native decision/proposal/contract/acceptance content, including their scope and actual authority. Author the validation findings, verdict, limitations and precise safe corrections once. Mechanically assembled packet/brief/handoff views remain part of the delivered unit: check their source revisions, completeness of required materialization and equivalence, then regenerate them after native corrections. Assembly success never supplies a semantic verdict.
+Classify actual issues as editorial/non-material clarification; unsupported/contradictory requirement; missing state/acceptance criterion; material contract gap needing design/owner decision; source/authority conflict; or untestable requirement. Give precise source-backed corrections. A conflicting external reference cannot change the controlling product requirement; record external alignment separately.
 
-1. Identify the exact contract revision, status, scope, controlling canon, approved decisions, and evidence.
-2. Check both directions: every applicable source unit is present in the unchanged assembly and covered by relevant checks, and every material output claim resolves to its authoritative source or exact approved decision. Inspect excluded scope, definitions and co-applicable rules. Byte equality or a list of citations is not evidence of complete selection. Flag observations, summaries or proposals used as canon.
-3. Check for contradictions within the supplied sources, between consumed rules and proposals, and throughout the contract, checks and handoff. Apply only supplied authority/precedence decisions; leave unresolved conflicts explicit. Inspect setups, notes, freedoms and gates for an independently authored condition, exception or prohibition.
-4. Walk the complete relevant experience: entry, eligibility, primary flow, no-selection, empty, progress, success, permissions, conflict, error, partial success, cancellation, retry, undo, recovery, and exit.
-5. Apply relevant accessibility, responsive, localization, RTL, information-architecture, content, visual-system, and motion lenses.
-6. Check that source requirements are observable and acceptance procedures exercise their full relevant conditions without writing competing expected behavior or forcing unnecessary implementation choices. Separate a detected/stopped defect from a completed conforming handoff.
-7. Ask whether a coding agent could proceed without inventing material design meaning.
-8. When human, coding, or Visual System Projections exist, check freshness and semantic equivalence against their pinned sources. A projection cannot compensate for a contract gap or close an unknown.
-9. Check that each material motion requirement has purpose, affected states, interaction fallbacks, performance/lifecycle constraint, authority, and validation evidence proportional to the scope.
-10. Check that implementation inputs include only production-eligible assets and that prototype-only replacements block precisely their dependent shipping scope.
+## Complete the safe work
 
-An approved Motion Choice Record must cite the exact Owner Decision Record revision and approving authority/scope. Treat it as governed decision evidence, never implementation authority. A handoff may carry motion requirements only from effective product canon, effective design-system canon, or an effective Design Contract.
+Restore altered source text from its pinned original. Apply non-material navigation/procedure corrections without changing source meaning, then recheck the affected content in the same turn. Keep proposed material changes separate, with findings, viable options, supported recommendation/trade-offs and the smallest real owner question. Do not silently choose a material direction.
 
-## Outcomes
+Recommend review-ready only when validation passes the intended scope. Validation never makes the contract effective. Distinguish a detected/stopped defect from a completed conforming handoff, and finish independent safe work while a dependent choice remains open.
 
-Return `pass`, `fail`, or `inconclusive` with evidence and limitations.
+After a native correction, recheck the changed meaning and regenerate affected copied views from that native owner; preserve the shared freshness/equivalence bounds. Return the exact checked result and its findings/limitations. A directly commissioned validation needs no additional Design Work Packet. For a required or carried packet, update its actual validation/native revisions, findings, resolved/remaining gates, sequence and next step/stop under the shared validity/refresh rules.
 
-Classify each issue as:
-
-- editorial or non-material clarification;
-- unsupported or contradictory requirement;
-- missing state or acceptance criterion;
-- material contract gap requiring design work or owner decision;
-- source or authority conflict;
-- untestable requirement.
-
-Suggest precise corrections. Restore an altered source unit from its pinned original; correct navigation or procedures without changing source meaning. Do not repair an authoritative source by paraphrasing it inside the contract. Do not choose or silently repair a material direction. For a material gap, provide findings, viable options, recommendation, trade-offs, and the smallest owner question.
-
-Recommend `review-ready` only when validation passes for the intended scope. Validation cannot make the contract `effective`. Apply non-material corrections and re-check them in the same turn. Do not stop at the Validation Record when safe dependent work remains.
-
-A match to an external reference does not cure an unsupported or contradictory contract requirement. Record reference alignment separately and let the controlling product contract determine normative validity.
-
-In carried or direct-expansion mode, mechanically materialize the following packet values from this exact Validation Record and actual workflow events; do not independently re-author its verdict or gates:
-
-
-- the current step;
-- the Validation Record locator, revision, and outcome;
-- the validated contract revision;
-- findings to preserve;
-- resolved/new gaps;
-- the effectivity or return-to-design gate;
-- the active sequence;
-- the next step and stop.
-
-In direct single-skill mode, return the native validation without a Design Work Packet.

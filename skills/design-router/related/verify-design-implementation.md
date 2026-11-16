@@ -54,6 +54,8 @@ Do not claim parity for an unobserved state.
 
 ## Review procedure
 
+For carried executable AC, resolve the exact artifact and evidence scope under [executable acceptance](../references/executable-acceptance.md). Reuse applicable current evidence and collect the missing implementation observations the commission requires. A fixture's reference/fault sensitivity is distinct from parity of this actual implementation; a second record alone is not a reason to repeat an observed check.
+
 1. Map acceptance criteria to observable paths, states, viewports, input methods, localization or RTL conditions, and assistive-technology checks relevant to the contract.
 2. Exercise the full relevant state cycle, including failure, permissions, partial success, cancellation, retry, undo, and recovery.
 3. Compare behavior, content, hierarchy, accessibility, responsive behavior, system usage, and motivated motion with the controlling effective source.

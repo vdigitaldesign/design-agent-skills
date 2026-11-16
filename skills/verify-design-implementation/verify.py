@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify a DAS portable bundle or one independently installed skill (Python 3.9+)."""
+"""Verify a DAS Claude package or one installed skill; Python 3.9+."""
 
 import argparse
 import hashlib
@@ -10,7 +10,6 @@ import posixpath
 import re
 import urllib.parse
 
-
 SKILLS = (
     "assess-design-reuse", "audit-design-surface", "audit-design-system",
     "design-router", "develop-visual-direction", "evolve-design-system",
@@ -19,6 +18,7 @@ SKILLS = (
     "reconstruct-design-context", "record-design-decision",
     "validate-design-contract", "verify-design-implementation", "write-design-contract",
 )
+
 REFERENCES = (
     "audit-exploration-templates", "authority-and-status", "contract-review-templates",
     "design-knowledge-index", "design-lab-protocol", "design-system-craft",
@@ -26,116 +26,87 @@ REFERENCES = (
     "packet-projections", "product-profile-and-tools", "quality-checklists",
     "task-context-templates", "visual-craft",
 )
+
 SOURCES = tuple(sorted(
     ["skills/" + name + "/SKILL.md" for name in SKILLS]
     + ["references/" + name + ".md" for name in REFERENCES]
 ))
-CODEX_TARGET_ID = "codex-20261017"
-CODEX_TARGET_RECORD = {
-    "client": "codex",
-    "id": "codex-20261017",
-    "qualification": {
-        "claudeQualification": "not conferred",
-        "effort": "ultra",
-        "model": "gpt-6-astra",
-        "packagingInstallationQualification": "not implied; requires separate artifact evidence",
-        "route": "native explicit named-skill chat",
-        "scope": "bounded Fieldnote, BorrowDesk, source-conflict control, E02, E04 plus unchanged E07 chain evidence"
-    },
+
+CLAUDE_RELEASE_TARGET_ID = "claude-0.1.0"
+
+CLAUDE_RELEASE_TARGET_RECORD = {
+    "client": "claude",
+    "id": CLAUDE_RELEASE_TARGET_ID,
     "schema": "das-client-target-v1",
-    "selectedSourceMapSHA256": "4f8262ea079cc09b69d8a18a22303600f8fa5cd22f728852155adc7b772385d9",
-    "sourceDigest": "dbbc3101c90a4a852fecaf3ae2c3a8f68cdf3b9ba6a38c148a06ea2797580e34",
-    "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
+    "selectedSourceMapSHA256": "39c8fbc04b51c44201fcc65656ebc9bc4800b1b14e577fb07c14d73cba476a84",
+    "sourceDigest": "491382874c052da485216de642254bc4b84a558045fe28ff41f19a71d401b874",
+    "sourceMapAlgorithm": "SHA-256 of UTF-8 json.dumps(files, sort_keys=True, separators=(',', ':'))",
 }
-CODEX_RC_TARGET_ID = "codex-20261028-rc1"
-CODEX_RC_TARGET_RECORD = {
-    "client": "codex",
-    "id": CODEX_RC_TARGET_ID,
-    "qualification": {
-        "claudeQualification": "not conferred",
-        "effort": "ultra",
-        "model": "gpt-6-astra",
-        "packagingInstallationQualification": "no native installation or invocation of this artifact observed",
-        "releaseQualified": False,
-        "route": "native explicit named-skill CLI 0.163.0",
-        "scope": "One prospective seven-source BorrowDesk sample: C1-C4 PASS; full non-effective handoff. No inherited historical-case qualification or reliability claim."
-    },
-    "schema": "das-client-target-v1",
-    "selectedSourceMapSHA256": "2084692186f80c00ae9d297d3bbd8dfcda627dcdf39a71bcd1ad92edbd020eca",
-    "sourceDigest": "4b3cf50c212aac87f2f788c762d5b1866f336c73c765213f140444c6b2ecd86b",
-    "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
-}
-CODEX_010_TARGET_ID = "codex-0.1.0"
-CODEX_010_TARGET_RECORD = {
-    "client": "codex",
-    "id": CODEX_010_TARGET_ID,
-    "qualification": {
-        "claudeQualification": "not conferred",
-        "effort": "ultra",
-        "model": "gpt-6-astra",
-        "packagingInstallationQualification": "source behavior and RC1 local routes have separate evidence; verify the final published artifact and its public routes",
-        "route": "native explicit named-skill CLI 0.163.0",
-        "scope": "Exact RC1 sources: seven-source BorrowDesk, fresh Fieldnote and both E07 phases assessed C1-C4 PASS. E07 includes actual exact approval, local canon publication/readback, separate contract effectivity and current handoff. Scoped samples do not establish reliability, every-skill or all-model correctness."
-    },
-    "schema": "das-client-target-v1",
-    "selectedSourceMapSHA256": "2084692186f80c00ae9d297d3bbd8dfcda627dcdf39a71bcd1ad92edbd020eca",
-    "sourceDigest": "4b3cf50c212aac87f2f788c762d5b1866f336c73c765213f140444c6b2ecd86b",
-    "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
-}
-CODEX_012_TARGET_ID = "codex-0.1.2"
-CODEX_012_TARGET_RECORD = {
-    "client": "codex",
-    "id": CODEX_012_TARGET_ID,
-    "qualification": {
-        "baseTarget": CODEX_010_TARGET_ID,
-        "claudeQualification": "not conferred",
-        "consumerRuntime": "NOT RUN on this source edition",
-        "packagingInstallationQualification": "verify this artifact and its public routes separately",
-        "scope": "PA-08 source clarification: omit issue classification for a conforming parity result. All four issue classifications and missing-evidence handling are unchanged. Offline source, link and export checks establish the one-reference change and 27 unchanged sources; they do not establish agent behavior. BorrowDesk, Fieldnote and E07 observations remain historical evidence for the preceding exact source edition, not new PASS results for this edition."
-    },
-    "schema": "das-client-target-v1",
-    "selectedSourceMapSHA256": "7db9c360f0017f8c487f51c06811862dea7f6198c6e0078cbb8931e69a4b4f30",
-    "sourceDigest": "a77e1fc8a149b137ef4a436a1f5736a835d7098552cd661775243caea4c90dbc",
-    "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
-}
-CODEX_STABLE_TARGET_ID = "codex-0.1.4"
-CODEX_STABLE_TARGET_RECORD = {
-    "client": "codex",
-    "id": "codex-0.1.4",
-    "qualification": {
-        "baseTarget": "codex-0.1.2",
-        "claudeQualification": "not conferred",
-        "consumerRuntime": "NOT RUN on this source edition",
-        "packagingInstallationQualification": "verify this exact artifact and its public routes separately",
-        "scope": "PA-09 editorial pass: consolidate repeated router instructions and split dense writer instructions without changing requirements or criteria. Exactly two sources differ from codex-0.1.2; the other 26 sources and PA-08 template clarification remain unchanged. Source correspondence, review and offline packaging checks do not establish model behavior. BorrowDesk, Fieldnote and E07 observations remain historical evidence for their preceding exact source edition, not new PASS results for this edition."
-    },
-    "schema": "das-client-target-v1",
-    "selectedSourceMapSHA256": "c8f36e141a7138febb27c8af60ecef05ef34f733aff09b82c1428c4325382dc3",
-    "sourceDigest": "cf11aeb980dbfb941c2338579f0aaf43e3ebd47cb8e4b889f58982ec5e9dd857",
-    "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
-}
-CODEX_TARGETS = {CODEX_TARGET_ID: CODEX_TARGET_RECORD,
-                 CODEX_RC_TARGET_ID: CODEX_RC_TARGET_RECORD,
-                 CODEX_010_TARGET_ID: CODEX_010_TARGET_RECORD,
-                 CODEX_012_TARGET_ID: CODEX_012_TARGET_RECORD,
-                 CODEX_STABLE_TARGET_ID: CODEX_STABLE_TARGET_RECORD}
-CODEX_STABLE_TARGET_IDS = {CODEX_010_TARGET_ID, CODEX_012_TARGET_ID, CODEX_STABLE_TARGET_ID}
-TARGET_SUFFIXES = {CODEX_TARGET_ID: "-codex", CODEX_RC_TARGET_ID: "-codex-rc1",
-                   CODEX_010_TARGET_ID: "", CODEX_012_TARGET_ID: "", CODEX_STABLE_TARGET_ID: ""}
+
 CLAUDE_PLUGIN_FILES = {".claude-plugin/plugin.json", ".claude-plugin/marketplace.json"}
+
 CODEX_PLUGIN_FILES = {".codex-plugin/plugin.json", ".agents/plugins/marketplace.json"}
-STABLE_EXCLUDED_FILES = CLAUDE_PLUGIN_FILES | {"docs/claude-code.md", "docs/claude-desktop.md"}
-STABLE_EXTRA_FILES = ("docs/release-notes.md", "docs/worked-example.md", "assets/plugin-icon.svg",
-                      "assets/social-preview.png")
+
+CLAUDE_RELEASE_EXTRA_FILES = ("assets/plugin-icon.svg", "assets/social-preview.png")
+
+CLAUDE_RELEASE_REPOSITORY_FILES = {
+    "README.md", "INSTALL.md", "LICENSE", "CHANGELOG.md", "CONTRIBUTING.md", "AGENTS.md",
+    "SUPPORT.md", "SECURITY.md", "docs/claude-code.md", "docs/skills.md",
+    "docs/how-das-works.md", "docs/advanced-installation.md", "scripts/manage.py",
+    "tests/test_repository.py", ".gitignore", "VERSION", "verify.py",
+    "assets/design-agent-skills-hero.svg",
+} | CLAUDE_PLUGIN_FILES
+
+LINK = re.compile(r'\]\(([^\s)]+)(?:\s+"[^"\n]*")?\)')
+
+CLAUDE_TARGETS = {CLAUDE_RELEASE_TARGET_ID: CLAUDE_RELEASE_TARGET_RECORD}
+
+CLIENT_TARGETS = CLAUDE_TARGETS
+
+CODEX_TARGETS = {}
+
+CODEX_STABLE_TARGET_IDS = set()
+
+TARGET_SUFFIXES = {}
+
+CLAUDE_SOURCES = ('references/audit-exploration-templates.md',
+ 'references/authority-and-status.md',
+ 'references/contract-review-templates.md',
+ 'references/design-knowledge-index.md',
+ 'references/design-lab-protocol.md',
+ 'references/design-system-craft.md',
+ 'references/engineering-integration.md',
+ 'references/executable-acceptance.md',
+ 'references/native-design-delivery.md',
+ 'references/packet-projections.md',
+ 'references/product-profile-and-tools.md',
+ 'references/quality-checklists.md',
+ 'references/task-context-templates.md',
+ 'references/visual-craft.md',
+ 'skills/assess-design-reuse/SKILL.md',
+ 'skills/audit-design-surface/SKILL.md',
+ 'skills/audit-design-system/SKILL.md',
+ 'skills/design-router/SKILL.md',
+ 'skills/develop-visual-direction/SKILL.md',
+ 'skills/evolve-design-system/SKILL.md',
+ 'skills/explore-design-directions/SKILL.md',
+ 'skills/frame-design-task/SKILL.md',
+ 'skills/maintain-design-knowledge/SKILL.md',
+ 'skills/prototype-design-directions/SKILL.md',
+ 'skills/publish-design-system-canon/SKILL.md',
+ 'skills/reconstruct-design-context/SKILL.md',
+ 'skills/record-design-decision/SKILL.md',
+ 'skills/validate-design-contract/SKILL.md',
+ 'skills/verify-design-implementation/SKILL.md',
+ 'skills/write-design-contract/SKILL.md',
+ 'skills/write-design-contract/references/source-version-reading.md')
 
 
 def repository_files(names, target):
-    """Select only the documented consumer files for this artifact profile."""
-    if target in CODEX_STABLE_TARGET_IDS:
-        return tuple(name for name in names if name not in STABLE_EXCLUDED_FILES) + STABLE_EXTRA_FILES
-    return tuple(name for name in names if not target or name not in CLAUDE_PLUGIN_FILES)
-
-LINK = re.compile(r'\]\(([^\s)]+)(?:\s+"[^"\n]*")?\)')
+    """Select the public files carried by this Claude edition."""
+    if target != CLAUDE_RELEASE_TARGET_ID:
+        raise ValueError("Unknown client target: " + str(target))
+    return tuple(name for name in names if name in CLAUDE_RELEASE_REPOSITORY_FILES) + CLAUDE_RELEASE_EXTRA_FILES
 
 
 def sha256(data):
@@ -187,18 +158,19 @@ def source_digest(records):
 
 
 def validate_source_target(target, digest):
-    if target is not None and target not in CODEX_TARGETS:
+    if target is not None and target not in CLIENT_TARGETS:
         raise ValueError("Unknown client target: " + str(target))
-    pinned = {record["sourceDigest"] for record in CODEX_TARGETS.values()}
+    pinned = {record["sourceDigest"] for record in CLIENT_TARGETS.values()}
     if ((target is None and digest in pinned)
-            or (target is not None and digest != CODEX_TARGETS[target]["sourceDigest"])):
-        raise ValueError("Pinned Codex source digest differs or its target label is missing")
+            or (target is not None and digest != CLIENT_TARGETS[target]["sourceDigest"])):
+        client = "Claude" if target in CLAUDE_TARGETS else "Codex"
+        raise ValueError("Pinned " + client + " source digest differs or its target label is missing")
 
 
 def target_from_record(record):
     target = record.get("id") if isinstance(record, dict) else None
-    if target not in CODEX_TARGETS or record != CODEX_TARGETS[target]:
-        raise ValueError("Codex TARGET.json differs from the fixed target record")
+    if target not in CLIENT_TARGETS or record != CLIENT_TARGETS[target]:
+        raise ValueError("TARGET.json differs from the fixed target record")
     return target
 
 
@@ -211,23 +183,47 @@ def check_target(root, manifest):
             raise ValueError("Target metadata requires an explicit client target")
     elif (not path.is_file() or target_from_record(
             json.loads(plain_path(path).read_text(encoding="utf-8"))) != target):
-        raise ValueError("Codex TARGET.json differs from the fixed target record")
+        raise ValueError("TARGET.json differs from the fixed target record")
     return target
 
 
 def artifact_label(version, target):
-    if target is not None and target not in CODEX_TARGETS:
+    if target is not None and target not in CLIENT_TARGETS:
         raise ValueError("Unknown client target: " + str(target))
+    if target == CLAUDE_RELEASE_TARGET_ID:
+        return "design-agent-skills-claude-" + version
     return "design-agent-skills-" + version + (TARGET_SUFFIXES[target] if target else "")
 
 
-def path_mapping(entry):
-    return {
-        source: ("SKILL.md" if source == "skills/" + entry + "/SKILL.md"
-                 else "related/" + source.split("/")[1] + ".md"
-                 if source.startswith("skills/") else source)
-        for source in SOURCES
-    }
+def sources_for_target(target=None):
+    if target is not None and target not in CLIENT_TARGETS:
+        raise ValueError("Unknown client target: " + str(target))
+    return CLAUDE_SOURCES if target in CLAUDE_TARGETS else SOURCES
+
+
+def is_entrypoint(source):
+    return source in {"skills/" + entry + "/SKILL.md" for entry in SKILLS}
+
+
+def path_mapping(entry, target=None):
+    if entry not in SKILLS:
+        raise ValueError("Unknown entrypoint: " + str(entry))
+    mapping = {}
+    for source in sources_for_target(target):
+        if source.startswith("skills/"):
+            _, owner, local = source.split("/", 2)
+            if owner == entry:
+                destination = local
+            elif is_entrypoint(source):
+                destination = "related/" + owner + ".md"
+            else:
+                destination = "related/" + owner + "/" + local
+        else:
+            destination = source
+        mapping[source] = destination
+    if len(set(mapping.values())) != len(mapping):
+        raise ValueError("Source export destination collision")
+    return mapping
 
 
 def transform(data, source_path, destinations):
@@ -290,57 +286,28 @@ def check_links(root, names):
 
 
 def check_plugins(root, names, version, target=None):
-    all_paths = CLAUDE_PLUGIN_FILES | CODEX_PLUGIN_FILES
-    if target in CODEX_TARGETS:
-        if CLAUDE_PLUGIN_FILES.intersection(names):
-            raise ValueError("Claude plugin metadata is forbidden in the Codex artifact")
-        paths = CODEX_PLUGIN_FILES
-    else:
-        paths = all_paths
-    # Source-only fixtures have no consumer documents or native plugin claims.
-    if not paths.intersection(names) and "README.md" not in names:
+    if CODEX_PLUGIN_FILES.intersection(names):
+        raise ValueError("Codex plugin metadata is forbidden in the Claude package")
+    if not CLAUDE_PLUGIN_FILES.intersection(names) and "README.md" not in names:
         return
-    if not paths.intersection(names) and target is None:
-        return
-    if not paths.issubset(names):
-        raise ValueError("Incomplete plugin metadata")
-    if target in CODEX_STABLE_TARGET_IDS:
-        if STABLE_EXCLUDED_FILES.intersection(names):
-            raise ValueError("Other-client files are forbidden in the stable Codex artifact")
-        if not set(STABLE_EXTRA_FILES).issubset(names):
-            raise ValueError("Stable release documents or media are missing")
-    plugin_paths = [".codex-plugin/plugin.json"]
-    if target is None:
-        plugin_paths.append(".claude-plugin/plugin.json")
-    for name in plugin_paths:
-        plugin = json.loads((root / name).read_text(encoding="utf-8"))
-        if plugin.get("name") != "design-agent-skills" or plugin.get("version") != version:
-            raise ValueError("Plugin identity/version differs from package: " + name)
-        if plugin.get("license") != "MIT":
-            raise ValueError("Plugin license differs from package: " + name)
-    codex = json.loads((root / ".codex-plugin/plugin.json").read_text(encoding="utf-8"))
-    if codex.get("skills") != "./skills/":
-        raise ValueError("Codex plugin must point to the installed skills directory")
-    if target in CODEX_STABLE_TARGET_IDS:
-        interface = codex.get("interface", {})
-        for field in ("logo", "composerIcon"):
-            path = interface.get(field) if isinstance(interface, dict) else None
-            if not isinstance(path, str) or not path.startswith("./") or path[2:] not in names:
-                raise ValueError("Stable plugin media must resolve inside the package: " + field)
-            if not 0 < (root / path[2:]).stat().st_size <= 5 * 1024 * 1024:
-                raise ValueError("Stable plugin media must be nonempty and at most 5 MiB: " + field)
-    if target is None:
-        claude = json.loads((root / ".claude-plugin/marketplace.json").read_text(encoding="utf-8"))
-        if (claude.get("name") != "design-agent-skills" or len(claude.get("plugins", [])) != 1
-                or claude["plugins"][0].get("name") != "design-agent-skills"
-                or claude["plugins"][0].get("source") != "./"):
-            raise ValueError("Claude marketplace must resolve this repository's plugin")
-    catalog = json.loads((root / ".agents/plugins/marketplace.json").read_text(encoding="utf-8"))
-    entries = catalog.get("plugins", [])
-    if (catalog.get("name") != "design-agent-skills" or len(entries) != 1
-            or entries[0].get("name") != "design-agent-skills"
-            or entries[0].get("source") != {"source": "local", "path": "./"}):
-        raise ValueError("Codex marketplace must resolve this repository's plugin")
+    required = {"README.md", "INSTALL.md", "CHANGELOG.md", "assets/design-agent-skills-hero.svg",
+                *CLAUDE_RELEASE_EXTRA_FILES}
+    if not required.issubset(names):
+        raise ValueError("Claude release documents or media are missing")
+    if not CLAUDE_PLUGIN_FILES.issubset(names):
+        raise ValueError("Incomplete Claude plugin metadata")
+    plugin = json.loads((root / ".claude-plugin/plugin.json").read_text(encoding="utf-8"))
+    if plugin.get("name") != "design-agent-skills" or plugin.get("version") != version:
+        raise ValueError("Claude plugin identity/version differs from package")
+    if plugin.get("license") != "MIT":
+        raise ValueError("Plugin license differs from package")
+    if plugin.get("icon") != "./assets/plugin-icon.svg":
+        raise ValueError("Claude release icon must point to the supplied DAS artwork")
+    marketplace = json.loads((root / ".claude-plugin/marketplace.json").read_text(encoding="utf-8"))
+    entries = marketplace.get("plugins", [])
+    if (marketplace.get("name") != "design-agent-skills" or len(entries) != 1
+            or entries[0].get("name") != "design-agent-skills" or entries[0].get("source") != "./"):
+        raise ValueError("Claude marketplace must resolve this repository's plugin")
 
 
 def check(root, source_root=None, checkout=False):
@@ -349,6 +316,8 @@ def check(root, source_root=None, checkout=False):
     if manifest.get("schema") != "das-portable-v1":
         raise ValueError("Unsupported manifest schema")
     target = check_target(root, manifest)
+    source_paths = sources_for_target(target)
+    source_count = len(source_paths)
     records = manifest["files"]
     expected = {relative_name(record["path"]): record for record in records}
     if len(records) != len(expected) or "MANIFEST.json" in expected:
@@ -368,11 +337,11 @@ def check(root, source_root=None, checkout=False):
         entry = manifest["entrypoint"]
         if entry not in SKILLS:
             raise ValueError("Unknown entrypoint")
-        mapping = path_mapping(entry)
+        mapping = path_mapping(entry, target)
         source_records = manifest["sources"]
         sources = {record["sourcePath"]: record for record in source_records}
-        if len(source_records) != 28 or set(sources) != set(SOURCES):
-            raise ValueError("Expected exact 28-source closure")
+        if len(source_records) != source_count or set(sources) != set(source_paths):
+            raise ValueError("Expected exact " + str(source_count) + "-source closure")
         layout = set(mapping.values()) | {"verify.py", "VERSION"}
         if "LICENSE" in expected:
             layout.add("LICENSE")
@@ -395,18 +364,18 @@ def check(root, source_root=None, checkout=False):
                 original = plain_path(plain_path(source_root) / source).read_bytes()
                 if restored != original:
                     raise ValueError("Inverse transform differs from canonical input: " + source)
-            if source.startswith("skills/"):
+            if is_entrypoint(source):
                 match = re.match(rb"---\nname: ([^\n]+)\ndescription: ([^\n]+)\n---", exported)
                 if not match or match[1].decode("utf-8") != source.split("/")[1]:
                     raise ValueError("Invalid skill frontmatter: " + destination)
         links, anchors = check_links(root, actual)
         return {"status": "pass", "kind": kind, "version": manifest["version"],
                 "entrypoint": entry, "sourceDigest": manifest["sourceDigest"],
-                "files": len(actual), "sources": 28, "localLinks": links,
-                "anchors": anchors, "inverseReproductions": 28,
+                "files": len(actual), "sources": source_count, "localLinks": links,
+                "anchors": anchors, "inverseReproductions": source_count,
                 "canonicalCompared": source_root is not None, "clientTarget": target}
     if (kind != "bundle" or manifest["entrypoints"] != list(SKILLS)
-            or manifest["sourceFiles"] != list(SOURCES)):
+            or manifest["sourceFiles"] != list(source_paths)):
         raise ValueError("Unknown bundle kind or entrypoints")
     discovered = sorted(name for name in actual if name.endswith("/SKILL.md"))
     if discovered != sorted("skills/" + entry + "/SKILL.md" for entry in SKILLS):
@@ -430,7 +399,7 @@ def check(root, source_root=None, checkout=False):
         raise ValueError("Mixed versions in bundle")
     shared = {name for name in actual if name.startswith("references/")}
     if shared:
-        if shared != {"references/" + name + ".md" for name in REFERENCES}:
+        if shared != {name for name in source_paths if name.startswith("references/")}:
             raise ValueError("Unexpected shared reference layout")
         first_skill = json.loads((root / "skills" / SKILLS[0] / "MANIFEST.json").read_text(encoding="utf-8"))
         source_hashes = {record["sourcePath"]: record["sourceSHA256"] for record in first_skill["sources"]}
@@ -438,9 +407,9 @@ def check(root, source_root=None, checkout=False):
             raise ValueError("Shared references differ from installed skill sources")
     links, anchors = check_links(root, actual)
     return {"status": "pass", "kind": kind, "version": manifest["version"],
-            "files": len(actual), "skills": 16, "sourcesPerSkill": 28,
+            "files": len(actual), "skills": 16, "sourcesPerSkill": source_count,
             "sourceDigest": manifest["sourceDigest"], "localLinks": links,
-            "anchors": anchors, "inverseReproductions": 448,
+            "anchors": anchors, "inverseReproductions": len(SKILLS) * source_count,
             "canonicalCompared": source_root is not None, "clientTarget": target}
 
 

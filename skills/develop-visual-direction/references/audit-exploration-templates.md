@@ -45,7 +45,7 @@ Repeated token or style frequency is observed evidence only. It may support a hy
 - Behavior, content, state, accessibility, and responsive contracts:
 - Documentation, ownership, adoption, exception, and maintenance signals:
 - Agent-ready retrieval context and evaluation fixtures:
-- Maturity by scope: healthy / partial / absent / harmful, with evidence:
+- Maturity by scope: healthy / partial / absent / harmful / unknown, with evidence or the inspected boundary:
 
 ### Proposed operating posture
 
