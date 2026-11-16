@@ -1,0 +1,45 @@
+{
+  "author": {
+    "name": "Volodymyr Onishchenko",
+    "url": "https://github.com/vdigitaldesign"
+  },
+  "description": "Design skills for AI agents to understand products, explore design options, and prepare clear implementation handoffs.",
+  "homepage": "https://github.com/vdigitaldesign/design-agent-skills",
+  "interface": {
+    "brandColor": "#00632E",
+    "brandColorDark": "#00632E",
+    "capabilities": [
+      "Design review",
+      "Design exploration",
+      "Developer handoff",
+      "Implementation verification"
+    ],
+    "category": "Creativity",
+    "composerIcon": "./assets/plugin-icon.svg",
+    "defaultPrompt": [
+      "Review this interface and recommend what to change.",
+      "Explore design directions for this product.",
+      "Check the implementation against the approved design."
+    ],
+    "developerName": "Volodymyr Onishchenko",
+    "displayName": "Design Agent Skills",
+    "logo": "./assets/plugin-icon.svg",
+    "longDescription": "DAS helps agents investigate a design problem, develop alternatives, and carry approved choices into an implementation handoff. Choose Codex or Claude Code in the repository installation guide.",
+    "shortDescription": "Design work for agents",
+    "supportURL": "https://github.com/vdigitaldesign/design-agent-skills/issues",
+    "websiteURL": "https://github.com/vdigitaldesign/design-agent-skills"
+  },
+  "keywords": [
+    "codex",
+    "agent-skills",
+    "product-design",
+    "design-systems",
+    "design-review",
+    "design-handoff"
+  ],
+  "license": "MIT",
+  "name": "design-agent-skills",
+  "repository": "https://github.com/vdigitaldesign/design-agent-skills",
+  "skills": "./skills/",
+  "version": "0.1.6"
+}

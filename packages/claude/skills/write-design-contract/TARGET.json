@@ -1,0 +1,8 @@
+{
+  "client": "claude",
+  "id": "claude-0.1.6",
+  "schema": "das-client-target-v1",
+  "selectedSourceMapSHA256": "39c8fbc04b51c44201fcc65656ebc9bc4800b1b14e577fb07c14d73cba476a84",
+  "sourceDigest": "491382874c052da485216de642254bc4b84a558045fe28ff41f19a71d401b874",
+  "sourceMapAlgorithm": "SHA-256 of UTF-8 json.dumps(files, sort_keys=True, separators=(',', ':'))"
+}

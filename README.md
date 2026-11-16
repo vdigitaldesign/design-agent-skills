@@ -2,82 +2,79 @@
 
 # Design Agent Skills
 
-**Design work for agents. Authority for humans.**
+[![Version: 0.1.6](https://img.shields.io/badge/version-0.1.6-00632E)](CHANGELOG.md) ![Format: Markdown](https://img.shields.io/badge/format-Markdown-f4f0e6) [![License: MIT](https://img.shields.io/badge/license-MIT-c9f24a)](LICENSE)
 
-[![Version: 0.1.5](https://img.shields.io/badge/version-0.1.5-00632E)](CHANGELOG.md)
-![Format: Markdown](https://img.shields.io/badge/format-Markdown-f4f0e6)
-[![License: MIT](https://img.shields.io/badge/license-MIT-c9f24a)](LICENSE)
+[Install](#install) · [Start a task](#start-a-task) · [Skills](#choose-a-skill) · [Documentation](#documentation) · [Contribute](CONTRIBUTING.md)
 
-[Why DAS](#why-das-exists) · [Example](docs/worked-example.md) · [Supported agents](#supported-agents) · [Install](#install) · [Workflow](#how-the-work-flows) · [Skills](#choose-a-skill) · [Docs](#documentation) · [Contribute](CONTRIBUTING.md)
+Design Agent Skills (DAS) helps you work through product and interface design with an AI agent. Use it to investigate a confusing screen, compare designs for a new flow, or prepare an approved design for implementation.
 
-Design Agent Skills (DAS) helps you work through product and interface design with an AI agent. Use it to
-investigate a confusing screen, compare designs for a new flow, or prepare an approved design for
-implementation.
+The agent works from your product sources, constraints, and design system. You retain authority over material product and design decisions. DAS is available for Codex and Claude Code from this repository.
 
 ## Why DAS exists
 
-A coding agent can build a working interface while still getting the design wrong. When context is incomplete,
-it may invent a recovery flow, overlook an existing component, choose a visual direction without alternatives,
-or treat the current code as the approved design. Passing implementation tests does not settle those questions.
+A coding agent can build a working interface while still getting the design wrong. When context is incomplete, it may invent a recovery flow, overlook an existing component, choose a visual direction without alternatives, or treat the current code as the approved design. Passing implementation tests does not settle those questions.
 
-### What DAS adds
+DAS connects design work to your product rules and design system. The skills help the agent check what can be reused, make important choices visible, and carry your approved decisions into a handoff. After implementation, it can compare the built interface with those requirements. Your engineering tools handle the production code.
 
-The skills connect design work to your product rules and design system. The agent checks what can be reused,
-makes important choices visible, and carries your approved decisions into a handoff. After implementation,
-it can compare the built interface with those requirements. Your engineering tools handle the production code.
-
-The [worked example](docs/worked-example.md) shows a fictional ticket-reassignment task: three design options,
-a person's choice, and the concrete flow and checks handed to a developer.
-
-## Supported agents
-
-Version 0.1.5 supports the documented Codex app and CLI workflows. The [Claude Code edition](https://github.com/vdigitaldesign/design-agent-skills/tree/claude) has its own version and installation guide. See the [release notes](docs/release-notes.md) and [tested configurations](docs/advanced-installation.md#support-and-evidence).
+The [worked example](packages/codex/docs/worked-example.md) follows a fictional ticket-reassignment task through three design options, a person's choice, and a developer handoff. It illustrates the process; it is not a report of a model run or a shipped interface.
 
 ## Install
 
-[![Codex: app and CLI](https://img.shields.io/badge/Codex-app%20%2B%20CLI-ff6846)](docs/codex.md)
+[![Codex: app and CLI](https://img.shields.io/badge/Codex-app%20%2B%20CLI-ff6846)](packages/codex/docs/codex.md) [![Claude Code](https://img.shields.io/badge/Claude-Code-f4f0e6)](packages/claude/docs/claude-code.md)
 
-The native plugin installs all 16 skills for Codex app and CLI. You can also install project-local copies through Skills CLI. Use one route per project to avoid duplicate DAS entries.
+Choose your client and one installation route per project. Both native plugins include all 16 skills. Project-local copies are also available through Skills CLI.
 
-If DAS is already installed, follow the [replacement instructions](docs/advanced-installation.md#replace-an-earlier-installation) before changing its source or version.
+If DAS is already installed, follow [update and removal](docs/update.md) before changing its source or version. For projects used by both clients, prefer the native plugins; copied skills share source-lock records by skill name.
 
-### Codex plugin quick start
+### Codex plugin
 
 In your terminal:
 
 ```sh
-codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.5 &&
+codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.6 &&
 codex plugin add design-agent-skills@design-agent-skills &&
 codex plugin list
 ```
 
-Open a new Codex session in your project. Select **Design Agent Skills: Design Router** from the skill picker, or use the namespaced invocation in a request:
+Open a new Codex session in your project. Select **Design Agent Skills: Design Router**, or invoke `$design-agent-skills:design-router`. The [Codex guide](packages/codex/docs/codex.md) covers the app and CLI workflows.
+
+### Claude Code plugin
+
+From your project, run:
+
+```sh
+claude plugin marketplace add 'vdigitaldesign/design-agent-skills#v0.1.6' --scope project &&
+claude plugin install design-agent-skills@design-agent-skills --scope project &&
+claude plugin list
+```
+
+Open a new Claude Code session and invoke `/design-agent-skills:design-router`. The [Claude Code guide](packages/claude/docs/claude-code.md) covers discovery and use. This scope does not include Claude Desktop or Cowork.
+
+### Project-local skills
+
+The [installation guide](INSTALL.md) has the prerequisites and exact Skills CLI commands for [Codex](INSTALL.md#codex-project-local-skills) and [Claude](INSTALL.md#claude-project-local-skills). Use the source path for your client: the destination agent flag alone does not select its instructions.
+
+Copied skills use `$design-router` in Codex or `/design-router` in Claude Code, without the plugin prefix. Keep the complete installed folders so the agent can read their supporting references and related instructions.
+
+## Start a task
+
+Invoke Design Router for your installation, then provide a request such as:
 
 ```text
-Use $design-agent-skills:design-router to review our checkout flow.
+Review our checkout flow.
 
 Read the existing screens, product rules, and design-system guidance.
 Identify the main usability problems and recommend what to change.
 Keep pricing, eligibility, and existing payment behavior unchanged.
 
-Show me any material design choices before preparing a selected direction
+Show me material design choices before preparing a selected direction
 for implementation. Save the findings and handoff in design/checkout/.
 Do not edit product code.
 ```
 
-Replace the flow, constraints, and destination with your task. Give Codex access to the relevant files or preview. The [task guide](docs/getting-started.md) includes a brief template and examples for new pages, existing flows, audits, visual direction, and implementation checks.
+Replace the flow, constraints, and destination with your task. Provide the result you need, relevant product facts, existing decisions, and access to files or previews. State where the agent may work and save its output.
 
-### Project-local skills
-
-From the root of the project that will use DAS:
-
-```sh
-npx skills add vdigitaldesign/design-agent-skills
-```
-
-Choose the skills you want and **Project** scope. Codex uses the **Universal** destination; clear any additional agents you do not want. This installs from the repository’s default branch. For a fixed release, use the [pinned command](INSTALL.md#install-a-fixed-release).
-
-Standalone copies use `$design-router` in Codex, without the plugin prefix. The [installation guide](INSTALL.md) covers prerequisites, verified archive downloads, and existing installations. The [Codex guide](docs/codex.md) explains discovery and use; [advanced installation](docs/advanced-installation.md) covers replacement, removal, and troubleshooting.
+A request can end with an audit and recommendations, a comparison of directions, a prototype, or an implementation handoff. Specify the outcome you need. The [Codex task guide](packages/codex/docs/getting-started.md) has brief templates and examples; the [Claude Code guide](packages/claude/docs/claude-code.md) shows its invocation format.
 
 ## How the work flows
 
@@ -95,108 +92,102 @@ Work follows the task. A review may end with findings and recommendations. A new
 
 The agent can research, audit, create, compare, and recommend within the scope you gave it. It asks for a decision when the remaining choice could change the product or design in a meaningful way, such as changing a task flow, recovery behavior, or visual identity.
 
-Approval applies to the choice and scope you actually approved. Choosing a layout does not approve a new pricing rule. A prototype does not become the design system because someone built it. DAS keeps observed, proposed, approved, implemented, and verified records separate, and identifies which approved requirements apply to implementation.
+Approval applies to the choice and scope you actually approved. Choosing a layout does not approve a new pricing rule. A prototype does not become the design system because someone built it. DAS distinguishes observed, proposed, approved, implemented, and verified work so the handoff can identify which requirements apply to implementation.
 
-Read [how DAS works](docs/how-das-works.md) for decision boundaries, design-system work, and the handoff to coding agents.
+Human decisions are part of both client workflows. Before implementation, confirm the approved revision and any remaining product questions. Keep the handoff and its governing source files together when continuing in another chat.
+
+Read the workflow guide for [Codex](packages/codex/docs/how-das-works.md) or [Claude](packages/claude/docs/how-das-works.md) for decision boundaries, design-system work, and the handoff to coding agents.
 
 ## Choose a skill
 
 [![Skills: 16](https://img.shields.io/badge/skills-16-62d9ff)](docs/skills.md)
 
-Use [`design-router`](skills/design-router/SKILL.md) when the task crosses several areas or you are unsure where to start. Invoke a specialist directly when the work is clear.
+Use `design-router` when the task crosses several areas or you are unsure where to start. Invoke a specialist directly when the work is clear. The [skill catalog](docs/skills.md) links to the instructions for each client.
 
 ### Understand the task
 
 | Skill | Use it to |
 | --- | --- |
-| [design-router](skills/design-router/SKILL.md) | Choose and continue the right design workflow |
-| [frame-design-task](skills/frame-design-task/SKILL.md) | Clarify the goal, scope, constraints, and decisions |
-| [reconstruct-design-context](skills/reconstruct-design-context/SKILL.md) | Recover product facts and unresolved questions from existing sources |
+| `design-router` | Choose and continue the right design workflow |
+| `frame-design-task` | Clarify the goal, scope, constraints, and decisions |
+| `reconstruct-design-context` | Recover product facts and unresolved questions from existing sources |
 
 ### Review what exists
 
 | Skill | Use it to |
 | --- | --- |
-| [audit-design-surface](skills/audit-design-surface/SKILL.md) | Review usability, content, composition, states, and accessibility |
-| [audit-design-system](skills/audit-design-system/SKILL.md) | Assess system coverage, consistency, and the work it needs |
-| [assess-design-reuse](skills/assess-design-reuse/SKILL.md) | Compare existing components and patterns with custom work |
+| `audit-design-surface` | Review usability, content, composition, states, and accessibility |
+| `audit-design-system` | Assess system coverage, consistency, and the work it needs |
+| `assess-design-reuse` | Compare existing components and patterns with custom work |
 
 ### Create and explore
 
 | Skill | Use it to |
 | --- | --- |
-| [explore-design-directions](skills/explore-design-directions/SKILL.md) | Compare distinct solutions and recommend a direction |
-| [develop-visual-direction](skills/develop-visual-direction/SKILL.md) | Develop composition, typography, imagery, color, and motion |
-| [prototype-design-directions](skills/prototype-design-directions/SKILL.md) | Make a choice tangible through a prototype, mock, or wireframe |
+| `explore-design-directions` | Compare distinct solutions and recommend a direction |
+| `develop-visual-direction` | Develop composition, typography, imagery, color, and motion |
+| `prototype-design-directions` | Make a choice tangible through a prototype, mock, or wireframe |
 
 ### Carry decisions forward
 
 | Skill | Use it to |
 | --- | --- |
-| [record-design-decision](skills/record-design-decision/SKILL.md) | Preserve the person's explicit choice and its scope |
-| [evolve-design-system](skills/evolve-design-system/SKILL.md) | Prepare a focused change to tokens, components, patterns, or documentation |
-| [publish-design-system-canon](skills/publish-design-system-canon/SKILL.md) | Publish an exact approved system revision to its designated destination |
+| `record-design-decision` | Preserve the person's explicit choice and its scope |
+| `evolve-design-system` | Prepare a focused change to tokens, components, patterns, or documentation |
+| `publish-design-system-canon` | Publish an exact approved system revision to its designated destination |
 
 ### Deliver and check
 
 | Skill | Use it to |
 | --- | --- |
-| [write-design-contract](skills/write-design-contract/SKILL.md) | Carry the applicable requirements and approved design into a contract and coding handoff |
-| [validate-design-contract](skills/validate-design-contract/SKILL.md) | Find gaps and contradictions before implementation |
-| [verify-design-implementation](skills/verify-design-implementation/SKILL.md) | Compare the built interface with approved requirements |
-| [maintain-design-knowledge](skills/maintain-design-knowledge/SKILL.md) | Keep useful decisions and patterns findable and current |
+| `write-design-contract` | Carry the applicable requirements and approved design into a contract and coding handoff |
+| `validate-design-contract` | Find gaps and contradictions before implementation |
+| `verify-design-implementation` | Compare the built interface with approved requirements |
+| `maintain-design-knowledge` | Keep useful decisions and patterns findable and current |
 
-The [skill catalog](docs/skills.md) adds the typical result for each capability. These are available capabilities, not a mandatory sequence or document checklist.
+These are available capabilities, not a mandatory sequence or document checklist. The client catalogs describe the typical result for each skill: [Codex](packages/codex/docs/skills.md), [Claude](packages/claude/docs/skills.md).
 
-## Bring your product context
-
-Provide the result you need, relevant product facts, existing decisions, files or previews, and constraints. State where the agent may work. It should inspect accessible sources before asking you to fill a gap, and continue work that does not depend on the missing answer.
-
-Tools come from your agent environment. Some tasks need a browser, design files, or an image tool; DAS does not bundle those services or a model runtime. Each skill carries its supporting references and related instructions. Keep the complete installed folders so the agent can open them. The [Codex guide](docs/codex.md) describes the supported setup.
-
-## Scope
+## Scope and limitations
 
 DAS supports design decisions across a workflow. It has no universal visual style and does not guarantee a beautiful interface or the right product strategy. Product judgment, research, and testing with users remain necessary.
 
-The design skills can create prototypes and implementation specifications. Production UI and engineering architecture belong to the implementation work. A completed specification does not establish that the interface was built, deployed, or successful with users.
+The skills can create prototypes and implementation specifications. Production UI and engineering architecture belong to implementation work. A completed specification does not establish that the interface was built, deployed, or successful with users.
 
-Version 0.1.5 updates public documentation and package tooling. Its design instructions are unchanged from 0.1.4. Review each handoff against your product rules; model behavior varies with context and settings. [Tested configurations and limits](docs/advanced-installation.md#support-and-evidence) explain the evidence behind the release.
+Model behavior varies with the available context, tools, and settings. Review handoffs against your product rules. Claude outputs have omitted required behavior and confused review readiness with approval; compare contracts with their governing sources, especially exact content, permissions, failure and recovery paths, and acceptance checks. The complete contract and implementation-handoff workflow has limited behavioral verification on Claude.
+
+Your agent environment supplies model access and tools. Some tasks need a browser, design files, or an image tool; DAS does not bundle those services or an application runtime. The client guides describe the documented setup and support limits.
 
 ## Documentation
 
 | You want to | Read |
 | --- | --- |
-| Install DAS | [Installation](INSTALL.md), [Codex guide](docs/codex.md) |
-| Give the agent a useful task | [Getting started](docs/getting-started.md) |
-| See a brief, design choice, and developer handoff | [Worked example](docs/worked-example.md) |
-| Understand the workflow and your decisions | [How DAS works](docs/how-das-works.md) |
-| Find a specialist and its expected output | [Skill catalog](docs/skills.md) |
-| Update, remove, or restore an installation | [Advanced installation](docs/advanced-installation.md) |
-| Check tested configurations and limitations | [Support and evidence](docs/advanced-installation.md#support-and-evidence) |
+| Install DAS | [Installation](INSTALL.md), [Codex guide](packages/codex/docs/codex.md), [Claude Code guide](packages/claude/docs/claude-code.md) |
+| Give the agent a useful task | [Codex task guide](packages/codex/docs/getting-started.md), [Claude Code first task](packages/claude/docs/claude-code.md) |
+| See a brief, design choice, and developer handoff | [Worked example](packages/codex/docs/worked-example.md) |
+| Understand the workflow and your decisions | [Codex workflow](packages/codex/docs/how-das-works.md), [Claude workflow](packages/claude/docs/how-das-works.md) |
+| Find a specialist and its expected output | [Skill catalog](docs/skills.md), [Codex results](packages/codex/docs/skills.md), [Claude results](packages/claude/docs/skills.md) |
+| Update, remove, or restore an installation | [Update and removal](docs/update.md) |
+| Check client support and limitations | [Codex support](packages/codex/docs/advanced-installation.md#support-and-evidence), [Claude support](packages/claude/SUPPORT.md) |
 | Report a problem or request a capability | [Support](SUPPORT.md) |
 | Report a suspected vulnerability privately | [Security reporting](SECURITY.md) |
 | Propose a package or instruction change | [Contributing](CONTRIBUTING.md) |
-| Review this release and package changes | [Release notes](docs/release-notes.md), [Changelog](CHANGELOG.md) |
+| Review release changes | [Changelog](CHANGELOG.md) |
 
 ## Repository layout
 
 ```text
-skills/<name>/SKILL.md      Instructions for each of the 16 skills
-references/                The 12 shared design references
-skills/<name>/references/   Generated copies for standalone installation
-skills/<name>/related/      Generated instructions from the other skills
-assets/                    README, plugin, and repository artwork
-.codex-plugin/             Codex plugin manifest
 .agents/plugins/           Codex marketplace catalog
-docs/                      Workflow, client guide, examples, catalog, release notes
-scripts/manage.py          Check and build the distributable package
-tests/                     Repository and packaging checks
+.claude-plugin/            Claude marketplace catalog
+packages/codex/            Complete Codex package, skills, references, and guides
+packages/claude/           Complete Claude package, skills, references, and guides
+assets/                    README, plugin, and repository artwork
+docs/                      Client skill links and update guidance
+scripts/manage.py          Check, synchronize, and build the client packages
+tests/                     Common repository maintenance checks
 .github/                   Contribution forms and automated checks
 ```
 
-This repository contains the public release export. Maintainers carry accepted contributions into the development source before generating the next release. `TARGET.json` pins the instruction sources for this edition; changing those sources requires a new edition and evidence decision. [Contributing](CONTRIBUTING.md) explains how to propose changes and use the maintenance commands.
-
-`VERSION`, `MANIFEST.json`, and `verify.py` identify and check the package. The contributor `AGENTS.md` and `CLAUDE.md` apply to work on this checkout; they do not add consumer instructions or Claude support to the installed skills.
+Each client package contains editable skill entrypoints, supporting references, and generated complete closures for project-local installation. Keep each client's instructions and resources together. `VERSION` and `MANIFEST.json` identify and check this repository; each package has its own source and integrity records. [Contributing](CONTRIBUTING.md) explains the maintenance commands.
 
 ## License
 
