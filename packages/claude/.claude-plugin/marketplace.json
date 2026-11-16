@@ -1,0 +1,10 @@
+{
+  "name": "design-agent-skills",
+  "description": "Design Agent Skills for product and interface design.",
+  "owner": {"name": "Volodymyr Onishchenko"},
+  "plugins": [{
+    "name": "design-agent-skills",
+    "source": "./",
+    "description": "Investigate a design task, explore alternatives, and prepare a source-grounded handoff."
+  }]
+}

@@ -8,7 +8,7 @@
       "name": "design-agent-skills",
       "source": {
         "source": "local",
-        "path": "./"
+        "path": "./packages/codex"
       },
       "policy": {
         "installation": "AVAILABLE",
