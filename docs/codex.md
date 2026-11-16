@@ -1,6 +1,6 @@
 # Use DAS in Codex
 
-Install the [0.1.4 plugin or project-local skills](../INSTALL.md), then open a new Codex session in the project where you want to work. Select a skill from the picker or name it explicitly in your request. If you are replacing an earlier release or a development package, follow [replacement and rollback](advanced-installation.md#replace-an-earlier-installation) first.
+Install the [0.1.5 plugin or project-local skills](../INSTALL.md), then open a new Codex session in the project where you want to work. Select a skill from the picker or name it explicitly in your request. If you are replacing an earlier release or a development package, follow [replacement and rollback](advanced-installation.md#replace-an-earlier-installation) first.
 
 | Installation | Router invocation | Specialist example |
 | --- | --- | --- |
@@ -27,4 +27,4 @@ For a new chat, provide the current handoff and its source files. Check that the
 
 Review the proposed behavior against your product rules. Confirm that important states and recovery paths have concrete checks, and that the handoff identifies unresolved questions and protected behavior. After implementation, invoke Verify Design Implementation with the approved target and the running interface.
 
-The recorded design-contract checks used `gpt-6-astra` with `ultra` reasoning. Short installation-route handoffs used `low`. These are observed settings, not a requirement that every task use one effort level or a guarantee for another model. See [support and evidence](advanced-installation.md#support-and-evidence).
+See [supported configurations and limits](advanced-installation.md#support-and-evidence) for the observed environment and model settings.

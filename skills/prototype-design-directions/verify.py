@@ -1,15 +1,22 @@
 #!/usr/bin/env python3
-"""Verify a DAS portable bundle or one independently installed skill (Python 3.9+)."""
+"""Verify this DAS Codex edition or one installed skill; Python 3.9+."""
+
 
 import argparse
-import hashlib
-import json
-import os
-from pathlib import Path, PurePosixPath
-import posixpath
-import re
-import urllib.parse
 
+import hashlib
+
+import json
+
+import os
+
+from pathlib import Path, PurePosixPath
+
+import posixpath
+
+import re
+
+import urllib.parse
 
 SKILLS = (
     "assess-design-reuse", "audit-design-surface", "audit-design-system",
@@ -19,6 +26,7 @@ SKILLS = (
     "reconstruct-design-context", "record-design-decision",
     "validate-design-contract", "verify-design-implementation", "write-design-contract",
 )
+
 REFERENCES = (
     "audit-exploration-templates", "authority-and-status", "contract-review-templates",
     "design-knowledge-index", "design-lab-protocol", "design-system-craft",
@@ -26,108 +34,37 @@ REFERENCES = (
     "packet-projections", "product-profile-and-tools", "quality-checklists",
     "task-context-templates", "visual-craft",
 )
+
 SOURCES = tuple(sorted(
     ["skills/" + name + "/SKILL.md" for name in SKILLS]
     + ["references/" + name + ".md" for name in REFERENCES]
 ))
-CODEX_TARGET_ID = "codex-20261017"
-CODEX_TARGET_RECORD = {
-    "client": "codex",
-    "id": "codex-20261017",
-    "qualification": {
-        "claudeQualification": "not conferred",
-        "effort": "ultra",
-        "model": "gpt-6-astra",
-        "packagingInstallationQualification": "not implied; requires separate artifact evidence",
-        "route": "native explicit named-skill chat",
-        "scope": "bounded Fieldnote, BorrowDesk, source-conflict control, E02, E04 plus unchanged E07 chain evidence"
-    },
-    "schema": "das-client-target-v1",
-    "selectedSourceMapSHA256": "4f8262ea079cc09b69d8a18a22303600f8fa5cd22f728852155adc7b772385d9",
-    "sourceDigest": "dbbc3101c90a4a852fecaf3ae2c3a8f68cdf3b9ba6a38c148a06ea2797580e34",
-    "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
-}
-CODEX_RC_TARGET_ID = "codex-20261028-rc1"
-CODEX_RC_TARGET_RECORD = {
-    "client": "codex",
-    "id": CODEX_RC_TARGET_ID,
-    "qualification": {
-        "claudeQualification": "not conferred",
-        "effort": "ultra",
-        "model": "gpt-6-astra",
-        "packagingInstallationQualification": "no native installation or invocation of this artifact observed",
-        "releaseQualified": False,
-        "route": "native explicit named-skill CLI 0.163.0",
-        "scope": "One prospective seven-source BorrowDesk sample: C1-C4 PASS; full non-effective handoff. No inherited historical-case qualification or reliability claim."
-    },
-    "schema": "das-client-target-v1",
-    "selectedSourceMapSHA256": "2084692186f80c00ae9d297d3bbd8dfcda627dcdf39a71bcd1ad92edbd020eca",
-    "sourceDigest": "4b3cf50c212aac87f2f788c762d5b1866f336c73c765213f140444c6b2ecd86b",
-    "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
-}
-CODEX_010_TARGET_ID = "codex-0.1.0"
-CODEX_010_TARGET_RECORD = {
-    "client": "codex",
-    "id": CODEX_010_TARGET_ID,
-    "qualification": {
-        "claudeQualification": "not conferred",
-        "effort": "ultra",
-        "model": "gpt-6-astra",
-        "packagingInstallationQualification": "source behavior and RC1 local routes have separate evidence; verify the final published artifact and its public routes",
-        "route": "native explicit named-skill CLI 0.163.0",
-        "scope": "Exact RC1 sources: seven-source BorrowDesk, fresh Fieldnote and both E07 phases assessed C1-C4 PASS. E07 includes actual exact approval, local canon publication/readback, separate contract effectivity and current handoff. Scoped samples do not establish reliability, every-skill or all-model correctness."
-    },
-    "schema": "das-client-target-v1",
-    "selectedSourceMapSHA256": "2084692186f80c00ae9d297d3bbd8dfcda627dcdf39a71bcd1ad92edbd020eca",
-    "sourceDigest": "4b3cf50c212aac87f2f788c762d5b1866f336c73c765213f140444c6b2ecd86b",
-    "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
-}
-CODEX_012_TARGET_ID = "codex-0.1.2"
-CODEX_012_TARGET_RECORD = {
-    "client": "codex",
-    "id": CODEX_012_TARGET_ID,
-    "qualification": {
-        "baseTarget": CODEX_010_TARGET_ID,
-        "claudeQualification": "not conferred",
-        "consumerRuntime": "NOT RUN on this source edition",
-        "packagingInstallationQualification": "verify this artifact and its public routes separately",
-        "scope": "PA-08 source clarification: omit issue classification for a conforming parity result. All four issue classifications and missing-evidence handling are unchanged. Offline source, link and export checks establish the one-reference change and 27 unchanged sources; they do not establish agent behavior. BorrowDesk, Fieldnote and E07 observations remain historical evidence for the preceding exact source edition, not new PASS results for this edition."
-    },
-    "schema": "das-client-target-v1",
-    "selectedSourceMapSHA256": "7db9c360f0017f8c487f51c06811862dea7f6198c6e0078cbb8931e69a4b4f30",
-    "sourceDigest": "a77e1fc8a149b137ef4a436a1f5736a835d7098552cd661775243caea4c90dbc",
-    "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
-}
-CODEX_STABLE_TARGET_ID = "codex-0.1.4"
-CODEX_STABLE_TARGET_RECORD = {
-    "client": "codex",
-    "id": "codex-0.1.4",
-    "qualification": {
-        "baseTarget": "codex-0.1.2",
-        "claudeQualification": "not conferred",
-        "consumerRuntime": "NOT RUN on this source edition",
-        "packagingInstallationQualification": "verify this exact artifact and its public routes separately",
-        "scope": "PA-09 editorial pass: consolidate repeated router instructions and split dense writer instructions without changing requirements or criteria. Exactly two sources differ from codex-0.1.2; the other 26 sources and PA-08 template clarification remain unchanged. Source correspondence, review and offline packaging checks do not establish model behavior. BorrowDesk, Fieldnote and E07 observations remain historical evidence for their preceding exact source edition, not new PASS results for this edition."
-    },
-    "schema": "das-client-target-v1",
-    "selectedSourceMapSHA256": "c8f36e141a7138febb27c8af60ecef05ef34f733aff09b82c1428c4325382dc3",
-    "sourceDigest": "cf11aeb980dbfb941c2338579f0aaf43e3ebd47cb8e4b889f58982ec5e9dd857",
-    "sourceMapAlgorithm": "sorted path + NUL + sourceSHA256 + LF"
-}
-CODEX_TARGETS = {CODEX_TARGET_ID: CODEX_TARGET_RECORD,
-                 CODEX_RC_TARGET_ID: CODEX_RC_TARGET_RECORD,
-                 CODEX_010_TARGET_ID: CODEX_010_TARGET_RECORD,
-                 CODEX_012_TARGET_ID: CODEX_012_TARGET_RECORD,
-                 CODEX_STABLE_TARGET_ID: CODEX_STABLE_TARGET_RECORD}
-CODEX_STABLE_TARGET_IDS = {CODEX_010_TARGET_ID, CODEX_012_TARGET_ID, CODEX_STABLE_TARGET_ID}
-TARGET_SUFFIXES = {CODEX_TARGET_ID: "-codex", CODEX_RC_TARGET_ID: "-codex-rc1",
-                   CODEX_010_TARGET_ID: "", CODEX_012_TARGET_ID: "", CODEX_STABLE_TARGET_ID: ""}
+
 CLAUDE_PLUGIN_FILES = {".claude-plugin/plugin.json", ".claude-plugin/marketplace.json"}
+
 CODEX_PLUGIN_FILES = {".codex-plugin/plugin.json", ".agents/plugins/marketplace.json"}
+
 STABLE_EXCLUDED_FILES = CLAUDE_PLUGIN_FILES | {"docs/claude-code.md", "docs/claude-desktop.md"}
+
 STABLE_EXTRA_FILES = ("docs/release-notes.md", "docs/worked-example.md", "assets/plugin-icon.svg",
                       "assets/social-preview.png")
 
+LINK = re.compile(r'\]\(([^\s)]+)(?:\s+"[^"\n]*")?\)')
+
+CODEX_RELEASE_TARGET_ID = "codex-0.1.5"
+
+CODEX_RELEASE_TARGET_RECORD = {'client': 'codex',
+ 'id': 'codex-0.1.5',
+ 'schema': 'das-client-target-v1',
+ 'selectedSourceMapSHA256': 'c8f36e141a7138febb27c8af60ecef05ef34f733aff09b82c1428c4325382dc3',
+ 'sourceDigest': 'cf11aeb980dbfb941c2338579f0aaf43e3ebd47cb8e4b889f58982ec5e9dd857',
+ 'sourceMapAlgorithm': 'sorted path + NUL + sourceSHA256 + LF'}
+
+CODEX_TARGETS = {CODEX_RELEASE_TARGET_ID: CODEX_RELEASE_TARGET_RECORD}
+
+CODEX_STABLE_TARGET_IDS = {CODEX_RELEASE_TARGET_ID}
+
+TARGET_SUFFIXES = {CODEX_RELEASE_TARGET_ID: ""}
 
 def repository_files(names, target):
     """Select only the documented consumer files for this artifact profile."""
@@ -135,12 +72,8 @@ def repository_files(names, target):
         return tuple(name for name in names if name not in STABLE_EXCLUDED_FILES) + STABLE_EXTRA_FILES
     return tuple(name for name in names if not target or name not in CLAUDE_PLUGIN_FILES)
 
-LINK = re.compile(r'\]\(([^\s)]+)(?:\s+"[^"\n]*")?\)')
-
-
 def sha256(data):
     return hashlib.sha256(data).hexdigest()
-
 
 def plain_path(path):
     raw = Path(path)
@@ -149,7 +82,6 @@ def plain_path(path):
         raise ValueError("Symlink paths are not accepted: " + str(raw))
     return Path(os.path.abspath(raw))
 
-
 def relative_name(name):
     path = PurePosixPath(name)
     if not isinstance(name, str) or "\\" in name or path.is_absolute() or not path.parts:
@@ -157,7 +89,6 @@ def relative_name(name):
     if str(path) != name or any(part in (".", "..") for part in path.parts):
         raise ValueError("Invalid manifest path: " + name)
     return name
-
 
 def walk_files(root, checkout=False):
     result = set()
@@ -178,29 +109,21 @@ def walk_files(root, checkout=False):
         result.update((Path(directory) / name).relative_to(root).as_posix() for name in files)
     return result
 
-
 def source_digest(records):
     return sha256("".join(
         record["sourcePath"] + "\t" + record["sourceSHA256"] + "\n"
         for record in sorted(records, key=lambda item: item["sourcePath"])
     ).encode("utf-8"))
 
-
 def validate_source_target(target, digest):
-    if target is not None and target not in CODEX_TARGETS:
-        raise ValueError("Unknown client target: " + str(target))
-    pinned = {record["sourceDigest"] for record in CODEX_TARGETS.values()}
-    if ((target is None and digest in pinned)
-            or (target is not None and digest != CODEX_TARGETS[target]["sourceDigest"])):
+    if target != CODEX_RELEASE_TARGET_ID or digest != CODEX_RELEASE_TARGET_RECORD["sourceDigest"]:
         raise ValueError("Pinned Codex source digest differs or its target label is missing")
-
 
 def target_from_record(record):
     target = record.get("id") if isinstance(record, dict) else None
     if target not in CODEX_TARGETS or record != CODEX_TARGETS[target]:
         raise ValueError("Codex TARGET.json differs from the fixed target record")
     return target
-
 
 def check_target(root, manifest):
     target = manifest.get("clientTarget")
@@ -214,12 +137,10 @@ def check_target(root, manifest):
         raise ValueError("Codex TARGET.json differs from the fixed target record")
     return target
 
-
 def artifact_label(version, target):
     if target is not None and target not in CODEX_TARGETS:
         raise ValueError("Unknown client target: " + str(target))
     return "design-agent-skills-" + version + (TARGET_SUFFIXES[target] if target else "")
-
 
 def path_mapping(entry):
     return {
@@ -228,7 +149,6 @@ def path_mapping(entry):
                  if source.startswith("skills/") else source)
         for source in SOURCES
     }
-
 
 def transform(data, source_path, destinations):
     """Change only local Markdown link path bytes, preserving labels and fragments."""
@@ -252,7 +172,6 @@ def transform(data, source_path, destinations):
         return match.group(0)[:relative_start] + mapped + suffix + match.group(0)[relative_end:]
 
     return LINK.sub(replace, text).encode("utf-8")
-
 
 def check_links(root, names):
     links = anchors = 0
@@ -287,7 +206,6 @@ def check_links(root, names):
                     raise ValueError("Broken local anchor: " + name + " -> " + target)
                 anchors += 1
     return links, anchors
-
 
 def check_plugins(root, names, version, target=None):
     all_paths = CLAUDE_PLUGIN_FILES | CODEX_PLUGIN_FILES
@@ -341,7 +259,6 @@ def check_plugins(root, names, version, target=None):
             or entries[0].get("name") != "design-agent-skills"
             or entries[0].get("source") != {"source": "local", "path": "./"}):
         raise ValueError("Codex marketplace must resolve this repository's plugin")
-
 
 def check(root, source_root=None, checkout=False):
     root = plain_path(root)
@@ -443,7 +360,6 @@ def check(root, source_root=None, checkout=False):
             "anchors": anchors, "inverseReproductions": 448,
             "canonicalCompared": source_root is not None, "clientTarget": target}
 
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path(__file__).parent)
@@ -457,7 +373,6 @@ def main():
     except (OSError, ValueError, KeyError, TypeError) as error:
         parser.exit(1, "Verification failed: " + str(error) + "\n")
     print(json.dumps(result, indent=2))
-
 
 if __name__ == "__main__":
     main()

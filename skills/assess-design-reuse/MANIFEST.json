@@ -1,5 +1,5 @@
 {
-  "clientTarget": "codex-0.1.4",
+  "clientTarget": "codex-0.1.5",
   "entrypoint": "assess-design-reuse",
   "files": [
     {
@@ -13,14 +13,14 @@
       "sha256": "e867b4cb4bad88c5f82b08d9ebfd9caddfd46a1230eb9db4e1e13661052e46b9"
     },
     {
-      "bytes": 1113,
+      "bytes": 331,
       "path": "TARGET.json",
-      "sha256": "ce153d8bffda2061ab7c3f86076ccd97dc939812f3962bb93a7dcf31ab45421d"
+      "sha256": "8bfcd9da8abd37b11e31975f5ad44e9b2b073071704cb9b6a07d6d5bf2c671b4"
     },
     {
       "bytes": 6,
       "path": "VERSION",
-      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7"
+      "sha256": "800cf1c0392b24de7c0a1c6ea6778ecb433dec71c49a150bce96a98477527b2f"
     },
     {
       "bytes": 5913,
@@ -158,9 +158,9 @@
       "sha256": "742030462320b9de70b260a9186e12a4e604d3c69ca41a786bf3dd21a7f10ec8"
     },
     {
-      "bytes": 24523,
+      "bytes": 19034,
       "path": "verify.py",
-      "sha256": "194fcf98246502a0713596a80c332c61da69c425834b3c959800eeb10762685c"
+      "sha256": "ec128768e7926fe86621b4d09d8e184c2be2ce8f4fb06ade9a3db9896fcb969b"
     }
   ],
   "kind": "skill",
@@ -336,5 +336,5 @@
       "sourceSHA256": "347c95b9edd2b6c091c2d9fa6ffda0880ed9d38223a4c0c4f7771823f21c83af"
     }
   ],
-  "version": "0.1.4"
+  "version": "0.1.5"
 }

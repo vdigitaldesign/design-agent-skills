@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.5
+
+- Clean public guides and metadata, keeping useful support information and known limitations.
+- Keep development experiment history out of the public verifier and generated copies.
+- Preserve all design instruction resources and artwork from 0.1.4.
+- Add public writing and export guidance for contributors.
+
+No new model task was run for this packaging and documentation patch.
+
 ## 0.1.4
 
 ### Changed
@@ -53,7 +62,7 @@ First supported Codex edition of Design Agent Skills.
 
 - Includes 16 design skills and 12 shared references, from context reconstruction and interface audits through design decisions, contracts, and implementation verification.
 - Provides a Codex plugin and project-local Skills CLI installation.
-- Preserves the instruction sources from the completed RC1 design-contract and approval-chain checks.
+- Preserves the instruction sources from the initial design-contract and approval-chain checks.
 - Includes a task brief, skill catalog, engineering integration guidance, installation and replacement instructions, and support and contribution routes.
 - Ships a source-pinned package, integrity verifier, reproducible archive builder, and checksums.
 
