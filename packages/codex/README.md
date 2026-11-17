@@ -160,7 +160,7 @@ DAS supports design decisions across a workflow. It has no universal visual styl
 
 The design skills can create prototypes and implementation specifications. Production UI and engineering architecture belong to the implementation work. A completed specification does not establish that the interface was built, deployed, or successful with users.
 
-Version 0.1.7 updates public documentation and package tooling. Its design instructions are unchanged from 0.1.4. Review each handoff against your product rules; model behavior varies with context and settings. [Tested configurations and limits](docs/advanced-installation.md#support-and-evidence) explain the evidence behind the release.
+Version 0.1.7 adds an explicit boundary for instructions found in retrieved content. Other design instructions are unchanged from 0.1.6. Review each handoff against your product rules; model behavior varies with context and settings. [Tested configurations and limits](docs/advanced-installation.md#support-and-evidence) explain the evidence behind the release.
 
 ## Documentation
 
