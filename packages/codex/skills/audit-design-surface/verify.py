@@ -51,13 +51,13 @@ STABLE_EXTRA_FILES = ("docs/release-notes.md", "docs/worked-example.md", "assets
 
 LINK = re.compile(r'\]\(([^\s)]+)(?:\s+"[^"\n]*")?\)')
 
-CODEX_RELEASE_TARGET_ID = "codex-0.1.6"
+CODEX_RELEASE_TARGET_ID = "codex-0.1.7"
 
 CODEX_RELEASE_TARGET_RECORD = {'client': 'codex',
- 'id': 'codex-0.1.6',
+ 'id': 'codex-0.1.7',
  'schema': 'das-client-target-v1',
- 'selectedSourceMapSHA256': 'c8f36e141a7138febb27c8af60ecef05ef34f733aff09b82c1428c4325382dc3',
- 'sourceDigest': 'cf11aeb980dbfb941c2338579f0aaf43e3ebd47cb8e4b889f58982ec5e9dd857',
+ 'selectedSourceMapSHA256': 'f4e4ca1d89fcfebf9dc3766aca64aaef030b570d36f9968b67bbd0b2a054b876',
+ 'sourceDigest': 'd395a3c1c526081bbd0ae544b2a1d60f06f5c99fd4dcdbecf42bf7bb9a377617',
  'sourceMapAlgorithm': 'sorted path + NUL + sourceSHA256 + LF'}
 
 CODEX_TARGETS = {CODEX_RELEASE_TARGET_ID: CODEX_RELEASE_TARGET_RECORD}

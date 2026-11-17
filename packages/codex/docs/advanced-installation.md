@@ -4,13 +4,13 @@ The [installation guide](../INSTALL.md) covers the release-tagged plugin and pro
 
 ## Support and evidence
 
-This edition is for the Codex app and CLI, through the native plugin or project-local Skills CLI copies. [Claude Code has its own package](https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.6/packages/claude).
+This edition is for the Codex app and CLI, through the native plugin or project-local Skills CLI copies. [Claude Code has its own package](https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.7/packages/claude).
 
 | Configuration | Observed scope and limit |
 | --- | --- |
 | Codex on macOS | Design-contract, approval-chain, plugin, and copied-skill workflows have been observed. Other operating systems and every skill/model combination are not established by those samples. |
 | Model settings | Earlier contract and approval-chain checks used `gpt-6-astra` with `ultra` reasoning. Short resource-reading handoffs used `low`. These are observations, not a required effort setting for every task. |
-| Current package | Version 0.1.6 preserves the design instructions from 0.1.4 and changes public copy and tooling. Integrity checks cover complete resources, source correspondence, local links, and reproducible builds. No new model task was run for this cleanup. |
+| Current package | Version 0.1.7 adds an explicit boundary for instructions found in retrieved content. Other design instructions are unchanged from 0.1.6. Integrity checks cover complete resources, source correspondence, local links, and reproducible builds; this patch adds no new model-behavior result. |
 
 Earlier behavior checks preceded the router and writer editorial changes in 0.1.4. They do not establish a new behavioral result for this package or guarantee a complete design for every product. Check source fidelity, approval scope, and the handoff before implementation.
 
@@ -36,7 +36,7 @@ Record the installed source, version, and scope before replacement. A locally bu
 4. For project-local skills, replace only the identified DAS folders and their lock entries. If another agent shares those folders or aliases, use a fresh project or plan that migration explicitly.
 5. Install from the desired release tag or verified archive. Check its identity and complete files, then start a new session and inspect the skill picker.
 
-Installed files do not change when a new DAS release is published. The plugin command in this guide pins its marketplace source to `v0.1.6`; use the replacement steps above to choose a newer release. For standalone skills, `npx skills update` is an explicit update: an installation from the default branch follows that branch, while a saved tag stays pinned to that tag. See the [Skills CLI update documentation](https://github.com/vercel-labs/skills/blob/main/docs/commands.md#skills-update).
+Installed files do not change when a new DAS release is published. The plugin command in this guide pins its marketplace source to `v0.1.7`; use the replacement steps above to choose a newer release. For standalone skills, `npx skills update` is an explicit update: an installation from the default branch follows that branch, while a saved tag stays pinned to that tag. See the [Skills CLI update documentation](https://github.com/vercel-labs/skills/blob/main/docs/commands.md#skills-update).
 
 Package versions identify released files and documentation. The target metadata pins the instruction contents. A package update can leave those instructions unchanged; the [changelog](../CHANGELOG.md) explains what changed.
 

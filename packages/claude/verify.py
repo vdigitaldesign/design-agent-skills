@@ -32,14 +32,14 @@ SOURCES = tuple(sorted(
     + ["references/" + name + ".md" for name in REFERENCES]
 ))
 
-CLAUDE_RELEASE_TARGET_ID = "claude-0.1.6"
+CLAUDE_RELEASE_TARGET_ID = "claude-0.1.7"
 
 CLAUDE_RELEASE_TARGET_RECORD = {
     "client": "claude",
     "id": CLAUDE_RELEASE_TARGET_ID,
     "schema": "das-client-target-v1",
-    "selectedSourceMapSHA256": "39c8fbc04b51c44201fcc65656ebc9bc4800b1b14e577fb07c14d73cba476a84",
-    "sourceDigest": "491382874c052da485216de642254bc4b84a558045fe28ff41f19a71d401b874",
+    "selectedSourceMapSHA256": "b977729fbe959a4afde06928f5ac2b65434d52c7e5384342f5e97b97346c978c",
+    "sourceDigest": "42a0c38897b8ab97e806724a1d42ae930092be7430a5417c4d6b62c03cf43388",
     "sourceMapAlgorithm": "SHA-256 of UTF-8 json.dumps(files, sort_keys=True, separators=(',', ':'))",
 }
 

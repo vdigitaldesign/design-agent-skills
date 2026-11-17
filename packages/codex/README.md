@@ -4,7 +4,7 @@
 
 **Design work for agents. Authority for humans.**
 
-[![Version: 0.1.6](https://img.shields.io/badge/version-0.1.6-00632E)](CHANGELOG.md)
+[![Version: 0.1.7](https://img.shields.io/badge/version-0.1.7-00632E)](CHANGELOG.md)
 ![Format: Markdown](https://img.shields.io/badge/format-Markdown-f4f0e6)
 [![License: MIT](https://img.shields.io/badge/license-MIT-c9f24a)](LICENSE)
 
@@ -31,7 +31,7 @@ a person's choice, and the concrete flow and checks handed to a developer.
 
 ## Supported agents
 
-Version 0.1.6 supports the documented Codex app and CLI workflows. The [Claude Code edition](https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.6/packages/claude) shares this release version and has its own installation guide. See the [release notes](docs/release-notes.md) and [tested configurations](docs/advanced-installation.md#support-and-evidence).
+Version 0.1.7 supports the documented Codex app and CLI workflows. The [Claude Code edition](https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.7/packages/claude) shares this release version and has its own installation guide. See the [release notes](docs/release-notes.md) and [tested configurations](docs/advanced-installation.md#support-and-evidence).
 
 ## Install
 
@@ -46,7 +46,7 @@ If DAS is already installed, follow the [replacement instructions](docs/advanced
 In your terminal:
 
 ```sh
-codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.6 &&
+codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.7 &&
 codex plugin add design-agent-skills@design-agent-skills &&
 codex plugin list
 ```
@@ -72,7 +72,7 @@ Replace the flow, constraints, and destination with your task. Give Codex access
 From the root of the project that will use DAS:
 
 ```sh
-npx --yes skills@1.7.4 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.6/packages/codex --agent codex --skill '*' --copy --yes
+npx --yes skills@1.7.4 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.7/packages/codex --agent codex --skill '*' --copy --yes
 ```
 
 This copies the sixteen Codex skills from the pinned release into the project’s Universal skills directory. The [installation guide](INSTALL.md#install-a-fixed-release) explains version selection and replacement.
@@ -160,7 +160,7 @@ DAS supports design decisions across a workflow. It has no universal visual styl
 
 The design skills can create prototypes and implementation specifications. Production UI and engineering architecture belong to the implementation work. A completed specification does not establish that the interface was built, deployed, or successful with users.
 
-Version 0.1.6 updates public documentation and package tooling. Its design instructions are unchanged from 0.1.4. Review each handoff against your product rules; model behavior varies with context and settings. [Tested configurations and limits](docs/advanced-installation.md#support-and-evidence) explain the evidence behind the release.
+Version 0.1.7 updates public documentation and package tooling. Its design instructions are unchanged from 0.1.4. Review each handoff against your product rules; model behavior varies with context and settings. [Tested configurations and limits](docs/advanced-installation.md#support-and-evidence) explain the evidence behind the release.
 
 ## Documentation
 

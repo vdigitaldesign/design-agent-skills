@@ -4,4 +4,4 @@ Report a suspected vulnerability through GitHub's [private vulnerability reporti
 
 Include the affected client edition and version, installation route, impact, and the smallest safe reproduction. An incomplete design result without a security impact belongs in [ordinary support](SUPPORT.md).
 
-This document covers the Claude 0.1.6 edition. Security fixes use a new version and release notes. Published tags, archives, and checksums are not replaced in place. Preserve your existing installation before [replacement or rollback](docs/advanced-installation.md#replace-or-restore-an-installation).
+This document covers the Claude 0.1.7 edition. Security fixes use a new version and release notes. Published tags, archives, and checksums are not replaced in place. Preserve your existing installation before [replacement or rollback](docs/advanced-installation.md#replace-or-restore-an-installation).

@@ -1,5 +1,5 @@
 {
-  "clientTarget": "codex-0.1.6",
+  "clientTarget": "codex-0.1.7",
   "entrypoint": "design-router",
   "files": [
     {
@@ -15,12 +15,12 @@
     {
       "bytes": 331,
       "path": "TARGET.json",
-      "sha256": "2fa3dabc12e5719f060dbcca7a5f5527dc380b45e6bbc63baa3043a0b0081ff4"
+      "sha256": "1d60efbce12d7134d512f20f6b8ce7b9ea452bd2caf7c349f627f06727c7d9ae"
     },
     {
       "bytes": 6,
       "path": "VERSION",
-      "sha256": "1f2110568627307becae713f8b808f3d9d912d4b2a24ed6a78605f03f7437d3c"
+      "sha256": "ba57e7c7f71876d645bcdd9fb070f2dea8e6db5ed284a7e3d85c6b7d2409fef1"
     },
     {
       "bytes": 5913,
@@ -63,9 +63,9 @@
       "sha256": "6032b3867ea0d0fc178a7c5ba1d4f41c3fd68e6fa983267fceedc783a87d6641"
     },
     {
-      "bytes": 9133,
+      "bytes": 10017,
       "path": "references/product-profile-and-tools.md",
-      "sha256": "0bf3b26b3bcfb09924710f1caab3b35c42e88d46833353a5f934a7a8b138c58c"
+      "sha256": "5ca9c1d24a2c6be4348fc22269b2c1d248ce1541113e98d18429490c04f71f2a"
     },
     {
       "bytes": 4658,
@@ -160,12 +160,12 @@
     {
       "bytes": 19034,
       "path": "verify.py",
-      "sha256": "7ba87e2f38925b98d81e1cb9d698b8b3238908c9ec060bb108af002503b34b80"
+      "sha256": "ed71d9ad759d7cf497c98e637019854d0ec5f1d14420f160af64feea5ac17931"
     }
   ],
   "kind": "skill",
   "schema": "das-portable-v1",
-  "sourceDigest": "cf11aeb980dbfb941c2338579f0aaf43e3ebd47cb8e4b889f58982ec5e9dd857",
+  "sourceDigest": "d395a3c1c526081bbd0ae544b2a1d60f06f5c99fd4dcdbecf42bf7bb9a377617",
   "sources": [
     {
       "exportPath": "references/audit-exploration-templates.md",
@@ -217,9 +217,9 @@
     },
     {
       "exportPath": "references/product-profile-and-tools.md",
-      "exportSHA256": "0bf3b26b3bcfb09924710f1caab3b35c42e88d46833353a5f934a7a8b138c58c",
+      "exportSHA256": "5ca9c1d24a2c6be4348fc22269b2c1d248ce1541113e98d18429490c04f71f2a",
       "sourcePath": "references/product-profile-and-tools.md",
-      "sourceSHA256": "0bf3b26b3bcfb09924710f1caab3b35c42e88d46833353a5f934a7a8b138c58c"
+      "sourceSHA256": "5ca9c1d24a2c6be4348fc22269b2c1d248ce1541113e98d18429490c04f71f2a"
     },
     {
       "exportPath": "references/quality-checklists.md",
@@ -336,5 +336,5 @@
       "sourceSHA256": "347c95b9edd2b6c091c2d9fa6ffda0880ed9d38223a4c0c4f7771823f21c83af"
     }
   ],
-  "version": "0.1.6"
+  "version": "0.1.7"
 }
