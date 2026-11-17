@@ -1,6 +1,6 @@
 # Support
 
-DAS 0.1.6 supports the documented Codex app and CLI workflows through the plugin and project-local copied-skill routes. The [Claude Code edition](https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.6/packages/claude) has a separate installation guide and support scope.
+DAS 0.1.7 supports the documented Codex app and CLI workflows through the plugin and project-local copied-skill routes. The [Claude Code edition](https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.7/packages/claude) has a separate installation guide and support scope.
 
 Volodymyr Onishchenko (`vdigitaldesign`) maintains the project. Use the repository's [issue forms](https://github.com/vdigitaldesign/design-agent-skills/issues/new/choose) for ordinary problems and feature requests. There is no guaranteed response time.
 

@@ -9,7 +9,7 @@ You need Claude Code with model access. The plugin route needs a client with `cl
 From your project, run:
 
 ```sh
-claude plugin marketplace add 'vdigitaldesign/design-agent-skills#v0.1.6' --scope project &&
+claude plugin marketplace add 'vdigitaldesign/design-agent-skills#v0.1.7' --scope project &&
 claude plugin install design-agent-skills@design-agent-skills --scope project &&
 claude plugin list
 ```
@@ -44,7 +44,7 @@ Remove the marketplace registration only when no other installation needs it. Se
 From your project, run:
 
 ```sh
-npx --yes skills@1.7.4 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.6/packages/claude --agent claude-code --skill '*' --copy --yes
+npx --yes skills@1.7.4 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.7/packages/claude --agent claude-code --skill '*' --copy --yes
 ```
 
 This copies all sixteen skills into the project's Claude skills directory. The explicit URL selects the Claude edition; `--agent claude-code` selects where to install it. Each complete skill folder includes its supporting references and integrity files.

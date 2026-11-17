@@ -1,15 +1,15 @@
-# Install DAS 0.1.6
+# Install DAS 0.1.7
 
 Choose the Codex plugin or project-local copied skills. Use one route in a project to avoid duplicate DAS entries.
 
 You need Codex with access to an available model. The plugin route also needs a Codex CLI that exposes `codex plugin`; check with `codex plugin --help`. The Skills CLI route needs Git, npm, and [Node.js 22.20.0 or later](https://github.com/vercel-labs/skills/blob/v1.7.2/package.json). Python 3.9 or later is needed only for the package verifier and maintenance commands.
 
-If an older DAS installation is present, read [replacement and rollback](docs/advanced-installation.md#replace-an-earlier-installation) before adding this version. The plugin and fixed-release commands below select tag `v0.1.6`.
+If an older DAS installation is present, read [replacement and rollback](docs/advanced-installation.md#replace-an-earlier-installation) before adding this version. The plugin and fixed-release commands below select tag `v0.1.7`.
 
 ## Codex plugin
 
 ```sh
-codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.6 &&
+codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.7 &&
 codex plugin add design-agent-skills@design-agent-skills &&
 codex plugin list
 ```
@@ -23,7 +23,7 @@ Adding this repository as a marketplace source installs a Codex plugin from GitH
 Run this from the root of the project that will use DAS:
 
 ```sh
-npx --yes skills@1.7.4 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.6/packages/codex --agent codex --skill '*' --copy --yes
+npx --yes skills@1.7.4 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.7/packages/codex --agent codex --skill '*' --copy --yes
 ```
 
 This installs all sixteen Codex skills as independent project-local copies without selection prompts. The explicit package URL selects the instructions; the agent flag selects the destination.
@@ -36,30 +36,30 @@ Start a new Codex session in that project. Project-local skills use names such a
 
 ### Install a fixed release
 
-The command above pins both DAS (`v0.1.6`) and Skills CLI (`1.7.4`). To choose a later version, change the release tag in the full package URL after reviewing its release notes. No background updater is created.
+The command above pins both DAS (`v0.1.7`) and Skills CLI (`1.7.4`). To choose a later version, change the release tag in the full package URL after reviewing its release notes. No background updater is created.
 
 ## Download and verify an archive
 
-Download `design-agent-skills-0.1.6.zip` and `design-agent-skills-0.1.6.sha256` from the [v0.1.6 release](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.6). Keep the package outside directories where Codex discovers skills.
+Download `design-agent-skills-0.1.7.zip` and `design-agent-skills-0.1.7.sha256` from the [v0.1.7 release](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.7). Keep the package outside directories where Codex discovers skills.
 
 On macOS, from the download directory:
 
 ```sh
 (
-  shasum -a 256 -c design-agent-skills-0.1.6.sha256 &&
-  das_extract_dir=$(mktemp -d "./das-0.1.6.XXXXXX") &&
-  unzip design-agent-skills-0.1.6.zip -d "$das_extract_dir" &&
-  python3 "$das_extract_dir/design-agent-skills-0.1.6/verify.py" --root "$das_extract_dir/design-agent-skills-0.1.6" &&
-  printf 'Verified package: %s\n' "$das_extract_dir/design-agent-skills-0.1.6"
+  shasum -a 256 -c design-agent-skills-0.1.7.sha256 &&
+  das_extract_dir=$(mktemp -d "./das-0.1.7.XXXXXX") &&
+  unzip design-agent-skills-0.1.7.zip -d "$das_extract_dir" &&
+  python3 "$das_extract_dir/design-agent-skills-0.1.7/verify.py" --root "$das_extract_dir/design-agent-skills-0.1.7" &&
+  printf 'Verified package: %s\n' "$das_extract_dir/design-agent-skills-0.1.7"
 )
 ```
 
-Copy the whole block, including the parentheses. It stops on failure and creates a fresh extraction directory only after the checksum passes. On systems with `sha256sum`, replace the first command inside the block with `sha256sum -c design-agent-skills-0.1.6.sha256`. Continue only when the verifier succeeds and the block prints the verified package path. Download the checksum from the same trusted release as the archive; the checksum alone does not authenticate a publisher.
+Copy the whole block, including the parentheses. It stops on failure and creates a fresh extraction directory only after the checksum passes. On systems with `sha256sum`, replace the first command inside the block with `sha256sum -c design-agent-skills-0.1.7.sha256`. Continue only when the verifier succeeds and the block prints the verified package path. Download the checksum from the same trusted release as the archive; the checksum alone does not authenticate a publisher.
 
 Use the printed package path to register a local plugin source. Replace the example path below with its absolute path:
 
 ```sh
-codex plugin marketplace add /absolute/path/to/das-0.1.6.ABC123/design-agent-skills-0.1.6 &&
+codex plugin marketplace add /absolute/path/to/das-0.1.7.ABC123/design-agent-skills-0.1.7 &&
 codex plugin add design-agent-skills@design-agent-skills
 ```
 

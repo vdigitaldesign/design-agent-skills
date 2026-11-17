@@ -4,7 +4,7 @@
 
 Design Agent Skills helps you work through product and interface design with Claude Code. Investigate an existing flow, compare alternatives, or prepare an approved design for implementation. The agent works from your product sources and design system; you make the material design decisions.
 
-This Claude edition is version 0.1.6. It includes [16 skills](docs/skills.md), available as a native plugin or project-local copies through Skills CLI.
+This Claude edition is version 0.1.7. It includes [16 skills](docs/skills.md), available as a native plugin or project-local copies through Skills CLI.
 
 [Install DAS](INSTALL.md) · [Use it in Claude Code](docs/claude-code.md) · [How the work flows](docs/how-das-works.md) · [Changes](CHANGELOG.md)
 
@@ -13,7 +13,7 @@ This Claude edition is version 0.1.6. It includes [16 skills](docs/skills.md), a
 From your project, run:
 
 ```sh
-claude plugin marketplace add 'vdigitaldesign/design-agent-skills#v0.1.6' --scope project &&
+claude plugin marketplace add 'vdigitaldesign/design-agent-skills#v0.1.7' --scope project &&
 claude plugin install design-agent-skills@design-agent-skills --scope project
 ```
 

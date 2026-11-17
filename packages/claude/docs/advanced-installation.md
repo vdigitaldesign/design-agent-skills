@@ -5,14 +5,14 @@
 For the native plugin, register the immutable Claude release tag:
 
 ```sh
-claude plugin marketplace add 'vdigitaldesign/design-agent-skills#v0.1.6' --scope project &&
+claude plugin marketplace add 'vdigitaldesign/design-agent-skills#v0.1.7' --scope project &&
 claude plugin install design-agent-skills@design-agent-skills --scope project
 ```
 
 For project-local copies:
 
 ```sh
-npx --yes skills@1.7.4 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.6/packages/claude --agent claude-code --skill '*' --copy --yes
+npx --yes skills@1.7.4 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.7/packages/claude --agent claude-code --skill '*' --copy --yes
 ```
 
 The tag fixes the DAS source; `skills@1.7.4` fixes the installer. A fixed tag stays on that release. Choose a newer source explicitly when updating.
@@ -27,7 +27,7 @@ For copied skills, preserve your current folders and lock file, remove only the 
 
 ## Download an archive
 
-The [Claude 0.1.6 release](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.6) also provides `design-agent-skills-claude-0.1.6.zip` and its checksum. An archive is useful for offline inspection or a retained recovery copy; normal installation is described in [INSTALL](../INSTALL.md).
+The [Claude 0.1.7 release](https://github.com/vdigitaldesign/design-agent-skills/releases/tag/v0.1.7) also provides `design-agent-skills-claude-0.1.7.zip` and its checksum. An archive is useful for offline inspection or a retained recovery copy; normal installation is described in [INSTALL](../INSTALL.md).
 
 Keep it outside folders where the agent discovers skills. Verify the supplied checksum before extracting into a fresh directory. In the extracted package, `python3 verify.py` checks its files and source correspondence. A checksum checks consistency; obtain it and the archive from the same trusted release.
 

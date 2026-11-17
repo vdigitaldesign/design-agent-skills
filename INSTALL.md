@@ -1,11 +1,11 @@
-# Install Design Agent Skills 0.1.6
+# Install Design Agent Skills 0.1.7
 
 Choose your client and one route per project. Native plugins need a client that exposes its `plugin` commands. Project-local skills need Git, npm, and Node.js 22.20 or later. Python 3.9 or later is needed only for optional integrity checks and maintenance.
 
 ## Codex plugin
 
 ```sh
-codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.6 &&
+codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.7 &&
 codex plugin add design-agent-skills@design-agent-skills &&
 codex plugin list
 ```
@@ -15,7 +15,7 @@ Start a new session and select Design Agent Skills: Design Router, or invoke `$d
 ## Codex project-local skills
 
 ```sh
-npx --yes skills@1.7.4 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.6/packages/codex --agent codex --skill '*' --copy --yes
+npx --yes skills@1.7.4 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.7/packages/codex --agent codex --skill '*' --copy --yes
 ```
 
 This installs the Codex package as complete project-local copies in `.agents/skills/`. Invoke `$design-router` in a new session. That shared directory can also be read by other agents; preserve existing same-named skills before replacement.
@@ -23,7 +23,7 @@ This installs the Codex package as complete project-local copies in `.agents/ski
 ## Claude plugin
 
 ```sh
-claude plugin marketplace add 'vdigitaldesign/design-agent-skills#v0.1.6' --scope project &&
+claude plugin marketplace add 'vdigitaldesign/design-agent-skills#v0.1.7' --scope project &&
 claude plugin install design-agent-skills@design-agent-skills --scope project &&
 claude plugin list
 ```
@@ -33,7 +33,7 @@ Start a new session and invoke `/design-agent-skills:design-router`. A marketpla
 ## Claude project-local skills
 
 ```sh
-npx --yes skills@1.7.4 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.6/packages/claude --agent claude-code --skill '*' --copy --yes
+npx --yes skills@1.7.4 add https://github.com/vdigitaldesign/design-agent-skills/tree/v0.1.7/packages/claude --agent claude-code --skill '*' --copy --yes
 ```
 
 This copies the Claude package into `.claude/skills/`. Invoke `/design-router` in a new session. The source path selects the client instructions; `--agent` selects the installation destination.

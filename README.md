@@ -2,7 +2,7 @@
 
 # Design Agent Skills
 
-[![Version: 0.1.6](https://img.shields.io/badge/version-0.1.6-00632E)](CHANGELOG.md) ![Format: Markdown](https://img.shields.io/badge/format-Markdown-f4f0e6) [![License: MIT](https://img.shields.io/badge/license-MIT-c9f24a)](LICENSE)
+[![Version: 0.1.7](https://img.shields.io/badge/version-0.1.7-00632E)](CHANGELOG.md) ![Format: Markdown](https://img.shields.io/badge/format-Markdown-f4f0e6) [![License: MIT](https://img.shields.io/badge/license-MIT-c9f24a)](LICENSE)
 
 [Install](#install) · [Start a task](#start-a-task) · [Skills](#choose-a-skill) · [Documentation](#documentation) · [Contribute](CONTRIBUTING.md)
 
@@ -31,7 +31,7 @@ If DAS is already installed, follow [update and removal](docs/update.md) before 
 In your terminal:
 
 ```sh
-codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.6 &&
+codex plugin marketplace add vdigitaldesign/design-agent-skills --ref v0.1.7 &&
 codex plugin add design-agent-skills@design-agent-skills &&
 codex plugin list
 ```
@@ -43,7 +43,7 @@ Open a new Codex session in your project. Select **Design Agent Skills: Design R
 From your project, run:
 
 ```sh
-claude plugin marketplace add 'vdigitaldesign/design-agent-skills#v0.1.6' --scope project &&
+claude plugin marketplace add 'vdigitaldesign/design-agent-skills#v0.1.7' --scope project &&
 claude plugin install design-agent-skills@design-agent-skills --scope project &&
 claude plugin list
 ```
